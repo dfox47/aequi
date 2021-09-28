@@ -9,17 +9,29 @@
 .header_logo {}
 
 .header_menu {
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 1.1;
+	text-transform: uppercase;
+
 	a,
 	a:visited {
 		color: #fff;
-		text-decoration: none;
+		padding: 1em;
 		position: relative;
+		text-decoration: none;
+	}
+
+	li {
+		margin: 0 88px;
 	}
 }
 
 .header_wrap {
+	align-items: center;
 	display: flex;
 	justify-content: center;
+	padding: 30px;
 }
 
 

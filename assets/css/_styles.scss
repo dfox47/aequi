@@ -1,8 +1,7 @@
-
-
-
-
 @charset "UTF-8";
+// powered by foxartbox.com
+
+
 
 // should be 1st
 @import "vars";
@@ -38,11 +37,11 @@
 
 	&:focus {
 		outline: none; }
-}
 
-.slick-list.dragging {
-	cursor: pointer;
-	cursor: hand; }
+	&.dragging {
+		cursor: pointer;
+		cursor: hand; }
+}
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
