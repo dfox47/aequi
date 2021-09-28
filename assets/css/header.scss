@@ -1,0 +1,25 @@
+
+
+
+.header {
+	background-color: $c_header_bg;
+	color: #fff;
+}
+
+.header_logo {}
+
+.header_menu {
+	a,
+	a:visited {
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+	}
+}
+
+.header_wrap {
+	display: flex;
+	justify-content: center;
+}
+
+
