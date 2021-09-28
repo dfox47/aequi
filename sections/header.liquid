@@ -56,7 +56,7 @@
 
 	<header class="header" role="banner">
 		<div class="header_wrap">
-			<a class="header_logo" href="/"><img src="/assets/i/logo.svg" alt="" /></a>
+			<a class="header_logo" href="/"><img src="{{ 'logo.svg' | asset_url }}" alt="" /></a>
 
 			<nav class="header_menu" role="navigation">
 				{% include 'site-nav', linklist: section.settings.main_linklist %}
