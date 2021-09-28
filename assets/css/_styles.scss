@@ -1,7 +1,11 @@
 
 
 
+
 @charset "UTF-8";
+
+// should be 1st
+@import "vars";
 
 @import "header";
 
