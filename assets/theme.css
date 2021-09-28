@@ -6997,3 +6997,7 @@ hr {
 
 .store-availability-list__phone {
 	margin-bottom: 0; }
+
+body {
+	background-color: red;
+}
