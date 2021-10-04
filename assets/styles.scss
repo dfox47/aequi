@@ -1384,10 +1384,7 @@ ol {
 	-webkit-overflow-scrolling: touch;
 }
 /*================ #Links and Buttons ================*/
-a:not([disabled]):hover,
-a:focus {
-	color: var(--color-text-focus);
-}
+
 .password-powered-by a:not([disabled]):hover,
 .password-powered-by a:focus {
 	color: var(--color-text-focus);
