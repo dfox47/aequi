@@ -22,6 +22,16 @@
 
 	&__item {
 		margin: 0 44px;
+
+		&.active {
+			.header_menu_list {
+				&__link {
+					&::after {
+						width: calc(100% - 40px);
+					}
+				}
+			}
+		}
 	}
 
 	&__link {
