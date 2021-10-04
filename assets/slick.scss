@@ -248,14 +248,14 @@
 				}
 			}
 		}
-	}
-}
 
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before,
-.slick-dots li a:hover:before,
-.slick-dots li a:focus:before {
-	opacity: 1;
+		button:hover:before,
+		button:focus:before,
+		a:hover:before,
+		a:focus:before {
+			opacity: 1;
+		}
+	}
 }
 
 
