@@ -1,6 +1,35 @@
 
 
 
-$c_header_bg: #4f4f4f;
+$c_header_bg:       #4f4f4f;
+$c_link:            #e09a8e;
+$c_main:            #273734;
 
 
+
+$transition:    all .3s ease-in-out;
+
+
+
+// @medias
+$desktop:               'only screen and (max-width: 1279px)';
+$mobile:                'only screen and (max-width: 767px)';
+$mobile_s:              'only screen and (max-width: 400px)';
+$tablet:                'only screen and (max-width: 1023px)';
+
+
+
+// fonts
+$font_main:                 'proxima_reg',      Arial, Helvetica, sans-serif;
+
+
+
+// proxima_black
+//@font-face {
+//	font-family: 'proxima_black';
+//	src: url('fonts/proxima_black.eot');
+//	src: url('fonts/proxima_black.eot?#iefix') format('embedded-opentype'),
+//	url('fonts/proxima_black.woff2') format('woff2'),
+//	url('fonts/proxima_black.woff') format('woff'),
+//	url('fonts/proxima_black.ttf') format('truetype');
+//}
