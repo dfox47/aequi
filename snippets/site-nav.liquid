@@ -7,7 +7,7 @@
     Usage:
     {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
 {% endcomment %}
-<ul class="heaedr_menu__list">
+<ul class="heaedr_menu_list">
   {% for link in linklists[linklist].links %}
     {%- assign child_list_handle = link.title | handleize -%}
 
@@ -79,8 +79,8 @@
         </div>
       </li>
     {% else %}
-      <li class="heaedr_menu__item{% if link.active %} active{% endif %}">
-        <a class="heaedr_menu_link" href="{{ link.url }}" {% if link.current %} aria-current="page"{% endif %}>
+      <li class="heaedr_menu_list__item{% if link.active %} active{% endif %}">
+        <a class="heaedr_menu_list__link" href="{{ link.url }}" {% if link.current %} aria-current="page"{% endif %}>
           <span>{{ link.title | escape }}</span>
         </a>
       </li>

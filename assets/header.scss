@@ -9,28 +9,26 @@
 .header_logo {}
 
 .header_menu {
+	display: flex;
 	font-size: 18px;
 	font-weight: 100;
 	line-height: 1.1;
 	text-transform: uppercase;
+}
 
-	a,
-	a:visited {
+.header_menu_list {
+	display: flex;
+	margin: 0;
+
+	&__item {
+		margin: 0 44px;
+	}
+
+	&__link {
 		color: #fff;
 		padding: 1em;
 		position: relative;
 		text-decoration: none;
-	}
-
-	li {
-		margin: 0 44px;
-	}
-
-	&__item {}
-
-	&__list {
-		display: flex;
-		margin: 0;
 	}
 }
 
