@@ -29,6 +29,26 @@
 		padding: 1em;
 		position: relative;
 		text-decoration: none;
+
+		&::after {
+			background-color: #fff;
+			content: "";
+			height: 1px;
+			left: 0;
+			position: absolute;
+			top: 100%;
+			transition: $transition;
+			width: 0;
+		}
+
+		&:focus,
+		&:hover {
+			color: #fff;
+
+			&::after {
+				width: 100%;
+			}
+		}
 	}
 }
 
