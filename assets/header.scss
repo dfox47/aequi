@@ -23,10 +23,13 @@
 	}
 
 	li {
-		margin: 0 88px;
+		margin: 0 44px;
 	}
 
+	&__item {}
+
 	&__list {
+		display: flex;
 		margin: 0;
 	}
 }
@@ -34,8 +37,11 @@
 .header_wrap {
 	align-items: center;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1020px;
 	padding: 30px;
+	width: 100%;
 }
 
 

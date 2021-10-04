@@ -1,3 +1,30 @@
 
 
 
+.social_link {
+	display: block;
+	transition: $transition;
+	width: 15px;
+
+	&:hover {
+		opacity: .7;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.social_links {
+	display: flex;
+
+	&__item {
+		margin: 0 0 0 30px;
+
+		&:first-child {
+			margin: 0;
+		}
+	}
+}
+
+
