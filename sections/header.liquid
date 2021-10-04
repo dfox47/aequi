@@ -1,18 +1,5 @@
-{% if section.settings.message %}
-	<style>
-		{% if section.settings.logo != blank %}
-		.site-header__logo-image {
-			max-width: {{ section.settings.logo_max_width | escape }}px;
-		}
-		{% endif %}
 
-		{% if section.settings.align_logo == 'left' %}
-		.site-header__logo-image {
-			margin: 0;
-		}
-		{% endif %}
-	</style>
-{% endif %}
+
 
 {% include 'search-drawer' %}
 
@@ -67,6 +54,7 @@
 			</div>
 		</div>
 	</header>
+</div>
 
 
 
