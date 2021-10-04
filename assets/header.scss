@@ -26,17 +26,17 @@
 
 	&__link {
 		color: #fff;
-		padding: 1em;
+		padding: 20px;
 		position: relative;
 		text-decoration: none;
 
 		&::after {
 			background-color: #fff;
+			bottom: 12px;
 			content: "";
 			height: 1px;
-			left: 0;
+			left: 20px;
 			position: absolute;
-			top: 100%;
 			transition: $transition;
 			width: 0;
 		}
@@ -46,7 +46,7 @@
 			color: #fff;
 
 			&::after {
-				width: 100%;
+				width: calc(100% - 40px);
 			}
 		}
 	}
