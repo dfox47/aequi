@@ -1,23 +1,47 @@
 
 
 
-<div class="hero_img">
+<div class="hero_img" style="background-image: url({{ section.settings.hero_img | img_url: '300x300' }})">
 	<div class="hero_img__logo"></div>
 
-	<div class="hero_img__bg" style="background-image: {{ section.settings.hero_img | img_url: '300x300' }}"></div>
+	<div class="hero_img__title_1">{{ section.settings.title_1 }}</div>
+
+	<div class="hero_img__title_2">{{ section.settings.title_2 }}</div>
+
+	<div class="hero_img__desc">{{ section.settings.desc }}</div>
+
+	<a class="hero_img__btn" href=""></a>
 </div>
 
 
 
 {% schema %}
 	{
-		"name": "HeroImageBg",
+		"name": "Hero image bg",
 		"settings": [
 			{
 				"type": "image_picker",
 				"id": "hero_img",
 				"label": "Hero image bg"
 			}
+			{
+				"type": "text",
+				"id": "title_1",
+				"label": "Title 1",
+				"default": "Title 1"
+			},
+			{
+				"type": "text",
+				"id": "title_2",
+				"label": "Title 2",
+				"default": "Title 2"
+			},
+			{
+				"type": "text",
+				"id": "desc",
+				"label": "Description",
+				"default": "Some description text"
+			},
 		],
 		"presets": [
 			{
