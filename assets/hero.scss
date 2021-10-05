@@ -141,7 +141,7 @@
 	position: relative;
 
 	&::after {
-		background: linear-gradient(180deg, rgba(39, 55, 52, 0) 0%, #000 100%);
+		background: linear-gradient(180deg, rgba(39,55,52, 0) 0%, #000 100%);
 		bottom: 0;
 		content: "";
 		height: 80%;
@@ -179,6 +179,11 @@
 		line-height: 1.1;
 		text-align: center;
 		text-transform: uppercase;
+		z-index: 3;
+	}
+
+	&__logo {
+		position: relative;
 		z-index: 3;
 	}
 
