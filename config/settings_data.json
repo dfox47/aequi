@@ -209,22 +209,25 @@
           "show_locale_selector": true
         }
       },
-      "163347099779197e5e": {
+      "1633472452365e9735": {
         "type": "hero_img",
         "settings": {
-          "hero_img": "shopify:\/\/shop_images\/AdobeStock_85992821_Preview_1.png"
+          "hero_img": "shopify:\/\/shop_images\/AdobeStock_85992821_Preview_1.png",
+          "title_1": "Your style.",
+          "title_2": "Your scene.",
+          "desc": "We design aesthetic cannabis experiences."
         }
       }
     },
     "content_for_index": [
+      "1633472452365e9735",
       "hero-1",
       "feature-row",
       "feature-columns",
       "collection",
       "hero-2",
       "quotes",
-      "image-bar",
-      "163347099779197e5e"
+      "image-bar"
     ]
   },
   "presets": {
