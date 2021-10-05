@@ -17,20 +17,6 @@
           "color_text": "#ffffff"
         }
       },
-      "hero-1": {
-        "type": "hero",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/AdobeStock_85992821_Preview_1.png",
-          "alignment": "center",
-          "hero_layout": "full_width",
-          "hero_size": "large",
-          "text_size": "large",
-          "title": "Your style. Your scene.",
-          "text": "<p>We design aesthetic cannabis experiences.<br\/><\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "feature-row": {
         "type": "feature-row",
         "settings": {
@@ -221,8 +207,6 @@
     },
     "content_for_index": [
       "1633472452365e9735",
-      "hero-1",
-      "feature-row",
       "feature-columns",
       "collection",
       "hero-2",
