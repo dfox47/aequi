@@ -3,7 +3,7 @@
 
 <div class="hero_img" style="background-image: url({{ section.settings.hero_img | img_url: '300x300' }})">
 	<div class="hero_img__logo">
-		<img src="{{ section.settings.hero_logo | img_url: '300x300' }}" alt="" />
+		<img src="{{ 'i_logo.svg' | asset_url }}" alt="" />
 	</div>
 
 	<div class="hero_img__title_1">{{ section.settings.title_1 }}</div>
@@ -25,11 +25,6 @@
 				"type": "image_picker",
 				"id": "hero_img",
 				"label": "Hero image bg"
-			},
-			{
-				"type": "image_picker",
-				"id": "hero_logo",
-				"label": "Logo"
 			},
 			{
 				"type": "text",
