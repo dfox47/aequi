@@ -184,7 +184,12 @@
 
 	&__logo {
 		position: relative;
+		width: 180px;
 		z-index: 3;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	&__title {
