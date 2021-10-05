@@ -126,3 +126,41 @@
 }
 
 
+
+// hero_img [START]
+.hero_img {
+	align-items: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: -55px 0 0;
+	min-height: calc(100vh - 112px);
+
+	&__btn {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+	}
+
+	&__desc {
+		color: #fff;
+		font-family: Josefin Sans, Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		font-weight: 100;
+		line-height: 1.1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		color: #fff;
+		line-height: 1.1;
+		font-size: 74px;
+	}
+}
+// hero_img [END]
+
+
