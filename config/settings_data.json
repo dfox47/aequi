@@ -208,6 +208,12 @@
           "show_currency_selector": true,
           "show_locale_selector": true
         }
+      },
+      "163347099779197e5e": {
+        "type": "hero_img",
+        "settings": {
+          "hero_img": "shopify:\/\/shop_images\/AdobeStock_85992821_Preview_1.png"
+        }
       }
     },
     "content_for_index": [
@@ -217,7 +223,8 @@
       "collection",
       "hero-2",
       "quotes",
-      "image-bar"
+      "image-bar",
+      "163347099779197e5e"
     ]
   },
   "presets": {
