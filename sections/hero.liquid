@@ -78,9 +78,6 @@
 			<div class="hero hero--{{ section.settings.hero_size }} hero-{{ section.id }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
 			     id="Hero-{{ section.id }}"
 			     data-layout="{{ section.settings.hero_layout }}"
-
-
-
 			{%- if section.settings.image -%}
 				{% unless section.settings.image.alt == blank %}
 					role="img"
@@ -103,11 +100,11 @@
 				<div class="hero__inner">
 					<div class="page-width text-center">
 						{%- if section.settings.image_logo != blank -%}
-							{{ section.settings.image_logo | img_url: '2048x' | img_tag }}
+							{{ section.settings.image_logo | img_url: '300x300' }}
 						{%- endif -%}
 
 						{%- if section.settings.title != blank -%}
-							<h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h2>
+							<h2>{{ section.settings.title | escape }}</h2>
 						{%- endif -%}
 
 						{%- if section.settings.text != blank -%}
