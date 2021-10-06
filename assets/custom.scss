@@ -1,6 +1,44 @@
 
 
 
+// home_text [START]
+.home_text {
+	color: $c_text;
+
+	+ .home_text {
+		.home_text_content {
+			background-image: url({{ 'i_home_2.svg' | asset_url }});
+		}
+
+		+ .home_text {
+			.home_text_content {
+				background-image: url({{ 'i_home_3.svg' | asset_url }});
+			}
+		}
+	}
+
+	h2 {
+		font-family: $font_playfair;
+		font-size: 33px;
+		margin: 0 0 1em;
+	}
+}
+
+.home_text_content {
+	background: url({{ 'i_home_1.svg' | asset_url }});
+	padding: 0 0 0 100px;
+	position: relative;
+}
+
+.home_text_desc {
+	font-family: $font_josefin;
+	font-size: 22px;
+	line-height: 1.1;
+}
+// home_text [END]
+
+
+
 .social_link {
 	display: block;
 	transition: $transition;
@@ -25,6 +63,15 @@
 			margin: 0;
 		}
 	}
+}
+
+
+
+.wrap {
+	margin: 0 auto;
+	max-width: 926px;
+	padding: 0 30px;
+	width: 100%;
 }
 
 
