@@ -7,12 +7,14 @@
 
 	+ .home_text {
 		.home_text_content {
-			background-image: url("{{ 'i_home_2.svg' | asset_url }}");
+			//background-image: url({{ 'i_home_2.svg' | asset_url }});
+			background-image: url(i_home_2.svg);
 		}
 
 		+ .home_text {
 			.home_text_content {
-				background-image: url("{{ 'i_home_3.svg' | asset_url }}");
+				//background-image: url({{ 'i_home_3.svg' | asset_url }});
+				background-image: url(i_home_3.svg);
 			}
 		}
 	}
@@ -25,7 +27,8 @@
 }
 
 .home_text_content {
-	background: url("{{ 'i_home_1.svg' | asset_url }}");
+	//background: url({{ 'i_home_1.svg' | asset_url }});
+	background: url(i_home_1.svg);
 	padding: 0 0 0 100px;
 	position: relative;
 }
