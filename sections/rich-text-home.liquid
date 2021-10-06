@@ -1,14 +1,12 @@
-<div class="home_text">
-	<div class="wrap">
-		<div class="home_text_content">
-			{% if section.settings.section_title != blank %}
-				<h2>{{ section.settings.section_title | escape }}</h2>
-			{% endif %}
+<div class="wrap">
+	<div class="home_text_content">
+		{% if section.settings.section_title != blank %}
+			<h2>{{ section.settings.section_title | escape }}</h2>
+		{% endif %}
 
-			{% if section.settings.text != blank %}
-				<div class="home_text_desc">{{ section.settings.text }}</div>
-			{% endif %}
-		</div>
+		{% if section.settings.text != blank %}
+			<div class="home_text_desc">{{ section.settings.text }}</div>
+		{% endif %}
 	</div>
 </div>
 
@@ -19,7 +17,7 @@
   "name": {
     "en": "Rich text home"
   },
-  "class": "index-section",
+  "class": "home_text_section",
   "settings": [
     {
       "type": "text",
