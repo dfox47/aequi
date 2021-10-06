@@ -206,19 +206,33 @@
           "link_text": "40% OFF"
         }
       },
-      "16335113535d998045": {
-        "type": "rich-text",
+      "163352137347303009": {
+        "type": "rich-text-home",
         "settings": {
-          "full_width": false,
           "section_title": "Accessories to reflect who you are.",
-          "text": "<p>The cannabis scene is personal, and changing. We want to introduce a level of elegance and aesthetic delight that meets a new era of modern smokers.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
+          "text": "<p>The cannabis scene is personal, and changing. We want to introduce a level of elegance and aesthetic delight that meets a new era of modern smokers.Some text...<\/p>"
+        }
+      },
+      "1633521404f2b616ac": {
+        "type": "rich-text-home",
+        "settings": {
+          "section_title": "For moments shared.",
+          "text": "<p>Your experiences with Aequi don't always happen alone. We are constantly designing for meaningful, shared and intimate environments with those you trust most. The cannabis experience is there to be shared, and our accessories and resources are made with this in mind.<\/p>"
+        }
+      },
+      "1633521410b68484ff": {
+        "type": "rich-text-home",
+        "settings": {
+          "section_title": "Designed for you.",
+          "text": "<p>Our products are designed for lovers of aesthetics and quality. For the creative types. The professionals. Those among us open to new and elevated experiences. We design for aesthetes of all backgrounds; so long as they are seeking peak experiences.<\/p>"
         }
       }
     },
     "content_for_index": [
       "1633472452365e9735",
-      "16335113535d998045",
+      "163352137347303009",
+      "1633521404f2b616ac",
+      "1633521410b68484ff",
       "feature-columns",
       "collection",
       "hero-2",
