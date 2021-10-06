@@ -152,7 +152,7 @@
 	}
 
 	&::before {
-		background: #273734;
+		background: $c_main;
 		content: "";
 		height: 100%;
 		left: 0;
@@ -173,7 +173,7 @@
 
 	&__desc {
 		color: #fff;
-		font-family: Josefin Sans, Helvetica, Arial, sans-serif;
+		font-family: $font_josefin;
 		font-size: 20px;
 		font-weight: 100;
 		line-height: 1.1;
@@ -194,6 +194,8 @@
 
 	&__title {
 		color: #fff;
+		font-family: $font_playfair;
+		font-weight: 400;
 		line-height: 1.1;
 		font-size: 74px;
 		z-index: 3;
