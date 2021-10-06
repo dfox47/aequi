@@ -1,0 +1,54 @@
+<div class="home_text">
+	<div class="wrap">
+		{% if section.settings.section_title != blank %}
+			<h2>{{ section.settings.section_title | escape }}</h2>
+		{% endif %}
+
+		{% if section.settings.text != blank %}
+			<div class="home_text_desc">{{ section.settings.text }}</div>
+		{% endif %}
+	</div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Rich text home",
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": {
+        "en": "Heading",
+      },
+      "default": {
+        "en": "Talk about your brand",
+      }
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": {
+        "en": "Text",
+      },
+      "default": {
+        "en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Rich text home"
+      },
+      "category": {
+        "en": "Text home"
+      }
+    }
+  ]
+}
+{% endschema %}
