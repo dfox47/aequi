@@ -205,10 +205,20 @@
           "link_src": "\/",
           "link_text": "40% OFF"
         }
+      },
+      "16335113535d998045": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Accessories to reflect who you are.",
+          "text": "<p>The cannabis scene is personal, and changing. We want to introduce a level of elegance and aesthetic delight that meets a new era of modern smokers.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
       }
     },
     "content_for_index": [
       "1633472452365e9735",
+      "16335113535d998045",
       "feature-columns",
       "collection",
       "hero-2",
