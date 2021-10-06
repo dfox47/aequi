@@ -4,16 +4,17 @@
 // home_text [START]
 .home_text {
 	color: $c_text;
+	padding: 116px 0 0;
 
 	+ .home_text {
+		padding: 0;
+
 		.home_text_content {
-			//background-image: url({{ 'i_home_2.svg' | asset_url }});
 			background-image: url(i_home_2.svg);
 		}
 
 		+ .home_text {
 			.home_text_content {
-				//background-image: url({{ 'i_home_3.svg' | asset_url }});
 				background-image: url(i_home_3.svg);
 			}
 		}
@@ -22,20 +23,22 @@
 	h2 {
 		font-family: $font_playfair;
 		font-size: 33px;
-		margin: 0 0 1em;
+		letter-spacing: .001em;
+		margin: 0 0 .5em;
+		text-transform: none;
 	}
 }
 
 .home_text_content {
-	//background: url({{ 'i_home_1.svg' | asset_url }});
-	background: url(i_home_1.svg);
-	padding: 0 0 0 100px;
+	background: url(i_home_1.svg) 3px 2px no-repeat scroll transparent;
+	padding: 0 0 0 127px;
 	position: relative;
 }
 
 .home_text_desc {
 	font-family: $font_josefin;
 	font-size: 22px;
+	letter-spacing: -.028em;
 	line-height: 1.1;
 }
 // home_text [END]
