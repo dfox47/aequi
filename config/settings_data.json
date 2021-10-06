@@ -212,11 +212,27 @@
           "section_title": "Accessories to reflect who you are.",
           "text": "<p>The cannabis scene is personal, and changing. We want to introduce a level of elegance and aesthetic delight that meets a new era of modern smokers.Some text...<\/p>"
         }
+      },
+      "1633521404f2b616ac": {
+        "type": "rich-text-home",
+        "settings": {
+          "section_title": "For moments shared.",
+          "text": "<p>Your experiences with Aequi don't always happen alone. We are constantly designing for meaningful, shared and intimate environments with those you trust most. The cannabis experience is there to be shared, and our accessories and resources are made with this in mind.<\/p>"
+        }
+      },
+      "1633521410b68484ff": {
+        "type": "rich-text-home",
+        "settings": {
+          "section_title": "Talk about your brand",
+          "text": "<p>Some text...<\/p>"
+        }
       }
     },
     "content_for_index": [
       "1633472452365e9735",
       "163352137347303009",
+      "1633521404f2b616ac",
+      "1633521410b68484ff",
       "feature-columns",
       "collection",
       "hero-2",
