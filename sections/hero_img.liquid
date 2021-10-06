@@ -6,13 +6,21 @@
 		<img src="{{ 'i_logo.svg' | asset_url }}" alt="" />
 	</div>
 
-	<div class="hero_img__title">{{ section.settings.title_1 }}</div>
+	{%- if section.settings.title_1 != blank -%}
+		<div class="hero_img__title">{{ section.settings.title_1 }}</div>
+	{%- endif -%}
 
-	<div class="hero_img__title">{{ section.settings.title_2 }}</div>
+	{%- if section.settings.title_2 != blank -%}
+		<div class="hero_img__title">{{ section.settings.title_2 }}</div>
+	{%- endif -%}
 
-	<div class="hero_img__desc">{{ section.settings.desc }}</div>
+	{%- if section.settings.desc != blank -%}
+		<div class="hero_img__desc">{{ section.settings.desc }}</div>
+	{%- endif -%}
 
-	<a class="hero_img__btn" href="{{ section.settings.link_src }}" target="_blank">{{ section.settings.link_text }}</a>
+	{%- if section.settings.link_src != blank -%}
+		<a class="hero_img__btn" href="{{ section.settings.link_src }}" target="_blank">{{ section.settings.link_text }}</a>
+	{%- endif -%}
 </div>
 
 
@@ -43,13 +51,13 @@
 				"id": "desc",
 				"label": "Description",
 				"default": "Some description text"
-			}
+			},
 			{
 				"type": "text",
 				"id": "link_src",
 				"label": "Button link",
 				"default": "https..."
-			}
+			},
 			{
 				"type": "text",
 				"id": "link_text",
