@@ -135,9 +135,10 @@
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	margin: -55px 0 0;
-	min-height: calc(100vh - 112px);
+	min-height: calc(100vh - 85px);
+	padding: 0 0 141px;
 	position: relative;
 
 	&::after {
@@ -175,14 +176,16 @@
 		color: #fff;
 		font-family: $font_josefin;
 		font-size: 20px;
-		font-weight: 100;
+		font-weight: 400;
 		line-height: 1.1;
+		padding: 24px 0 0;
 		text-align: center;
 		text-transform: uppercase;
 		z-index: 3;
 	}
 
 	&__logo {
+		margin: 0 35px -15px 0;
 		position: relative;
 		width: 180px;
 		z-index: 3;
@@ -195,9 +198,10 @@
 	&__title {
 		color: #fff;
 		font-family: $font_playfair;
+		font-size: 74px;
 		font-weight: 400;
 		line-height: 1.1;
-		font-size: 74px;
+		padding: 4px 0 0;
 		z-index: 3;
 	}
 }
