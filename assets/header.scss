@@ -7,7 +7,7 @@
 }
 
 .header_logo {
-	margin: -3px 0 0;
+	margin: -3px 0 0 4px;
 	max-width: 124px;
 	width: 100%;
 
@@ -30,7 +30,7 @@
 	margin: 0;
 
 	&__item {
-		margin: 0 28px;
+		margin: 0 48px;
 
 		&.active {
 			.header_menu_list {
@@ -45,16 +45,16 @@
 
 	&__link {
 		color: #fff;
-		padding: 20px;
+		display: block;
 		position: relative;
 		text-decoration: none;
 
 		&::after {
 			background-color: #fff;
-			bottom: 12px;
+			bottom: 0;
 			content: "";
 			height: 1px;
-			left: 18px;
+			left: 20px;
 			position: absolute;
 			transition: $transition;
 			width: 0;
