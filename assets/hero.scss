@@ -166,9 +166,15 @@
 	}
 
 	&__btn {
-		bottom: 0;
+		background-color: $c_link;
+		border-radius: 6px;
+		border: 1px solid #fff;
+		bottom: 50px;
+		color: #fff;
+		padding: 20px;
 		position: absolute;
-		right: 0;
+		right: 50px;
+		text-align: center;
 		z-index: 3;
 	}
 
