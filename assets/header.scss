@@ -6,7 +6,15 @@
 	color: #fff;
 }
 
-.header_logo {}
+.header_logo {
+	max-width: 120px;
+	width: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+}
 
 .header_menu {
 	display: flex;
