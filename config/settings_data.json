@@ -217,11 +217,16 @@
       "1634400532ed0f0043": {
         "type": "image_text_home",
         "settings": {
-          "layout": "left",
-          "title": "Image & text home",
-          "text": "<p>some text<\/p>",
-          "button_label": "button",
-          "button_link": "shopify:\/\/blogs\/news"
+          "image": "shopify:\/\/shop_images\/Group_1181.png",
+          "title_1": "Quality",
+          "title_2": "Mission",
+          "title_3": "Balance",
+          "subtitle_1": "Made to last",
+          "subtitle_2": "Enhanced cannabis experiences",
+          "subtitle_3": "Live with balance",
+          "text_1": "<p>Our products are designed to be lifetime companions.<\/p>",
+          "text_2": "<p>Cannabis is entering a new era. It deserves a new look and feel to match.<\/p>",
+          "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>"
         }
       }
     },
