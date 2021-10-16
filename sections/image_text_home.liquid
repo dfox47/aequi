@@ -9,12 +9,14 @@
         <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
           <div style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
             <img id="{{ img_id }}"
+                 alt="{{ section.settings.image.alt | escape }}"
                  class="feature-row__image lazyload"
-                 data-src="{{ img_url }}"
-                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                  data-aspectratio="{{ section.settings.image.aspect_ratio }}"
                  data-sizes="auto"
-                 alt="{{ section.settings.image.alt | escape }}">
+                 data-src="{{ img_url }}"
+                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            />
           </div>
         </div>
 
@@ -72,7 +74,7 @@
   "name": {
     "en": "Image & text home"
   },
-  "class": "",
+  "class": "home_advantages",
   "settings": [
     {
       "type": "image_picker",
