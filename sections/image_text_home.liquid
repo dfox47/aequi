@@ -45,6 +45,34 @@
 			{% if section.settings.text_1 != blank %}
 				<div>{{ section.settings.text_1 }}</div>
 			{% endif %}
+
+
+
+			{% if section.settings.title_2 != blank %}
+				<h2>{{ section.settings.title_2 | escape }}</h2>
+			{% endif %}
+
+			{% if section.settings.subtitle_2 != blank %}
+				<h3>{{ section.settings.subtitle_2 | escape }}</h3>
+			{% endif %}
+
+			{% if section.settings.text_2 != blank %}
+				<div>{{ section.settings.text_2 }}</div>
+			{% endif %}
+
+
+
+			{% if section.settings.title_3 != blank %}
+				<h2>{{ section.settings.title_3 | escape }}</h2>
+			{% endif %}
+
+			{% if section.settings.subtitle_3 != blank %}
+				<h3>{{ section.settings.subtitle_3 | escape }}</h3>
+			{% endif %}
+
+			{% if section.settings.text_3 != blank %}
+				<div>{{ section.settings.text_3 }}</div>
+			{% endif %}
 		</div>
 	</div>
 </div>
@@ -130,6 +158,26 @@
 			"id": "text_1",
 			"label": {
 				"en": "Text 1"
+			},
+			"default": {
+				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+			}
+		},
+		{
+			"type": "richtext",
+			"id": "text_2",
+			"label": {
+				"en": "Text 2"
+			},
+			"default": {
+				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+			}
+		},
+		{
+			"type": "richtext",
+			"id": "text_3",
+			"label": {
+				"en": "Text 3"
 			},
 			"default": {
 				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
