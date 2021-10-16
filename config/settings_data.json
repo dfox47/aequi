@@ -213,13 +213,24 @@
           "section_title": "Designed for you.",
           "text": "<p>Our products are designed for lovers of aesthetics and quality. For the creative types. The professionals. Those among us open to new and elevated experiences. We design for aesthetes of all backgrounds; so long as they are seeking peak experiences.<\/p>"
         }
+      },
+      "16343991386274833e": {
+        "type": "feature-row",
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "1633472452365e9735",
       "163352137347303009",
       "1633521404f2b616ac",
-      "1633521410b68484ff"
+      "1633521410b68484ff",
+      "16343991386274833e"
     ]
   },
   "presets": {
