@@ -55,19 +55,18 @@ h2 {
 	}
 }
 
+.home_advantages_img {
+	width: 50%;
+
+	img {
+		width: 100%;
+	}
+}
+
 .home_advantages_list {
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
-	&__item {
-		width: 50%;
-
-		&:last-child {
-			max-width: 375px;
-		}
-	}
 }
 // home_advantages [END]
 
