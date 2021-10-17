@@ -233,7 +233,7 @@
         "type": "home_info",
         "settings": {
           "text_1": "<p>Free shipping & returns<\/p>",
-          "text_2": "<p>30 Day Trial<\/p>",
+          "text_2": "<p><strong>30<\/strong> Day Trial<\/p>",
           "text_3": "<p>40% Off Any Product<\/p>",
           "text_4": "<p>Early Access Community<\/p>"
         }
