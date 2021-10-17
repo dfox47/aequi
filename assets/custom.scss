@@ -98,6 +98,10 @@ h2 {
 		padding: 30px 35px;
 		position: relative;
 
+		img {
+			width: 100%;
+		}
+
 		&:last-child {
 			padding-right: 0;
 		}

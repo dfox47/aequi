@@ -20,45 +20,47 @@
 		{{ image_layout }}
 
 		<div class="home_advantages_list__item">
-			{% if section.settings.title_1 != blank %}
-				<h2>{{ section.settings.title_1 | escape }}</h2>
-			{% endif %}
+			<div class="home_advantages_content">
+				{% if section.settings.title_1 != blank %}
+					<h2>{{ section.settings.title_1 | escape }}</h2>
+				{% endif %}
 
-			{% if section.settings.subtitle_1 != blank %}
-				<h3>{{ section.settings.subtitle_1 | escape }}</h3>
-			{% endif %}
+				{% if section.settings.subtitle_1 != blank %}
+					<h3>{{ section.settings.subtitle_1 | escape }}</h3>
+				{% endif %}
 
-			{% if section.settings.text_1 != blank %}
-				<div class="home_advantages_desc">{{ section.settings.text_1 }}</div>
-			{% endif %}
-
-
-
-			{% if section.settings.title_2 != blank %}
-				<h2>{{ section.settings.title_2 | escape }}</h2>
-			{% endif %}
-
-			{% if section.settings.subtitle_2 != blank %}
-				<h3>{{ section.settings.subtitle_2 | escape }}</h3>
-			{% endif %}
-
-			{% if section.settings.text_2 != blank %}
-				<div class="home_advantages_desc">{{ section.settings.text_2 }}</div>
-			{% endif %}
+				{% if section.settings.text_1 != blank %}
+					<div class="home_advantages_desc">{{ section.settings.text_1 }}</div>
+				{% endif %}
 
 
 
-			{% if section.settings.title_3 != blank %}
-				<h2>{{ section.settings.title_3 | escape }}</h2>
-			{% endif %}
+				{% if section.settings.title_2 != blank %}
+					<h2>{{ section.settings.title_2 | escape }}</h2>
+				{% endif %}
 
-			{% if section.settings.subtitle_3 != blank %}
-				<h3>{{ section.settings.subtitle_3 | escape }}</h3>
-			{% endif %}
+				{% if section.settings.subtitle_2 != blank %}
+					<h3>{{ section.settings.subtitle_2 | escape }}</h3>
+				{% endif %}
 
-			{% if section.settings.text_3 != blank %}
-				<div class="home_advantages_desc">{{ section.settings.text_3 }}</div>
-			{% endif %}
+				{% if section.settings.text_2 != blank %}
+					<div class="home_advantages_desc">{{ section.settings.text_2 }}</div>
+				{% endif %}
+
+
+
+				{% if section.settings.title_3 != blank %}
+					<h2>{{ section.settings.title_3 | escape }}</h2>
+				{% endif %}
+
+				{% if section.settings.subtitle_3 != blank %}
+					<h3>{{ section.settings.subtitle_3 | escape }}</h3>
+				{% endif %}
+
+				{% if section.settings.text_3 != blank %}
+					<div class="home_advantages_desc">{{ section.settings.text_3 }}</div>
+				{% endif %}
+			</div>
 		</div>
 	</div>
 </div>
