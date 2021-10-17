@@ -124,6 +124,7 @@
 </style>
 
 
+
 {%- capture payment_icon_markup -%}
 	{%- if show_payment_icons -%}
 		<div class="grid__item site-footer__payment-icons">
@@ -140,6 +141,8 @@
 {%- endcapture -%}
 
 <footer class="footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
+	{% include 'site-nav', linklist: section.settings.main_linklist %}
+
 	<div class="page-width">
 		<div class="site-footer__content">
 			{%- for block in section.blocks -%}
@@ -177,10 +180,10 @@
 											       aria-required="true"
 											       required
 											       autocapitalize="off"
-											{% if form.errors %}
-												aria-invalid="true"
-												aria-describedby="{{ formId }}-email-error"
-												data-form-status
+													{% if form.errors %}
+														aria-invalid="true"
+														aria-describedby="{{ formId }}-email-error"
+														data-form-status
 													{% endif %}>
 											<span class="input-group__btn">
 												<button type="submit" class="btn newsletter__submit" name="commit" >
@@ -206,17 +209,13 @@
 										{{ block.settings.text }}
 									</div>
 								{%- endif -%}
-
 							{%- when 'link_list' -%}
 								{%- assign footer_linklist = block.settings.menu -%}
 
-								<ul class="site-footer__linklist
-                            {% if inline_list %}list--inline{% endif %}">
+								<ul class="site-footer__linklist {% if inline_list %}list--inline{% endif %}">
 									{%- for link in linklists[footer_linklist].links -%}
 										<li class="site-footer__linklist-item">
-											<a href="{{ link.url }}"
-													{% if link.current %} aria-current="page"{% endif %}
-											>
+											<a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>
 												{{ link.title | escape }}
 											</a>
 										</li>
@@ -229,9 +228,9 @@
 		</div>
 	</div>
 
-	<hr class="site-footer__hr">
+	<hr class="site-footer__hr" />
 
-	{%- assign socials = "Twitter Instagram Facebook  Pinterest Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+	{%- assign socials = "Twitter Instagram Facebook Pinterest Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
 
 	<div class="page-width">
 		<div class="grid grid--no-gutters small--text-center grid--footer-float-right">
@@ -370,6 +369,14 @@
 		},
 		"max_blocks": 4,
 		"settings": [
+			{
+				"type": "link_list",
+				"id": "main_linklist",
+				"label": {
+					"en": "Menu"
+				},
+				"default": "main-menu"
+			},
 			{
 				"type": "header",
 				"content": {
