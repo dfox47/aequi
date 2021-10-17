@@ -183,7 +183,9 @@
 												{{ 'general.newsletter_form.confirmation' | t }}
 											</p>
 										{%- endif -%}
-										<input type="hidden" name="contact[tags]" value="newsletter">
+
+										<input type="hidden" name="contact[tags]" value="newsletter" />
+
 										<div class="input-group {% if form.errors %} input-group--error{% endif %}">
 											<input type="email"
 											       name="contact[email]"
@@ -244,8 +246,6 @@
 	</div>
 
 	<hr class="site-footer__hr" />
-
-
 
 	<div class="page-width">
 		<div class="grid grid--no-gutters small--text-center grid--footer-float-right">
