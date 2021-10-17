@@ -25,52 +25,6 @@
 	text-transform: uppercase;
 }
 
-.header_menu_list {
-	display: flex;
-	margin: 0;
-
-	&__item {
-		margin: 0 48px;
-
-		&.active {
-			.header_menu_list {
-				&__link {
-					&::after {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
-
-	&__link {
-		color: #fff;
-		display: block;
-		position: relative;
-		text-decoration: none;
-
-		&::after {
-			background-color: #fff;
-			bottom: -4px;
-			content: "";
-			height: 1px;
-			left: 0;
-			position: absolute;
-			transition: $transition;
-			width: 0;
-		}
-
-		&:focus,
-		&:hover {
-			color: #fff;
-
-			&::after {
-				width: 100%;
-			}
-		}
-	}
-}
-
 .header_wrap {
 	align-items: center;
 	display: flex;
