@@ -1,14 +1,49 @@
 
 
 
-// home_advantages [START]
-.home_advantages {
-	&__item {}
+h2 {
+	font-size: 19px;
 }
 
-.home_advantages_list {}
 
-.home_advantages_wrap {}
+
+// home_advantages [START]
+.home_advantages {
+	background-color: $c_main;
+	color: #fff;
+
+	h2 {
+		color: $c_link;
+		font-size: 19px;
+		font-weight: 100;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-weight: 400;
+		line-height: 1;
+		text-transform: none;
+	}
+}
+
+.home_advantages_desc {
+	margin: 0 0 30px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.home_advantages_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__item {
+		width: 50%;
+	}
+}
 // home_advantages [END]
 
 
@@ -33,13 +68,14 @@
 
 .home_info_list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	&__item {
 		align-items: center;
 		display: flex;
 		min-height: 25px;
-		padding: 30px 10px;
+		padding: 30px 35px;
 		position: relative;
 
 		&:last-child {
