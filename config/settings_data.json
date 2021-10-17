@@ -228,6 +228,15 @@
           "text_2": "<p>Cannabis is entering a new era. It deserves a new look and feel to match.<\/p>",
           "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>"
         }
+      },
+      "1634454978ed949a88": {
+        "type": "home_info",
+        "settings": {
+          "text_1": "<p>Free shipping & returns<\/p>",
+          "text_2": "<p>30 Day Trial<\/p>",
+          "text_3": "<p>40% Off Any Product<\/p>",
+          "text_4": "<p>Early Access Community<\/p>"
+        }
       }
     },
     "content_for_index": [
@@ -235,7 +244,8 @@
       "163352137347303009",
       "1633521404f2b616ac",
       "1633521410b68484ff",
-      "1634400532ed0f0043"
+      "1634400532ed0f0043",
+      "1634454978ed949a88"
     ]
   },
   "presets": {
