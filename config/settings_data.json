@@ -232,10 +232,10 @@
       "1634454978ed949a88": {
         "type": "home_info",
         "settings": {
-          "text_1": "<p>Free shipping & returns<\/p>",
-          "text_2": "<p><strong>30<\/strong> Day Trial<\/p>",
-          "text_3": "<p>40% Off Any Product<\/p>",
-          "text_4": "<p>Early Access Community<\/p>"
+          "text_1": "<p><strong>Free<\/strong> shipping & returns<\/p>",
+          "text_2": "<p><strong>30 Day<\/strong> Trial<\/p>",
+          "text_3": "<p><strong>40% Off<\/strong> Any Product<\/p>",
+          "text_4": "<p><strong>Early Access<\/strong> Community<\/p>"
         }
       }
     },
