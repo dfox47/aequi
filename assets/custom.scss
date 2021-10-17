@@ -13,6 +13,39 @@
 
 
 
+// home_info [START]
+.home_info {
+	background-color: $c_main;
+}
+
+.home_info_list {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		align-items: center;
+		display: flex;
+		min-height: 25px;
+		padding: 30px 10px;
+		position: relative;
+
+		&::before {
+			background: url(i_leaf.svg) 0 0 no-repeat scroll transparent;
+			background-size: contain;
+			height: 25px;
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 25px;
+		}
+	}
+}
+// home_info [END]
+
+
+
 // home_text [START]
 .home_text {
 	color: $c_text;
