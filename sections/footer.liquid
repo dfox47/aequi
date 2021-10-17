@@ -141,7 +141,9 @@
 {%- endcapture -%}
 
 <footer class="footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
-	{% include 'site-nav', linklist: section.settings.main_linklist %}
+	<nav class="footer_menu" role="navigation">
+		{% include 'site-nav', linklist: section.settings.main_linklist %}
+	</nav>
 
 	<div class="page-width">
 		<div class="site-footer__content">
