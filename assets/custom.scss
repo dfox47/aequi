@@ -16,7 +16,15 @@
 // home_info [START]
 .home_info {
 	background-color: $c_main;
+	border-top: 1px solid #fff;
 	color: #fff;
+	font-size: 19px;
+	font-weight: 100;
+	line-height: 1;
+
+	strong {
+		font-weight: 400;
+	}
 
 	p {
 		color: #fff;
@@ -33,6 +41,10 @@
 		min-height: 25px;
 		padding: 30px 10px;
 		position: relative;
+
+		&:last-child {
+			padding-right: 0;
+		}
 
 		&::before {
 			background: url(i_leaf.svg) 0 0 no-repeat scroll transparent;
@@ -126,6 +138,13 @@
 .wrap {
 	margin: 0 auto;
 	max-width: 926px;
+	padding: 0 30px;
+	width: 100%;
+}
+
+.wrap2 {
+	margin: 0 auto;
+	max-width: 1020px;
 	padding: 0 30px;
 	width: 100%;
 }
