@@ -11,9 +11,13 @@ h2 {
 .home_advantages {
 	background-color: $c_main;
 	color: #fff;
+	font-size: 22px;
+	font-weight: 100;
+	padding: 130px 0 50px;
 
 	h2 {
 		color: $c_link;
+		font-family: $font_josefin;
 		font-size: 19px;
 		font-weight: 100;
 		line-height: 1;
@@ -24,6 +28,10 @@ h2 {
 		font-weight: 400;
 		line-height: 1;
 		text-transform: none;
+	}
+
+	p {
+		color: #fff;
 	}
 }
 
