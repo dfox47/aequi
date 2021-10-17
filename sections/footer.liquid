@@ -141,9 +141,22 @@
 {%- endcapture -%}
 
 <footer class="footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
-	<nav class="footer_menu" role="navigation">
-		{% include 'site-nav', linklist: section.settings.main_linklist %}
-	</nav>
+	<div class="wrap">
+		<nav class="footer_menu" role="navigation">
+			{% include 'site-nav', linklist: section.settings.main_linklist %}
+		</nav>
+
+		{%- assign socials = "Twitter Instagram Facebook Pinterest Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+	</div>
+
+
+
+
+
+
+
+
+
 
 	<div class="page-width">
 		<div class="site-footer__content">
@@ -232,7 +245,7 @@
 
 	<hr class="site-footer__hr" />
 
-	{%- assign socials = "Twitter Instagram Facebook Pinterest Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
+
 
 	<div class="page-width">
 		<div class="grid grid--no-gutters small--text-center grid--footer-float-right">
