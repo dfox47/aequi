@@ -4,10 +4,14 @@
 .footer {
 	background-color: $c_text;
 	color: #fff;
+	padding: 50px 0;
 	text-align: center;
 }
 
 .footer_menu {
+	font-size: 18px;
+	text-transform: uppercase;
+
 	.site_nav {
 		justify-content: center;
 	}
