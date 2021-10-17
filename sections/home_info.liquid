@@ -1,0 +1,78 @@
+<div class="home_info_list">
+	{% if section.settings.text_1 != blank %}
+		<div class="home_info_list__item">{{ section.settings.text_1 | escape }}</div>
+	{% endif %}
+
+	{% if section.settings.text_2 != blank %}
+		<div class="home_info_list__item">{{ section.settings.text_2 | escape }}</div>
+	{% endif %}
+
+	{% if section.settings.text_3 != blank %}
+		<div class="home_info_list__item">{{ section.settings.text_3 | escape }}</div>
+	{% endif %}
+
+	{% if section.settings.text_4 != blank %}
+		<div class="home_info_list__item">{{ section.settings.text_4 | escape }}</div>
+	{% endif %}
+</div>
+
+
+
+{% schema %}
+{
+	"name": {
+		"en": "Home info"
+	},
+	"class": "home_info",
+	"settings": [
+		{
+			"type": "richtext",
+			"id": "text_1",
+			"label": {
+				"en": "Text 1"
+			},
+			"default": {
+				"en": "Text 1"
+			}
+		},
+		{
+			"type": "richtext",
+			"id": "text_2",
+			"label": {
+			"en": "Text 2"
+		},
+			"default": {
+				"en": "Text 2"
+			}
+		},
+		{
+			"type": "richtext",
+			"id": "text_3",
+			"label": {
+				"en": "Text 3"
+			},
+			"default": {
+				"en": "Text 3"
+			}
+		},
+		{
+			"type": "richtext",
+			"id": "text_4",
+			"label": {
+				"en": "Text 4"
+			},
+			"default": {
+				"en": "Text 4"
+			}
+		},
+		{
+			"name": {
+				"en": "Image & text home"
+			},
+			"category": {
+				"en": "Image"
+			}
+		}
+	]
+}
+{% endschema %}

@@ -1,6 +1,6 @@
 <div class="home_advantages_wrap">
 	{% capture image_layout %}
-		<div class="home_advantages__item">
+		<div class="home_advantages_list__item">
 			{% if section.settings.image != blank %}
 				{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
@@ -16,10 +16,10 @@
 		</div>
 	{% endcapture %}
 
-	<div class="home_advantages">
+	<div class="home_advantages_list">
 		{{ image_layout }}
 
-		<div class="home_advantages__item">
+		<div class="home_advantages_list__item">
 			{% if section.settings.title_1 != blank %}
 				<h2>{{ section.settings.title_1 | escape }}</h2>
 			{% endif %}
