@@ -16,10 +16,14 @@
 // home_info [START]
 .home_info {
 	background-color: $c_main;
+	color: #fff;
+
+	p {
+		color: #fff;
+	}
 }
 
 .home_info_list {
-	color: #fff;
 	display: flex;
 	justify-content: space-between;
 
@@ -33,6 +37,7 @@
 		&::before {
 			background: url(i_leaf.svg) 0 0 no-repeat scroll transparent;
 			background-size: contain;
+			content: "";
 			height: 25px;
 			left: 0;
 			position: absolute;
