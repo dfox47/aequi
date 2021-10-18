@@ -172,12 +172,25 @@
 					</li>
 				{%- endif -%}
 			</ul>
-		{%- else -%}
-			<div class="small--hide site-footer-item-align-right {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
-				<small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-				<small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>
-			</div>
 		{%- endif -%}
+
+		{% if section.settings.footer_title != blank %}
+			<div class="footer_title">
+				{{ section.settings.footer_title }}
+			</div>
+		{% endif %}
+
+		{% if section.settings.footer_desc != blank %}
+			<div class="footer_desc">
+				{{ section.settings.footer_desc }}
+			</div>
+		{% endif %}
+
+		{% if section.settings.footer_desc != blank %}
+			<div class="footer_desc">
+				{{ section.settings.footer_desc }}
+			</div>
+		{% endif %}
 	</div>
 
 
@@ -378,6 +391,7 @@
 
 
 {% schema %}
+<script type="application/json">
 	{
 		"name": {
 			"en": "Footer"
@@ -391,6 +405,26 @@
 					"en": "Menu"
 				},
 				"default": "main-menu"
+			},
+			{
+				"type": "richtext",
+				"id": "footer_title",
+				"label": {
+					"en": "Footer title"
+				},
+				"default": {
+					"en": "<p>40% Off: Just For Joining</p>"
+				}
+			},
+			{
+				"type": "richtext",
+				"id": "footer_desc",
+				"label": {
+					"en": "Footer description"
+				},
+				"default": {
+					"en": "<p>Sign-up for our online publication, receive a 40% discount on any product you pre-order, and be part of the movement.</p>"
+				}
 			},
 			{
 				"type": "header",
@@ -542,4 +576,5 @@
 			}
 		]
 	}
+</script>
 {% endschema %}
