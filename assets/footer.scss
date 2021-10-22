@@ -3,16 +3,18 @@
 
 .footer {
 	background-color: $c_text;
-	color: #fff;
+	color: rgb(235, 19, 19);
 	padding: 50px 0;
 	text-align: center;
 }
 
-.footer_desc {}
+.footer_desc {
+
+}
 
 .footer_menu {
-	font-size: 18px;
-	margin: 0 0 40px;
+	font-size: 17px;
+	margin: 0 0 41px;
 	text-transform: uppercase;
 
 	.site_nav {
