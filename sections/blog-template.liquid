@@ -1,27 +1,6 @@
 {% paginate blog.articles by 12 %}
 
-<div class="page-width">
-  <header class="section-header text-center">
-    <h1>{{ page_title }}</h1>
-    {% if blog.tags.size > 0 %}
-    <div class="blog-filter">
-      <label class="blog-filter__label select-label" for="BlogTagFilter">{{ 'collections.filters.title_tags' | t
-        }}</label>
-      <div class="select-group">
-        <select id="BlogTagFilter" aria-describedby="a11y-refresh-page-message a11y-selection-message"
-          data-blog-tag-filter>
-          <option value="{{ blog.url }}">{{ 'blogs.article.all_topics' | t }}</option>
-          {% for tag in blog.all_tags %}
-          <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif
-            %}>{{ tag }}</option>
-          {% endfor %}
-        </select>
-        {% include 'icon-chevron-down' %}
-      </div>
-    </div>
-    {% endif %}
-  </header>
-</div>
+
 
 
 {% if section.settings.layout == 'grid' %}
