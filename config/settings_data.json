@@ -253,13 +253,13 @@
           "show_view_all": false
         }
       },
-      "163515685720d7e142": {
-        "type": "blog2",
+      "163516720981d3fb7a": {
+        "type": "blog-template",
         "settings": {
-          "text_1": "<p>Text 122222222222222<\/p>",
-          "text_2": "<p>Text 2222222222222<\/p>",
-          "text_3": "<p>Text 3222<\/p>",
-          "text_4": "<p>Text 4rrrrrrrrr<\/p>"
+          "text_1": "<p>Text 1<\/p>",
+          "text_2": "<p>Text 2<\/p>",
+          "text_3": "<p>Text 3<\/p>",
+          "text_4": "<p>Text 4<\/p>"
         }
       }
     },
@@ -271,7 +271,7 @@
       "1634400532ed0f0043",
       "1634454978ed949a88",
       "1634903037e536b1bb",
-      "163515685720d7e142"
+      "163516720981d3fb7a"
     ]
   },
   "presets": {
