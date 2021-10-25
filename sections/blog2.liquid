@@ -1,1 +1,47 @@
 33333
+
+
+
+{% schema %}
+{
+"name": "Slideshow",
+"tag": "section",
+"class": "slideshow",
+"max_blocks": 5,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Slideshow"
+}
+],
+"blocks": [
+{
+"name": "blog1",
+"type": "slide",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+]
+"default": {
+"settings": {
+"title": "blog11"
+},
+"blocks": [
+{
+"type": "image",
+"settings": []
+},
+{
+"type": "image",
+"settings": []
+}
+]
+}
+}
+{% endschema %}
