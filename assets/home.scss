@@ -112,6 +112,7 @@
 
 		&::before {
 			background-color: #fff;
+			content: "";
 			display: none;
 			height: 100%;
 			left: 0;
@@ -128,8 +129,10 @@
 		background-color: $c_main;
 		color: #fff;
 		padding: 14px;
+		position: relative;
 		text-transform: uppercase;
 		width: 100%;
+		z-index: 3;
 	}
 
 	&__tags {}
