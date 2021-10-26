@@ -9,7 +9,9 @@
 		<ul class="home_blog_list">
 			{% for article in blog.articles limit: section.settings.post_limit %}
 				<li class="home_blog_list__item">
-					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ article.image }});"{% endif %}>
+					{%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ img_url }})"{% endif %}>
 						<div class="home_blog__title">{{ article.title }}</div>
 					</a>
 
