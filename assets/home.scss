@@ -84,7 +84,11 @@
 
 	&__img {}
 
-	&__link {}
+	&__link {
+		display: block;
+		position: relative;
+		width: 100%;
+	}
 
 	&__meta {}
 
@@ -95,15 +99,20 @@
 
 .home_blog_list {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
 
-	&__item {}
+	&__item {
+		display: block;
+		position: relative;
+		width: 31%;
+	}
 }
 
 .home_blog_wrap {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 1232px;
 	padding: 50px 30px 70px;
 	width: 100%;
 }
