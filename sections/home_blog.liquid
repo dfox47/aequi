@@ -11,20 +11,18 @@
 				<li class="home_blog_list__item">
 					{%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ article.image | img_url: '600x600' }})"{% endif %}>
+					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ article.image | img_url: '500x' }})"{% endif %}>
+						{% if section.settings.blog_show_date %}
+							<span class="home_blog__date">{{ article.published_at | date: '%Y-%m-%d' }}</span>
+						{% endif %}
+
 						<div class="home_blog__title">{{ article.title }}</div>
-					</a>
 
-					{% if section.settings.blog_show_author %}
-						<span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-					{% endif %}
+						{% if section.settings.blog_show_author %}
+							<span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+						{% endif %}
 
-					{% if section.settings.blog_show_date %}
-						<span class="home_blog__date">{{ article.published_at | time_tag: format: 'date' }}</span>
-					{% endif %}
-
-					<div class="home_blog__meta">
-						<div class="rte article__grid-excerpt">
+						<div class="home_blog__desc">
 							{% if article.excerpt.size > 0 %}
 								{{ article.excerpt }}
 							{% else %}
@@ -32,8 +30,12 @@
 							{% endif %}
 						</div>
 
+						<div class="home_blog__readmore">{{ 'blogs.article.view' | t }}</div>
+					</a>
+
+					<div class="home_blog__meta">
 						{% if article.tags.size > 0 %}
-							<div class="home_blog__tags rte">
+							<div class="home_blog__tags">
 								<ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
 									{% for tag in article.tags %}
 										<li>
@@ -44,21 +46,13 @@
 							</div>
 						{% endif %}
 
-						<ul class="list--inline article__meta-buttons">
-							<li>
-								<a href="{{ article.url }}" class="btn btn--tertiary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
-									{{ 'blogs.article.view' | t }}
+						{% if blog.comments_enabled? and article.comments_count > 0 %}
+							<div class="home_blog__comments">
+								<a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
+									{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
 								</a>
-							</li>
-
-							{% if blog.comments_enabled? and article.comments_count > 0 %}
-								<li>
-									<a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
-										{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
-									</a>
-								</li>
-							{% endif %}
-						</ul>
+							</div>
+						{% endif %}
 					</div>
 				</li>
 			{% endfor %}
