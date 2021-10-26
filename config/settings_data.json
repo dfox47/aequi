@@ -242,17 +242,6 @@
           "text_4": "<p><strong>Early Access<\/strong> Community<\/p>"
         }
       },
-      "1634903037e536b1bb": {
-        "type": "featured-blog",
-        "settings": {
-          "title": "Read our blog",
-          "blog": "news",
-          "post_limit": 3,
-          "blog_show_author": false,
-          "blog_show_date": true,
-          "show_view_all": false
-        }
-      },
       "163516720981d3fb7a": {
         "type": "blog-template",
         "settings": {
@@ -260,6 +249,17 @@
           "text_2": "<p>Text 2<\/p>",
           "text_3": "<p>Text 3<\/p>",
           "text_4": "<p>Text 4<\/p>"
+        }
+      },
+      "163526736102b8ca93": {
+        "type": "home_blog",
+        "settings": {
+          "title": "Read our blog",
+          "blog": "news",
+          "post_limit": 4,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
         }
       }
     },
@@ -270,7 +270,7 @@
       "1633521410b68484ff",
       "1634400532ed0f0043",
       "1634454978ed949a88",
-      "1634903037e536b1bb",
+      "163526736102b8ca93",
       "163516720981d3fb7a"
     ]
   },
