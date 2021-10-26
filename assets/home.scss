@@ -101,6 +101,7 @@
 	display: grid;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 
 	&__item {
 		display: block;
@@ -108,21 +109,25 @@
 		width: 31%;
 
 		&:nth-child(1) {
+			grid-column: 1;
 			grid-row-start: 1;
 			grid-row-end: 2;
 		}
 
 		&:nth-child(2) {
+			grid-column: 2;
 			grid-row-start: 1;
 			grid-row-end: 1;
 		}
 
 		&:nth-child(3) {
+			grid-column: 2;
 			grid-row-start: 2;
 			grid-row-end: 2;
 		}
 
 		&:nth-child(4) {
+			grid-column: 3;
 			grid-row-start: 1;
 			grid-row-end: 2;
 		}
