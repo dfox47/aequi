@@ -67,6 +67,46 @@
 
 
 
+// home_blog_posts [START]
+.home_blog {
+	background-color: $c_blog_bg;
+
+	h2 {
+		font-family: $font_josefin;
+		font-weight: 400;
+		margin: 0 0 40px;
+	}
+
+	&__author {}
+
+	&__date {}
+
+	&__img {}
+
+	&__link {}
+
+	&__meta {}
+
+	&__tags {}
+
+	&__title {}
+}
+
+.home_blog_list {
+	&__item {}
+}
+
+.home_blog_wrap {
+	display: flex;
+	margin: 0 auto;
+	max-width: 100px;
+	padding: 50px 30px 70px;
+	width: 100%;
+}
+// home_blog_posts [END]
+
+
+
 // home_info [START]
 .home_info {
 	background-color: $c_main;
