@@ -245,7 +245,7 @@
       "1634903037e536b1bb": {
         "type": "featured-blog",
         "settings": {
-          "title": "Blog posts",
+          "title": "",
           "blog": "news",
           "post_limit": 3,
           "blog_show_author": false,
