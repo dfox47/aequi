@@ -1,5 +1,5 @@
 @charset "UTF-8";
-// powered by foxartbox.com
+// powered by FOXARTBOX | www.foxartbox.com
 
 
 
@@ -9,7 +9,8 @@
 @import "footer";
 @import "header";
 @import "hero";
-@import "slick";
+@import "home";
+@import "slick.scss";
 
 // should be last
 @import "custom";
@@ -7345,3 +7346,91 @@ hr {
 .store-availability-list__phone {
 	margin-bottom: 0;
 }
+
+
+
+// TODO move to scss
+.blog h3,
+.blog p {
+	color:#000;
+}
+
+.blog {
+	background:#fff;
+}
+
+.blog h3 {
+	text-align: center;
+	font-size: 21px;
+	text-transform: unset;
+	font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+
+}
+
+.blog p {
+	text-align: center;
+	font-weight: 100;
+	font-family: "Josefin Sans", sans-serif;
+	text-transform: initial;
+}
+
+.text_block {
+
+	background: #fff;
+}
+
+.blog a {
+
+	padding: 15px 0;
+	font-family: "Josefin Sans", sans-serif;
+	background: #273734;
+	width: 100%;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.blog .date {
+
+	color: #000;
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.blog {
+	display: flex;
+	background: #E0D8D3;
+}
+
+.middle_items_wrap {
+	display: flex;
+
+	width: 33.3333%;
+}
+
+.thourth_item {
+
+	width: 33.3333%;
+}
+
+.thourth_item {
+
+	width: 33.3333%;
+}
+
+.first_item {
+	width: 33.3333%;
+
+}
+
+.blog_title {
+
+	color:#000;
+	font-family: "Josefin Sans", sans-serif;
+	background: #E0D8D3;
+}
+
+

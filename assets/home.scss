@@ -1,0 +1,167 @@
+
+
+
+// home_advantages [START]
+.home_advantages {
+	background-color: $c_main;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 100;
+	margin: 100px 0 0;
+	padding: 135px 0 115px;
+
+	h2 {
+		color: $c_link;
+		font-family: $font_josefin;
+		font-size: 19px;
+		font-weight: 400;
+		letter-spacing: .01em;
+		line-height: 1;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 1;
+		margin: 0 0 4px;
+		text-transform: none;
+	}
+
+	p {
+		color: #fff;
+		letter-spacing: .02em;
+		line-height: 1.1;
+	}
+}
+
+.home_advantages_content {
+	max-width: 480px;
+	padding: 0 0 0 105px;
+	width: 100%;
+}
+
+.home_advantages_desc {
+	margin: 0 0 38px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.home_advantages_img {
+	width: 50%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.home_advantages_list {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+// home_advantages [END]
+
+
+
+// home_info [START]
+.home_info {
+	background-color: $c_main;
+	border-top: 1px solid #fff;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 100;
+	line-height: 1;
+
+	strong {
+		font-weight: 400;
+	}
+
+	p {
+		color: #fff;
+	}
+}
+
+.home_info_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__item {
+		align-items: center;
+		display: flex;
+		min-height: 25px;
+		padding: 30px 35px;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		&::before {
+			background: url(i_leaf.svg) 0 0 no-repeat scroll transparent;
+			background-size: contain;
+			content: "";
+			height: 25px;
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 25px;
+		}
+	}
+}
+// home_info [END]
+
+
+
+// home_text [START]
+.home_text {
+	color: $c_text;
+	padding: 116px 0 0;
+
+	+ .home_text {
+		padding: 54px 0 0;
+
+		.home_text_content {
+			background-image: url(i_home_2.svg);
+		}
+
+		+ .home_text {
+			.home_text_content {
+				background-image: url(i_home_3.svg);
+			}
+		}
+	}
+
+	h2 {
+		font-family: $font_playfair;
+		font-size: 33px;
+		letter-spacing: .001em;
+		margin: 0 0 .5em;
+		text-transform: none;
+	}
+}
+
+.home_text_content {
+	background: url(i_home_1.svg) 3px 2px no-repeat scroll transparent;
+	padding: 0 0 0 127px;
+	position: relative;
+}
+
+.home_text_desc {
+	font-family: $font_josefin;
+	font-size: 22px;
+	letter-spacing: -.028em;
+	line-height: 1.1;
+}
+// home_text [END]
+
+
