@@ -155,15 +155,18 @@
 		}
 
 		&:nth-child(2) {
-			background-color: #fff;
-			background-size: 50% 100%;
-			background-position: right center;
 			grid-column: 2;
 			grid-row-start: 1;
 			grid-row-end: 1;
-			padding: 0 50% 0 0;
 
 			.home_blog {
+				&__link {
+					background-color: #fff;
+					background-size: 50% 100%;
+					background-position: right center;
+					padding: 0 50% 0 0;
+				}
+
 				&__title {
 					color: $c_main;
 					font-size: 16px;
@@ -172,15 +175,18 @@
 		}
 
 		&:nth-child(3) {
-			background-color: #fff;
-			background-size: 50% 100%;
-			background-position: left center;
 			grid-column: 2;
 			grid-row-start: 2;
 			grid-row-end: 2;
-			padding: 0 0 0 50%;
 
 			.home_blog {
+				&__link {
+					background-color: #fff;
+					background-size: 50% 100%;
+					background-position: left center;
+					padding: 0 0 0 50%;
+				}
+
 				&__title {
 					color: $c_main;
 					font-size: 16px;
