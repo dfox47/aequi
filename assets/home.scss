@@ -85,11 +85,13 @@
 		font-size: 15px;
 		font-weight: 200;
 		margin: 0 0 1em;
+		width: 100%;
 	}
 
 	&__desc {
 		color: $c_blog_desc;
 		padding: 0 24px;
+		width: 100%;
 	}
 
 	&__img {}
@@ -98,7 +100,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
 		height: 100%;
 		position: relative;
 		width: 100%;
@@ -119,6 +122,7 @@
 	&__title {
 		margin: 0 0 1em;
 		text-transform: uppercase;
+		width: 100%;
 	}
 }
 
