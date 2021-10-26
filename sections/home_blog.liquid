@@ -13,7 +13,7 @@
 
 					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ article.image | img_url: '500x' }})"{% endif %}>
 						{% if section.settings.blog_show_date %}
-							<span class="home_blog__date">{{ article.published_at | date: '%Y-%m-%d' }}</span>
+							<span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
 						{% endif %}
 
 						<div class="home_blog__title">{{ article.title }}</div>
