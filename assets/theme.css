@@ -13,17 +13,20 @@
       }
 
       .home_blog_list__item:nth-child(1), .home_blog_list__item:nth-child(4) {
+        grid-column: 1;
         align-items: flex-end;
          grid-row-end: auto;
         
     }
 
     .home_blog_list__item:nth-child(2) {
+        grid-column: 1;
         grid-column: auto;
         grid-row-start: auto;
         grid-row-end: auto;
     }
     .home_blog_list__item:nth-child(3) {
+        grid-column: 1;
         grid-column: auto;
         grid-row-start: auto;
         grid-row-end: auto;
