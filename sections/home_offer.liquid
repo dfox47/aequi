@@ -1,0 +1,100 @@
+
+
+
+<div class="home_offer_wrap">
+	{%- if section.settings.title != blank -%}
+		<div class="home_offer__title">{{ section.settings.title }}</div>
+	{%- endif -%}
+
+	{%- if section.settings.subtitle != blank -%}
+		<div class="home_offer__subtitle">{{ section.settings.subtitle }}</div>
+	{%- endif -%}
+
+	{%- if section.settings.desc != blank -%}
+		<div class="home_offer__desc">{{ section.settings.desc }}</div>
+	{%- endif -%}
+
+	<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
+		{%- assign formId = 'ContactFooter' -%}
+
+		{% form 'customer', id: formId, novalidate: 'novalidate' %}
+			{%- if form.posted_successfully? -%}
+				<p class="form-message form-message--success" tabindex="-1" data-form-status>
+					{{ 'general.newsletter_form.confirmation' | t }}
+				</p>
+			{%- endif -%}
+
+			<input type="hidden" name="contact[tags]" value="newsletter" />
+
+			<div class="input-group {% if form.errors %} input-group--error{% endif %}">
+				<input type="email"
+				       name="contact[email]"
+				       id="{{ formId }}-email"
+				       class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+				       value="{{ form.email }}"
+				       placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+				       aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+				       aria-required="true"
+				       required
+				       autocapitalize="off"
+				{% if form.errors %}
+					aria-invalid="true"
+					aria-describedby="{{ formId }}-email-error"
+					data-form-status
+						{% endif %}>
+				<span class="input-group__btn">
+												<button type="submit" class="btn newsletter__submit" name="commit" >
+													<span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+												</button>
+											</span>
+			</div>
+
+			{% if form.errors contains 'email' %}
+				<span id="{{ formId }}-email-error" class="input-error-message">
+					<span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+					{% include 'icon-error' %}
+					<span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+				</span>
+			{% endif %}
+		{% endform %}
+	</div>
+</div>
+
+
+
+{% schema %}
+{% comment %}<script type="application/json">{% endcomment %}
+{
+	"name": "Home offer",
+	"class": "home_offer",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title",
+			"default": "Special offer for you"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subitle",
+			"default": "As we prepare our first designs for launch, we're making a special offer."
+		},
+		{
+			"type": "richtext",
+			"id": "desc",
+			"label": "Description",
+			"default": "<p>Join our <strong>Early Access List</strong> to stay updated, receive <strong>40% Off</strong> on your first order and be engaged with a group of cannabis aesthetes seeking unique experiences.</p>"
+		}
+	],
+	"presets": [
+		{
+			"name": "Home offer",
+			"category": "Content"
+		}
+	]
+}
+{% comment %}</script>{% endcomment %}
+{% endschema %}
+
+
