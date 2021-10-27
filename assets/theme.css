@@ -97,6 +97,16 @@
 
   }
 
+  .site_nav{
+ 
+    padding: 40px 0px;
+    position: absolute;
+    display: block;
+    right: 0;
+    background: #000;
+    z-index: 1;
+  }
+
   .header_social{
 
     display: none;
