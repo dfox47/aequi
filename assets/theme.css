@@ -29,7 +29,7 @@
   font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
 }
 
-#home_offer_form-email{
+/* #home_offer_form-email{
 
   width: 30%;
   margin: 0 auto 15px auto;
@@ -37,14 +37,18 @@
   display: block;
   background: #F0F0F0;
   padding-bottom: 15px;
-}
+} */
 
 .input-group {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto 110px auto;
 
 }
 
-.home_offer__subtitle{
+/* .home_offer__subtitle{
 
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -53,7 +57,7 @@
   width: 43%;
   margin: 0 auto;
   padding: 60px 0 35px 0;
-}
+} */
 
 .home_offer__desc p{
 
