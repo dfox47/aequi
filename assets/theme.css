@@ -110,6 +110,10 @@
     flex-direction: column;
 }
 
+.site_nav__item {
+  margin: 10px 48px;
+}
+
   .header_social{
 
     display: none;
