@@ -15,6 +15,127 @@ html {
 
 
 
+.breadcrumbs {
+	display: block;
+	max-width: 1100px;
+	text-align: center;
+	width: 100%;
+}
+
+.breadcrumbs_list {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		&::after {
+			content: "/";
+			display: inline-block;
+			margin: 0 .5em;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.btn,
+.btn:visited {
+	cursor: pointer;
+	display: inline-block;
+	transition: $transition;
+}
+
+.btn_close,
+.btn_close:visited {
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 19px;
+	font-weight: 100;
+	line-height: 1.1;
+	transition: $transition;
+
+	span {
+		background-color: $c_main;
+		display: inline-block;
+		height: 37px;
+		margin: 0 8px 0 0;
+		width: 37px;
+
+		&::after,
+		&::before {
+			background-color: #fff;
+			content: "";
+			height: 1px;
+			left: 6px;
+			position: absolute;
+			top: 10px;
+			width: 11px;
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.faq {
+	h3 {
+		margin: 2em 0 0;
+	}
+
+	&__desc {
+		display: none;
+	}
+
+	&__title {
+		border-top: 1px solid #000;
+		color: #000;
+		display: block;
+		font-weight: 400;
+		padding: 27px 0 0;
+		position: relative;
+		text-transform: uppercase;
+
+		&::before {
+			align-items: center;
+			background-color: rgba($c_main, .5);
+			color: #000;
+			content: "+";
+			display: flex;
+			font-size: 28px;
+			height: 70px;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 70px;
+		}
+
+		&.active {
+			font-weight: 700;
+
+			&::before {
+				background-color: $c_main;
+				color: #fff;
+				content: "-";
+			}
+		}
+	}
+
+	.btn_close,
+	.btn_close:visited {
+		margin: 30px 0 0;
+	}
+}
+
 .site-footer {
 	input {
 		border-radius: 6px;
