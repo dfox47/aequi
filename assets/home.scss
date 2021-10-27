@@ -156,6 +156,7 @@
 
 .home_blog_content {
 	display: flex;
+	flex-wrap: wrap;
 	height: 100%;
 	position: relative;
 	width: 100%;
@@ -199,7 +200,7 @@
 				align-items: flex-end;
 
 				&::after {
-					background: linear-gradient(to top, $c_main, #000);
+					background: linear-gradient(to top, #000, $c_main, rgba(0,0,0, 0));
 					bottom: 0;
 					content: "";
 					height: 50%;
@@ -229,6 +230,8 @@
 
 			.home_blog_content {
 				background-color: #fff;
+				flex-direction: column;
+				justify-content: space-between;
 			}
 		}
 
