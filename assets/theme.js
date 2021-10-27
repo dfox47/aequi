@@ -8774,7 +8774,7 @@ theme.Product = (function () {
 				'[data-slider-button]'
 			);
 			var sliderTrack = this.container.querySelector('[data-slider-track]');
-			var sliderItems = sliderTrack.querySelectorAll('[data-slider-item');
+			var sliderItems = sliderTrack.querySelectorAll('[data-slider-item]');
 			this.settings.sliderActive = false;
 
 			if (sliderTrack) {
@@ -9691,11 +9691,21 @@ function removeImageLoadingAnimation(image) {
 var x = document.querySelector(".site_nav");
 
 document.querySelector(".menu_toggle").onclick = function () {
-
 	if (x.style.display === "flex") {
 		x.style.display = "none";
-	} else {
+	}
+	else {
 		x.style.display = "flex";
 	}
 }
+
+
+
+////////////////////////////////////////// CUSTOM
+var $ = jQuery.noConflict();
+
+$(window).bind('load', function() {
+	console.log('x1');
+});
+
 
