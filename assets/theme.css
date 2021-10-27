@@ -98,6 +98,8 @@
   }
 
   .site_nav {
+   
+    right: 0;
     align-items: end;
     margin-top: 42px;
     padding: 40px 0;
