@@ -14,11 +14,12 @@
   content: "40%";
   position: absolute;
   font-size: 590px;
-  opacity: 0.1;
+  opacity: .1;
   left: 20%;
   top: 0;
-  bottom: 1%;
-  font-family: "Playfair Display", serif;
+  bottom: 750px;
+  font-family: "Playfair Display",serif;
+  z-index: -1;
 }
 .input-group__btn .newsletter__submit{
 
