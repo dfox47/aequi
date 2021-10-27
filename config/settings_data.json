@@ -252,6 +252,14 @@
           "blog_show_date": true,
           "show_view_all": false
         }
+      },
+      "16353252042a238585": {
+        "type": "home_offer",
+        "settings": {
+          "title": "Special offer for you",
+          "subtitle": "As we prepare our first designs for launch, we're making a special offer.",
+          "desc": "<p>Join our <strong>Early Access List<\/strong> to stay updated, receive <strong>40% Off<\/strong> on your first order and be engaged with a group of cannabis aesthetes seeking unique experiences.<\/p>"
+        }
       }
     },
     "content_for_index": [
@@ -261,7 +269,8 @@
       "1633521410b68484ff",
       "1634400532ed0f0043",
       "1634454978ed949a88",
-      "163526736102b8ca93"
+      "163526736102b8ca93",
+      "16353252042a238585"
     ]
   },
   "presets": {
