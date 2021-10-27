@@ -17,6 +17,7 @@ html {
 
 .breadcrumbs {
 	display: block;
+	margin: 0 auto;
 	max-width: 1100px;
 	text-align: center;
 	width: 100%;
@@ -101,9 +102,11 @@ html {
 	&__title {
 		border-top: 1px solid #000;
 		color: #000;
+		cursor: pointer;
 		display: block;
 		font-family: $font_josefin;
 		font-weight: 400;
+		min-height: 70px;
 		padding: 27px 0 0 100px;
 		position: relative;
 		text-transform: uppercase;
@@ -114,7 +117,8 @@ html {
 			color: #000;
 			content: "+";
 			display: flex;
-			font-size: 28px;
+			font-size: 60px;
+			font-weight: 100;
 			height: 70px;
 			justify-content: center;
 			left: 0;
