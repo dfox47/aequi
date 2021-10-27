@@ -5,6 +5,11 @@ body {
 	overflow-x: hidden;
 }
 
+h1 {
+	font-weight: 700;
+	text-align: center;
+}
+
 h2 {
 	font-size: 18px;
 }
@@ -26,6 +31,7 @@ html {
 .breadcrumbs_list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	&__item {
 		&::after {
