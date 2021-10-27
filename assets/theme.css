@@ -11,7 +11,14 @@
 }
 .home_offer__title:after{
 
-  content: "40%"; 
+  content: "40%";
+  position: absolute;
+  font-size: 590px;
+  opacity: 0.1;
+  left: 20%;
+  top: 0;
+  bottom: 15%;
+  font-family: "Playfair Display", serif;
 }
 .input-group__btn .newsletter__submit{
 
