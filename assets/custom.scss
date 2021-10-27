@@ -6,9 +6,15 @@ body {
 }
 
 h1 {
+	font-size: 30px;
 	font-weight: 700;
+	line-height: 1.1;
 	margin: 0 0 42px;
 	text-align: center;
+
+	@media #{$tablet} {
+		font-size: 25px;
+	}
 }
 
 h2 {
