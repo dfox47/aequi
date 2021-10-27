@@ -55,10 +55,11 @@
   }
   
   .home_text_content {
-      background: url(i_home_1.svg) 50% 0px no-repeat;
- 
-      position: relative;
-  }
+    /* padding: 0; */
+    background: url(i_home_1.svg) 50% 0 no-repeat;
+    position: relative;
+    padding: 100px 0 0 0;
+}
   
   .home_text h2 {
      
@@ -77,9 +78,12 @@
   }
   
   .home_advantages_content {
-      max-width: 100%;
-       width: 100%;
-      text-align: center;
+    
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
     
   }
   
