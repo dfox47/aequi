@@ -9706,6 +9706,7 @@ $(window).bind('load', function() {
 	$('.js-block-hide').click(function () {
 		var blockId = $(this).attr('data-block');
 
+		$('.js-block-toggle[data-block="' + blockId + '"]').removeClass('active');
 		$('.js-block-show[data-block="' + blockId + '"]').removeClass('active');
 		$('.js-block[data-block="' + blockId + '"]').removeClass('active');
 	});
