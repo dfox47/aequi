@@ -97,6 +97,7 @@ html {
 
 .faq {
 	font-family: $font_josefin;
+	padding: 0 0 116px;
 
 	h3 {
 		font-family: $font_josefin;
@@ -109,6 +110,10 @@ html {
 
 		&.active {
 			display: block;
+		}
+
+		&:last-child {
+			border-bottom: 1px solid #000;
 		}
 	}
 
