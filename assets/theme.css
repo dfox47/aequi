@@ -12,7 +12,7 @@
 
 .input-group__btn .newsletter__submit{
 
-  width: 50%;
+  width: 30%;
   margin: 0 auto 110px auto;
   display: block;
   background: #272C3E;
@@ -21,7 +21,7 @@
 
 #home_offer_form-email{
 
-  width: 50%;
+  width: 30%;
   margin: 0 auto 15px auto;
   text-align: center;
   display: block;
