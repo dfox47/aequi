@@ -87,12 +87,17 @@
 
   
     display: block;
-    height: 3px;
+    height: 2px;
     width: 30px;
     background: #fff;
     z-index: 12;
     color: #fff;
-    margin: 2px 0;
+    margin: 9px 0;
 
 
+  }
+
+  .header_social{
+
+    display: none;
   }
