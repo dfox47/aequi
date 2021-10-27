@@ -21,6 +21,17 @@
   padding: 60px 0 35px 0;
 }
 
+.home_offer__desc p{
+
+  font-family: Josefin sans;
+  font-weight: 200;
+  font-size: 22px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
 @media screen and (max-width: 1024px) {
 
   .hero_img {
