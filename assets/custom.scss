@@ -103,6 +103,10 @@ html {
 
 	&__desc {
 		display: none;
+
+		&.active {
+			display: block;
+		}
 	}
 
 	&__title {
