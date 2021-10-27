@@ -9692,10 +9692,10 @@ var x = document.querySelector(".site_nav");
 
 document.querySelector(".menu_toggle").onclick = function () {
 
-	if (x.style.display === "block") {
+	if (x.style.display === "flex") {
 		x.style.display = "none";
 	} else {
-		x.style.display = "block";
+		x.style.display = "flex";
 	}
 }
 

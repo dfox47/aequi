@@ -97,15 +97,19 @@
 
   }
 
-  .site_nav{
- 
-    padding: 40px 0px;
+  .site_nav {
+    align-items: end;
+    margin-top: 42px;
+    padding: 40px 0;
     position: absolute;
-    display: block;
+    display: flex;
     right: 0;
     background: #000;
     z-index: 1;
-  }
+    z-index: 4;
+    width: 100%;
+    flex-direction: column;
+}
 
   .header_social{
 
