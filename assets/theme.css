@@ -10,6 +10,29 @@
   padding-top: 158px;
 }
 
+.newsletter__submit{
+
+  width: 50%;
+  margin: 0 auto 110px auto;
+  display: block;
+  background: #272C3E;
+  font-family: Josefin sans;
+}
+.home_offer_form-email{
+
+  width: 50%;
+  margin: 0 auto 15px auto;
+  text-align: center;
+  display: block;
+  background: #F0F0F0;
+  padding-bottom: 15px;
+}
+
+.input-group {
+  display: block;
+
+}
+
 .home_offer__subtitle{
 
   font-family: Playfair display;
