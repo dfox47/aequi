@@ -1,8 +1,16 @@
 
 
 
+body {
+	overflow-x: hidden;
+}
+
 h2 {
 	font-size: 18px;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 
@@ -84,16 +92,10 @@ h2 {
 	}
 
 	@media #{$tablet} {
-		align-items: end;
-		background-color: #000;
-		display: none;
+		align-items: center;
+		background-color: $c_main;
 		flex-direction: column;
-		margin-top: 42px;
 		padding: 40px 0;
-		position: absolute;
-		right: 0;
-		width: 100%;
-		z-index: 4;
 	}
 }
 

@@ -4,6 +4,7 @@
 .header {
 	background-color: $c_main;
 	color: #fff;
+	position: relative;
 }
 
 .header_logo {
@@ -23,9 +24,22 @@
 	font-weight: 100;
 	line-height: 1.1;
 	text-transform: uppercase;
+
+	@media #{$tablet} {
+		background-color: $c_main;
+		display: none;
+		left: 0;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
 }
 
 .header_menu_active {
+	.header_menu {
+		display: block;
+	}
+
 	.header_menu_toggle {
 		&::after {
 			top: 10px;
@@ -51,6 +65,7 @@
 	position: absolute;
 	right: 10px;
 	top: 50%;
+	transform: translateY(-50%);
 	width: 40px;
 	z-index: 5;
 
