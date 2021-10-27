@@ -87,7 +87,10 @@ html {
 }
 
 .faq {
+	font-family: $font_josefin;
+
 	h3 {
+		font-family: $font_josefin;
 		margin: 2em 0 0;
 	}
 
@@ -99,8 +102,9 @@ html {
 		border-top: 1px solid #000;
 		color: #000;
 		display: block;
+		font-family: $font_josefin;
 		font-weight: 400;
-		padding: 27px 0 0;
+		padding: 27px 0 0 100px;
 		position: relative;
 		text-transform: uppercase;
 
@@ -265,6 +269,13 @@ html {
 .wrap3 {
 	margin: 0 auto;
 	max-width: 1280px;
+	padding: 0 30px;
+	width: 100%;
+}
+
+.wrap4 {
+	margin: 0 auto;
+	max-width: 866px;
 	padding: 0 30px;
 	width: 100%;
 }
