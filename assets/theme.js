@@ -9713,6 +9713,7 @@ $(window).bind('load', function() {
 	$('.js-block-toggle').click(function () {
 		var blockId = $(this).attr('data-block');
 
+		$(this).toggleClass('active');
 		$('.js-block-show[data-block="' + blockId + '"]').toggleClass('active');
 		$('.js-block[data-block="' + blockId + '"]').toggleClass('active');
 	});
