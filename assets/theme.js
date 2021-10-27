@@ -9688,20 +9688,20 @@ function removeImageLoadingAnimation(image) {
 
 
 // gamburger
-var x = document.querySelector(".site_nav");
+var x = document.querySelector('.site_nav');
 
-document.querySelector(".menu_toggle").onclick = function () {
-	if (x.style.display === "flex") {
-		x.style.display = "none";
+document.querySelector('.menu_toggle').onclick = function () {
+	if (x.style.display === 'flex') {
+		x.style.display = 'none';
 	}
 	else {
-		x.style.display = "flex";
+		x.style.display = 'flex';
 	}
 }
 
 
 
-////////////////////////////////////////// CUSTOM
+// Custom JS
 var $ = jQuery.noConflict();
 
 $(window).bind('load', function() {
