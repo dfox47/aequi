@@ -11,26 +11,30 @@
 				<li class="home_blog_list__item">
 					{%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-					<a href="{{ article.url }}" class="home_blog__link" {% if article.image %}style="background-image: url({{ article.image | img_url: '500x' }})"{% endif %}>
-						{% if section.settings.blog_show_date %}
-							<span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
-						{% endif %}
+					<a href="{{ article.url }}" class="home_blog__link">
+						{% if article.image %}<span class="home_blog_bg" style="background-image: url({{ article.image | img_url: '500x' }})"></span>{% endif %}
 
-						<div class="home_blog__title">{{ article.title }}</div>
-
-						{% if section.settings.blog_show_author %}
-							<span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-						{% endif %}
-
-						<div class="home_blog__desc">
-							{% if article.excerpt.size > 0 %}
-								{{ article.excerpt }}
-							{% else %}
-								{{ article.content | strip_html | truncate: 150 }}
+						<span class="home_blog_content">
+							{% if section.settings.blog_show_date %}
+								<span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
 							{% endif %}
-						</div>
 
-						<div class="home_blog__readmore">{{ 'blogs.article.view' | t }}</div>
+							<div class="home_blog__title">{{ article.title }}</div>
+
+							{% if section.settings.blog_show_author %}
+								<span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+							{% endif %}
+
+							<span class="home_blog__desc">
+								{% if article.excerpt.size > 0 %}
+									{{ article.excerpt }}
+								{% else %}
+									{{ article.content | strip_html | truncate: 150 }}
+								{% endif %}
+							</span>
+
+							<span class="home_blog__readmore">{{ 'blogs.article.view' | t }}</span>
+						</span>
 					</a>
 
 					<div class="home_blog__meta">
