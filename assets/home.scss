@@ -155,8 +155,10 @@
 }
 
 .home_blog_content {
-	background-color: #fff;
+	display: flex;
+	height: 100%;
 	position: relative;
+	width: 100%;
 	z-index: 3;
 }
 
@@ -190,6 +192,20 @@
 
 				&__title {
 					color: #fff;
+				}
+			}
+
+			.home_blog_content {
+				align-items: flex-end;
+
+				&::after {
+					background: linear-gradient(to top, $c_main, #000);
+					bottom: 0;
+					content: "";
+					height: 50%;
+					position: absolute;
+					width: 100%;
+					z-index: 2;
 				}
 			}
 		}
