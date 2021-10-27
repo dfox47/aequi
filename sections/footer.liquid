@@ -218,9 +218,9 @@
 
 						{%- case block.type -%}
 							{%- when 'newsletter' -%}
-								<div class="site-footer__newsletter
-                          {% if section.blocks.size == 1 %} site-footer__single-block--centered{% endif %}">
+								<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
 									{%- assign formId = 'ContactFooter' -%}
+
 									{% form 'customer', id: formId, novalidate: 'novalidate' %}
 										{%- if form.posted_successfully? -%}
 											<p class="form-message form-message--success" tabindex="-1" data-form-status>
@@ -262,11 +262,9 @@
 										{% endif %}
 									{% endform %}
 								</div>
-
 							{%- when 'text' -%}
 								{%- if block.settings.text != blank -%}
-									<div class="site-footer__rte
-                              {% if section.blocks.size == 1 %} site-footer__single-block--centered{% endif %}">
+									<div class="site-footer__rte {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
 										{{ block.settings.text }}
 									</div>
 								{%- endif -%}
@@ -391,7 +389,7 @@
 
 
 {% schema %}
-<script type="application/json">
+{% comment %}<script type="application/json">{% endcomment %}
 	{
 		"name": {
 			"en": "Footer"
@@ -576,5 +574,5 @@
 			}
 		]
 	}
-</script>
+{% comment %}</script>{% endcomment %}
 {% endschema %}
