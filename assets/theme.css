@@ -27,17 +27,21 @@
   display: block;
   background: #272C3E; */
   font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+  background: rgb(39, 44, 62);
+  border-radius: 6px;
+  margin-left: 6px;
 }
 
-/* #home_offer_form-email{
-
+ #home_offer_form-email{
+  border-radius: 6px;
+/* 
   width: 30%;
   margin: 0 auto 15px auto;
   text-align: center;
   display: block;
   background: #F0F0F0;
-  padding-bottom: 15px;
-} */
+  padding-bottom: 15px; */
+} 
 
 .input-group {
   display: flex;
