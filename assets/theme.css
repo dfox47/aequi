@@ -9,7 +9,10 @@
   color: #273734;
   padding-top: 158px;
 }
+.home_offer__title:after{
 
+  content: "40%"; 
+}
 .input-group__btn .newsletter__submit{
 
   width: 30%;
@@ -36,7 +39,7 @@
 
 .home_offer__subtitle{
 
-  font-family: Playfair display;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 33px;
   text-align: center;
@@ -47,7 +50,7 @@
 
 .home_offer__desc p{
 
-  font-family: Josefin sans;
+  font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
   font-weight: 200;
   font-size: 22px;
   width: 40%;
