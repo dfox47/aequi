@@ -178,6 +178,11 @@
 		display: block;
 		position: relative;
 		min-height: 260px;
+		transition: $transition;
+
+		&:hover {
+			opacity: .5;
+		}
 
 		&:nth-child(1),
 		&:nth-child(4) {
