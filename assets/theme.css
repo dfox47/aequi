@@ -16,6 +16,7 @@
         grid-column: 1;
         align-items: flex-end;
          grid-row-end: auto;
+         grid-row-start: auto;
         
     }
 
