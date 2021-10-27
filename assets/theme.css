@@ -33,6 +33,59 @@
     }
 
 
-    
+    .hero_img__title {
+      color: #fff;
+      font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+      font-size: 74px;
+      font-weight: 400;
+      line-height: 1;
+      padding: 4px 0 0;
+      z-index: 3;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  
+  .site_nav {
+      display: none;
+      margin: 0;
+  }
+  
+  .home_text_content {
+      background: url(i_home_1.svg) 50% 0px no-repeat;
+      padding: 100px 0 0 0;
+      position: relative;
+  }
+  
+  .home_text h2 {
+      font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+      font-size: 33px;
+      letter-spacing: .001em;
+      margin: 0 0 .5em;
+      text-transform: none;
+      text-align: center;
+  }
+  
+  .home_text_desc {
+      font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+      font-size: 22px;
+      letter-spacing: -.028em;
+      line-height: 1.1;
+      text-align: center;
+  }
+  
+  .home_advantages_img {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+  }
+  
+  .home_advantages_content {
+      max-width: auto;
+      padding: 0 0 0 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 61px;
+  }
   
   }
