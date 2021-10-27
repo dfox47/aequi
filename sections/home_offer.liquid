@@ -15,7 +15,7 @@
 	{%- endif -%}
 
 	<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
-		{%- assign formId = 'ContactFooter' -%}
+		{%- assign formId = 'home_offer_form' -%}
 
 		{% form 'customer', id: formId, novalidate: 'novalidate' %}
 			{%- if form.posted_successfully? -%}
