@@ -43,10 +43,10 @@
 					data-form-status
 						{% endif %}>
 				<span class="input-group__btn">
-												<button type="submit" class="btn newsletter__submit" name="commit" >
-													<span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
-												</button>
-											</span>
+					<button type="submit" class="btn newsletter__submit" name="commit" >
+						<span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+					</button>
+				</span>
 			</div>
 
 			{% if form.errors contains 'email' %}
@@ -63,7 +63,6 @@
 
 
 {% schema %}
-{% comment %}<script type="application/json">{% endcomment %}
 {
 	"name": "Home offer",
 	"class": "home_offer",
@@ -77,7 +76,7 @@
 		{
 			"type": "text",
 			"id": "subtitle",
-			"label": "Subitle",
+			"label": "Subtitle",
 			"default": "As we prepare our first designs for launch, we're making a special offer."
 		},
 		{
@@ -94,7 +93,6 @@
 		}
 	]
 }
-{% comment %}</script>{% endcomment %}
 {% endschema %}
 
 
