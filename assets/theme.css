@@ -7,28 +7,18 @@
   .hero_img {
     align-items: center;
     background-position: center left 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: -55px 0 0;
-    min-height: calc(100vh - 40vh);
-    padding: 0 0 141px;
-    position: relative;
+     min-height: calc(100vh - 40vh);
+   
 }
 
     .home_blog_list {
         display: grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-columns: repeat(1,minmax(0,1fr));
-        text-align: center;
+       grid-template-columns: repeat(1,minmax(0,1fr));
+   
       }
 
       .home_blog_list__item:nth-child(1), .home_blog_list__item:nth-child(4) {
         grid-column: 1;
-        align-items: flex-end;
          grid-row-end: auto;
          grid-row-start: auto;
         
@@ -49,52 +39,34 @@
 
 
     .hero_img__title {
-      color: #fff;
-      font-family: "Playfair Display",Helvetica,Arial,sans-serif;
       font-size: 46px;
-      font-weight: 400;
-      line-height: 1;
-      padding: 4px 0 0;
-      z-index: 3;
-      margin: 0 auto;
-      text-align: center;
-  }
+        }
 
   .hero_img__desc {
-    color: #fff;
+    
     font-size: 12px;
-    line-height: 1.1;
-    padding: 24px 0 0;
-    text-align: center;
-    z-index: 3;
+   
 }
   
   
   .site_nav {
       display: none;
-      margin: 0;
+   
   }
   
   .home_text_content {
       background: url(i_home_1.svg) 50% 0px no-repeat;
-      padding: 100px 0 0 0;
+ 
       position: relative;
   }
   
   .home_text h2 {
-      font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-      font-size: 33px;
-      letter-spacing: .001em;
-      margin: 0 0 .5em;
-      text-transform: none;
+     
       text-align: center;
   }
   
   .home_text_desc {
-      font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
-      font-size: 22px;
-      letter-spacing: -.028em;
-      line-height: 1.1;
+    
       text-align: center;
   }
   
@@ -106,10 +78,9 @@
   
   .home_advantages_content {
       max-width: 100%;
-      padding: 0 0 0 0;
-      width: 100%;
+       width: 100%;
       text-align: center;
-      margin-top: 61px;
+    
   }
   
   }
