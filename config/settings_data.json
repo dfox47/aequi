@@ -242,15 +242,6 @@
           "text_4": "<p><strong>Early Access<\/strong> Community<\/p>"
         }
       },
-      "163516720981d3fb7a": {
-        "type": "blog-template",
-        "settings": {
-          "text_1": "<p>Text 1<\/p>",
-          "text_2": "<p>Text 2<\/p>",
-          "text_3": "<p>Text 3<\/p>",
-          "text_4": "<p>Text 4<\/p>"
-        }
-      },
       "163526736102b8ca93": {
         "type": "home_blog",
         "settings": {
@@ -270,8 +261,7 @@
       "1633521410b68484ff",
       "1634400532ed0f0043",
       "1634454978ed949a88",
-      "163526736102b8ca93",
-      "163516720981d3fb7a"
+      "163526736102b8ca93"
     ]
   },
   "presets": {
