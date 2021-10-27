@@ -9709,6 +9709,13 @@ $(window).bind('load', function() {
 		$('.js-block-show[data-block="' + blockId + '"]').removeClass('active');
 		$('.js-block[data-block="' + blockId + '"]').removeClass('active');
 	});
+
+	$('.js-block-toggle').click(function () {
+		var blockId = $(this).attr('data-block');
+
+		$('.js-block-show[data-block="' + blockId + '"]').toggleClass('active');
+		$('.js-block[data-block="' + blockId + '"]').toggleClass('active');
+	});
 });
 
 

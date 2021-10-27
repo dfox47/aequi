@@ -70,6 +70,8 @@ html {
 		display: inline-block;
 		height: 37px;
 		margin: 0 8px 0 0;
+		position: relative;
+		vertical-align: middle;
 		width: 37px;
 
 		&::after,
@@ -77,10 +79,10 @@ html {
 			background-color: #fff;
 			content: "";
 			height: 1px;
-			left: 6px;
+			left: 11px;
 			position: absolute;
-			top: 10px;
-			width: 11px;
+			top: 17px;
+			width: 15px;
 		}
 
 		&::after {
@@ -151,7 +153,7 @@ html {
 
 	.btn_close,
 	.btn_close:visited {
-		margin: 30px 0 0;
+		margin: 30px 0 45px;
 	}
 }
 
