@@ -22,10 +22,10 @@
 }
 .input-group__btn .newsletter__submit{
 
-  width: 30%;
+  /* width: 30%;
   margin: 0 auto 110px auto;
   display: block;
-  background: #272C3E;
+  background: #272C3E; */
   font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
 }
 
