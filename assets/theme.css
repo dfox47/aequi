@@ -28,14 +28,14 @@
     margin: 0 auto 110px auto;
     width: 40%;
 }
-.input-group .newsletter__submit{
+.home_offer_wrap .input-group .newsletter__submit{
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
     font-size: 15px;
     border-radius:6px;
     background: #272C3E;
 }
 
-.input-group  input[type=email]{
+.home_offer_wrap .input-group  input[type=email]{
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
 background:#F0F0F0;
 
