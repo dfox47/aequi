@@ -8,7 +8,7 @@
 .site-footer__newsletter {
     width: 100%;
 }
-.email{
+.email_p {
 
-    background: url(i_email.svg) 30px 20px no-repeat; 
+    background: url(i_email.svg) no-repeat; 
 }
