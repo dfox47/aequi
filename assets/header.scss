@@ -34,6 +34,14 @@
 		top: 100%;
 		width: 100%;
 	}
+
+	.site_nav {
+		@media #{$tablet} {
+			align-items: center;
+			flex-direction: column;
+			padding: 40px 0;
+		}
+	}
 }
 
 .header_menu_active {

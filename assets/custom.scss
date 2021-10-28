@@ -203,6 +203,7 @@ html {
 
 .site_nav {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 
 	&__item {
@@ -248,13 +249,6 @@ html {
 				width: 100%;
 			}
 		}
-	}
-
-	@media #{$tablet} {
-		align-items: center;
-		background-color: $c_main;
-		flex-direction: column;
-		padding: 40px 0;
 	}
 }
 
