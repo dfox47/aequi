@@ -13,3 +13,26 @@
     padding: 10px 40px;
     background: url(i_email.svg) 9px 8px no-repeat;
 }
+
+.footer_title p{
+    
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 18px;
+
+}
+
+.footer_desc p{
+    
+    width: 80%;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+footer .input-group {
+    width: 64%;
+}
+footer .input-group input {
+   border-radius: 6px;
+}
