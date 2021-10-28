@@ -30,6 +30,7 @@ footer .email{
 }
 footer .newsletter__submit{
     background: #E09A8E;
+    border-radius: 6px;
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
     font-size: 15px;
 
@@ -82,4 +83,16 @@ footer .input-group input {
 
     margin-bottom: 10px;
 }
+
+
+@media screen and (max-width: 1023px) {
+    .home_offer_wrap .input-group input[type=email] {
+        flex-basis: auto;
+       
+    }
+
+    .home_offer_wrap .input-group {
+      flex-direction: column;
+    }
+  }
 
