@@ -9,6 +9,6 @@
     width: 100%;
 }
 .email_p {
-
-    background: url(i_email.svg) no-repeat; 
+    padding: 10px 40px;
+    background: url(i_email.svg) 9px 8px no-repeat;
 }
