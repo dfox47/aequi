@@ -9,7 +9,17 @@ footer .site-footer__newsletter {
     width: 100%;
 }
 
+.copiright{
+ 
+    width: 45%;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 auto;
+
+}
+
 .email_p {
+    font-size: 18px;
     display: inline;
     padding: 10px 40px;
     background: url(i_email.svg) 9px 8px no-repeat;
@@ -17,6 +27,12 @@ footer .site-footer__newsletter {
 footer .email{
     margin-bottom: 40px;
         margin-top: 20px;
+}
+footer .newsletter__submit{
+    background: #E09A8E;
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+
 }
 
 .footer_title p{
