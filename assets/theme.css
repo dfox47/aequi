@@ -93,6 +93,19 @@ footer .input-group input {
 
     .home_offer_wrap .input-group {
       flex-direction: column;
+      width: 100%;
+    padding: 0 15px;
     }
+
+    footer .input-group input {
+        flex-basis: auto;
+        border-radius: 6px;
+    }
+
+      footer .input-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
   }
 
