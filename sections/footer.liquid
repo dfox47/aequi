@@ -136,7 +136,7 @@
 {%- endcapture -%}
 
 <footer class="footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
-	<p>4444</p><div class="wrap">
+	<div class="wrap">
 		<nav class="footer_menu" role="navigation">
 			{% include 'site-nav', linklist: section.settings.main_linklist %}
 		</nav>
@@ -184,25 +184,11 @@
 		{% endif %} 
 	</div>
 
-	<p>666668899</p>
-
-
-
-
-
-
-
-
 
 	<div class="page-width">
-		
-	
-		<div class="site-footer__content">
+			<div class="site-footer__content">
 			{%- for block in section.blocks -%}
 				<div class="site-footer__item">
-			
-					
-
 						{%- case block.type -%}
 							{%- when 'newsletter' -%}
 								<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
@@ -275,14 +261,9 @@
 			<p class="copiright">© AEQUI Ltd. 2020 — Cannabis accessories designer that helps smokers sustain a level of quality and style in their smoking identity. 
 				Privacy Policy </p>
 		</div>
+    </div>
 
-	
-	</div>
-
-	<!-- <hr class="site-footer__hr" /> -->
-
-	<!-- <div class="page-width">
-		<div class="grid grid--no-gutters small--text-center grid--footer-float-right">
+	<div class="grid grid--no-gutters small--text-center grid--footer-float-right">
 			{%- if show_selectors -%}
 				<div class="grid__item one-half small--one-whole">
 					{%- form 'localization', class: 'selectors-form', data-disclosure-form: '' -%}
