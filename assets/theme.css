@@ -8,3 +8,7 @@
 .site-footer__newsletter {
     width: 100%;
 }
+.email{
+
+    background-image: url("../assets/i_email.svg"); 
+}
