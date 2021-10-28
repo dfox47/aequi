@@ -5,7 +5,7 @@
     color:#fff;
 }
 
-.site-footer__newsletter {
+footer .site-footer__newsletter {
     width: 100%;
 }
 .email_p {
@@ -50,8 +50,15 @@ background:#F0F0F0;
 
 footer .input-group {
     width: 64%;
+    margin: 0 auto 0 auto;
 }
+
 footer .input-group input {
    border-radius: 6px;
+}
+
+.footer .site-footer__item{
+
+    margin-bottom: 10px;
 }
 
