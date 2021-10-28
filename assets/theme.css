@@ -84,11 +84,20 @@ footer .input-group input {
     margin-bottom: 10px;
 }
 
+.home_offer_wrap .input-group input[type=email] {
+  border-radius: 6px;   
+}
+
 
 @media screen and (max-width: 1023px) {
     .home_offer_wrap .input-group input[type=email] {
         flex-basis: auto;
        
+    }
+
+    footer .site_nav {
+        flex-direction: column;
+        
     }
 
     .home_offer_wrap .input-group {
