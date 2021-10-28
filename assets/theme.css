@@ -21,7 +21,10 @@
     font-size: 18px;
 
 }
+.home_offer_wrap .input-group {
 
+    width: 40%;
+}
 .footer_desc p{
     
     width: 80%;
@@ -36,3 +39,4 @@ footer .input-group {
 footer .input-group input {
    border-radius: 6px;
 }
+
