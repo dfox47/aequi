@@ -8,10 +8,15 @@
 footer .site-footer__newsletter {
     width: 100%;
 }
+
 .email_p {
     display: inline;
     padding: 10px 40px;
     background: url(i_email.svg) 9px 8px no-repeat;
+}
+footer .email{
+    margin-bottom: 40px;
+        margin-top: 20px;
 }
 
 .footer_title p{
