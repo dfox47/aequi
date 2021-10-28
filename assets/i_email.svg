@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd" [
-	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-]>
-<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="42px" height="42px" viewBox="-0.5 0.5 42 42" xml:space="preserve">
-<path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34
-	C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28
-	c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"/>
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="#ffffff">
+<g clip-path="url(#clip0_339:770)">
+<path d="M22.7977 1.15625L15.8213 8.0877L22.7977 15.0191C22.9234 14.7541 22.9998 14.4621 22.9998 14.1521V2.02324C22.9998 1.71328 22.9234 1.42129 22.7977 1.15625Z" fill="#ffffff"/>
+<path d="M20.9783 0H2.02129C1.71133 0 1.41934 0.0763672 1.1543 0.202148L10.0713 9.07422C10.8574 9.86035 12.1422 9.86035 12.9283 9.07422L21.8453 0.202148C21.5803 0.0763672 21.2883 0 20.9783 0Z" fill="#ffffff"/>
+<path d="M0.202148 1.15625C0.0763672 1.42129 0 1.71328 0 2.02324V14.1521C0 14.4621 0.0763672 14.7541 0.202148 15.0191L7.17852 8.0877L0.202148 1.15625Z" fill="#ffffff"/>
+<path d="M14.8699 9.03906L13.8816 10.0273C12.5699 11.3391 10.4316 11.3391 9.11543 10.0273L8.12715 9.03906L1.15527 15.9705C1.42031 16.0963 1.7123 16.1727 2.02227 16.1727H20.9793C21.2893 16.1727 21.5812 16.0963 21.8463 15.9705L14.8699 9.03906Z" fill="#ffffff"/>
+</g>
+<defs>
+<clipPath id="clip0_339:770">
+<rect width="23" height="16.1719" fill="#ffffff"/>
+</clipPath>
+</defs>
 </svg>
