@@ -29,8 +29,16 @@
     width: 40%;
 }
 .input-group .newsletter__submit{
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
     border-radius:6px;
     background: #272C3E;
+}
+
+.input-group  input[type=email]{
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+background:#F0F0F0;
+
 }
 .footer_desc p{
     
