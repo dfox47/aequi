@@ -1,0 +1,25 @@
+
+
+
+{% assign t = template | split: '.' | first  %}
+
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+	<ul class="breadcrumbs_list">
+		<li class="breadcrumbs_list__item">
+			<a href="/" title="Home">Home</a>
+		</li>
+
+		{% case t %}
+			{% when 'page' %}
+				<li class="breadcrumbs_list__item">
+					<a href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+				</li>
+			{% else %}
+				<li class="breadcrumbs_list__item" aria-current="page">
+					<a href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+				</li>
+		{% endcase %}
+	</ul>
+</nav>
+
+

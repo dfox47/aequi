@@ -4,6 +4,8 @@
 .header {
 	background-color: $c_main;
 	color: #fff;
+	position: relative;
+	z-index: 5;
 }
 
 .header_logo {
@@ -23,6 +25,93 @@
 	font-weight: 100;
 	line-height: 1.1;
 	text-transform: uppercase;
+
+	@media #{$tablet} {
+		background-color: $c_main;
+		display: none;
+		left: 0;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+
+	.site_nav {
+		@media #{$tablet} {
+			align-items: center;
+			flex-direction: column;
+			padding: 40px 0;
+		}
+	}
+}
+
+.header_menu_active {
+	.header_menu {
+		display: block;
+	}
+
+	.header_menu_toggle {
+		&::after {
+			top: 16px;
+			transform: rotate(45deg);
+		}
+
+		&::before {
+			top: 16px;
+			transform: rotate(-45deg);
+		}
+
+		span {
+			left: 100px;
+			opacity: 0;
+		}
+	}
+}
+
+.header_menu_toggle {
+	cursor: pointer;
+	display: none;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	z-index: 5;
+
+	&::after,
+	&::before,
+	span {
+		background-color: #fff;
+		content: "";
+		display: block;
+		height: 2px;
+		left: 6px;
+		position: absolute;
+		transition: $transition;
+		width: 28px;
+	}
+
+	&::after {
+		top: 6px;
+	}
+
+	&::before {
+		top: 26px;
+	}
+
+	span {
+		top: 16px;
+	}
+
+	@media #{$tablet} {
+		display: block;
+	}
+}
+
+.header_social {
+	@media #{$tablet} {
+		display: none;
+	}
 }
 
 .header_wrap {
@@ -33,6 +122,10 @@
 	max-width: 1020px;
 	padding: 30px 30px 19px;
 	width: 100%;
+
+	@media #{$tablet} {
+		justify-content: center;
+	}
 }
 
 
