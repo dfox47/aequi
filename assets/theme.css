@@ -21,9 +21,16 @@
     font-size: 18px;
 
 }
+ .input-group {
+     border-radius:6px;
+}
 .home_offer_wrap .input-group {
-
+    margin: 0 auto 110px auto;
     width: 40%;
+}
+.input-group .newsletter__submit{
+    border-radius:6px;
+    background: #272C3E;
 }
 .footer_desc p{
     
