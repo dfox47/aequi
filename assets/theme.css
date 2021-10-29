@@ -83,6 +83,9 @@ footer .input-group input {
 
     margin-bottom: 10px;
 }
+.mobile_content{
+    display: none;
+}
 
 .home_offer_wrap .input-group input[type=email] {
   border-radius: 6px;   
@@ -90,6 +93,10 @@ footer .input-group input {
 
 
 @media screen and (max-width: 1023px) {
+
+    .mobile_content{
+        display: block;
+    }
     .home_offer_wrap .input-group input[type=email] {
         flex-basis: auto;
        
@@ -115,6 +122,8 @@ footer .input-group input {
         width: 100%;
         flex-direction: column;
     }
+
+    
 
   }
 
