@@ -97,7 +97,9 @@ footer .input-group input {
     .mobile_content{
         display: block;
     }
-
+    .mobile_content p{
+       color:#fff;
+    }
     .mobile_content .header_social {
         display: block;
     }
