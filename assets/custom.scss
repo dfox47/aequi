@@ -262,6 +262,8 @@ html {
 }
 
 .footer {
+	margin: 130px 0 0;
+
 	p {
 		color:#fff;
 	}
@@ -270,11 +272,13 @@ html {
 		margin: 20px 0 40px;
 	}
 
-	.newsletter__submit {
-		background: #E09A8E;
-		border-radius: 6px;
-		font-family: $font_josefin;
-		font-size: 15px;
+	.newsletter {
+		&__submit {
+			background: #E09A8E;
+			border-radius: 6px;
+			font-family: $font_josefin;
+			font-size: 15px;
+		}
 	}
 
 	.site-footer {
