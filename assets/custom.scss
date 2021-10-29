@@ -309,4 +309,148 @@ html {
 	width: 100%;
 }
 
+.wrap5 {
+	margin: 0 auto;
+	max-width: 906px;
+	padding: 0 30px;
+	width: 100%;
+}
+
+
+
+
+
+.footer p{
+
+	color:#fff;
+}
+
+footer .site-footer__newsletter {
+	width: 100%;
+}
+
+.copiright{
+
+	width: 45%;
+	font-size: 18px;
+	font-weight: 100;
+	margin: 0 auto;
+
+}
+
+.email_p {
+	font-size: 18px;
+	display: inline;
+	padding: 10px 40px;
+	background: url(i_email.svg) 9px 8px no-repeat;
+}
+footer .email{
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+footer .newsletter__submit{
+	background: #E09A8E;
+	border-radius: 6px;
+	font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+
+}
+
+.footer_title p{
+
+	font-weight: 600;
+	margin-top: 50px;
+	font-size: 18px;
+
+}
+.input-group {
+	border-radius:6px;
+}
+.home_offer_wrap .input-group {
+	margin: 0 auto 110px auto;
+	width: 40%;
+}
+.home_offer_wrap .input-group .newsletter__submit{
+	font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+	border-radius:6px;
+	background: #272C3E;
+}
+
+.home_offer_wrap .input-group  input[type=email]{
+	font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+	background:#F0F0F0;
+
+}
+.footer_desc p{
+
+	width: 80%;
+	font-size: 18px;
+	font-weight: 100;
+	margin: 0 auto;
+}
+
+footer .input-group {
+	width: 64%;
+	margin: 0 auto 0 auto;
+}
+
+footer .input-group input {
+	border-radius: 6px;
+}
+
+.footer .site-footer__item{
+
+	margin-bottom: 10px;
+}
+.mobile_content{
+	display: none;
+}
+
+.home_offer_wrap .input-group input[type=email] {
+	border-radius: 6px;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+	.mobile_content{
+		display: block;
+	}
+	.mobile_content p{
+		color:#fff;
+	}
+	.mobile_content .header_social {
+		display: block;
+	}
+	.home_offer_wrap .input-group input[type=email] {
+		flex-basis: auto;
+
+	}
+
+	footer .site_nav {
+		flex-direction: column;
+
+	}
+
+	.home_offer_wrap .input-group {
+		flex-direction: column;
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	footer .input-group input {
+		flex-basis: auto;
+		border-radius: 6px;
+	}
+
+	footer .input-group {
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+
+}
+
 
