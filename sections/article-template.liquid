@@ -1,29 +1,35 @@
 <div class="article">
-	{% if section.settings.blog_show_date %}
-		<span class="article__date">{{ article.published_at | time_tag: format: 'date' }}</span>
-	{% endif %}
+	<div class="article_header">
+		{% if section.settings.blog_show_date %}
+			<span class="article__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
+		{% endif %}
 
-	<h1 class="article__title">{{ article.title }}</h1>
+		<h1 class="article__title">{{ article.title }}</h1>
 
-	{% if article.tags %}
-		<div class="article__tags">
-			{% for tag in article.tags %}
-				{{ tag }}
-			{% endfor %}
-		</div>
-	{% endif %}
+		{% if article.tags %}
+			<ul class="article_tags">
+				{% for tag in article.tags %}
+					<li class="article_tags__item">
+						{{ tag }}
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
 
-	{% if section.settings.show_share_buttons %}
-		<div class="article__social">
-			{% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-		</div>
-	{% endif %}
+		{% if section.settings.show_share_buttons %}
+			<div class="article__social">
+				{% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+			</div>
+		{% endif %}
+	</div>
 
-	<div class="article__img">{{ article.image }}</div>
+	<div class="article__img" style="background-image: url({{ article.image.src | img_url: '500x' }})" title="{{ article.image.src }}"></div>
 </div>
 
-<div class="rte">
-	{{ article.content }}
+<div class="article_content">
+	<div class="wrap5">
+		{{ article.content }}
+	</div>
 </div>
 
 

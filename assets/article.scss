@@ -1,0 +1,61 @@
+
+
+
+.article {
+	background-color: $c_blog_bg;
+	color: $c_main;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: $font_josefin;
+	line-height: 1.1;
+	text-align: center;
+
+	&__date {
+		font-size: 15px;
+		font-weight: 200;
+	}
+
+	&__img {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 50%;
+	}
+
+	&__title {
+		font-size: 33px;
+		margin: 2em 0 1em;
+	}
+}
+
+.article_content {}
+
+.article_header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 86px);
+	padding: 30px;
+	width: 50%;
+}
+
+.article_single {}
+
+.article_tags {
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+	line-height: 1.1;
+	text-transform: uppercase;
+
+	&__item {
+		margin: 0 1em 1em 0;
+		position: relative;
+
+		&::before {
+			content: "#";
+		}
+	}
+}
+
+
