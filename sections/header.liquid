@@ -53,16 +53,14 @@
 				
 						<div class="site-footer__item">
 								
-									{%- when 'newsletter' -%}
-										<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
-											{%- assign formId = 'ContactFooter' -%}
-		
-											{% form 'customer', id: formId, novalidate: 'novalidate' %}
-												{%- if form.posted_successfully? -%}
+									
+										<div class="site-footer__newsletter">
+											
+															
 													<p class="form-message form-message--success" tabindex="-1" data-form-status>
 														{{ 'general.newsletter_form.confirmation' | t }}
 													</p>
-												{%- endif -%}
+											
 		
 												<input type="hidden" name="contact[tags]" value="newsletter" />
 		
@@ -89,14 +87,14 @@
 													</span>
 												</div>
 		
-												{% if form.errors contains 'email' %}
+												
 													<span id="{{ formId }}-email-error" class="input-error-message">
 														<span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
 														{% include 'icon-error' %}
 														<span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
 													</span>
-												{% endif %}
-											{% endform %}
+											
+											
 										</div>
 									{%- when 'text' -%}
 										{%- if block.settings.text != blank -%}
