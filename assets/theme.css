@@ -97,6 +97,10 @@ footer .input-group input {
     .mobile_content{
         display: block;
     }
+
+    .mobile_content .header_social {
+        display: block;
+    }
     .home_offer_wrap .input-group input[type=email] {
         flex-basis: auto;
        
