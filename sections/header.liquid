@@ -50,9 +50,9 @@
 			<div class="mobile_content">
 				<div class="page-width">
 					<div class="site-footer__content">
-					{%- for block in section.blocks -%}
+				
 						<div class="site-footer__item">
-								{%- case block.type -%}
+								
 									{%- when 'newsletter' -%}
 										<div class="site-footer__newsletter {% if section.blocks.size == 1 %}site-footer__single-block--centered{% endif %}">
 											{%- assign formId = 'ContactFooter' -%}
@@ -116,10 +116,10 @@
 												</li>
 											{%- endfor -%}
 										</ul> -->
-								{%- endcase -%}
+							
 							</div>
 						</div>
-					{%- endfor -%}
+					
 					<div class="email"><p class="email_p">hello@aequi.com</p></div>
 					
 					<p class="copiright">© AEQUI Ltd. 2020 — Cannabis accessories designer that helps smokers sustain a level of quality and style in their smoking identity. 
