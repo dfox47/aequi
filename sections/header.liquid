@@ -49,6 +49,9 @@
 				{% include 'site-nav', linklist: section.settings.main_linklist %}
 			<div class="mobile_content">
 				44444
+				<div class="footer_desc">
+					{{ section.settings.footer_desc }}
+				</div>
 				{% form 'customer', id: formId, novalidate: 'novalidate' %}
 										{%- if form.posted_successfully? -%}
 											<p class="form-message form-message--success" tabindex="-1" data-form-status>
