@@ -30,28 +30,6 @@
 							<span class="home_blog__readmore">{{ 'blogs.article.view' | t }}</span>
 						</span>
 					</a>
-
-					<div class="home_blog__meta">
-						{% if article.tags.size > 0 %}
-							<div class="home_blog__tags">
-								<ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
-									{% for tag in article.tags %}
-										<li>
-											<a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__grid-tag">{{ tag }}</a>
-										</li>
-									{% endfor %}
-								</ul>
-							</div>
-						{% endif %}
-
-						{% if blog.comments_enabled? and article.comments_count > 0 %}
-							<div class="home_blog__comments">
-								<a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
-									{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
-								</a>
-							</div>
-						{% endif %}
-					</div>
 				</li>
 			{% endfor %}
 		</ul>
