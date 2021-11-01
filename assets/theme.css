@@ -279,7 +279,28 @@ footer .input-group input {
     .home_info_list__item {       
         padding: 18px  35px;       
     }
- 
+
+
+
+    .home_info {
+       
+      
+        border-top: 0px  solid #fff;
+       
+    }
+    .home_info:before {
+       
+      
+        background-color: #8a8989;
+        content: "";
+        height: 1px;
+        left: 17%;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        width: 70%;
+        display: block;
+       
+    }
 
   }
 
