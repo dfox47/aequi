@@ -168,7 +168,28 @@ footer .input-group input {
     margin-top: 30px;
  }
 
- 
+ .mobile_content .input-group__field {
+    border-radius: 2px 0 0 2px;
+    flex-basis: auto;
+    flex-grow: 9999;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.mobile_content form {
+    padding: 0 15px;
+}
+.mobile_content button [type='submit']{
+    font-family: "Josefin Sans", sans-serif;
+    
+    background: #E09A8E;
+    border-radius: 6px;
+
+}
+.mobile_content button [type='email']{
+     
+    border-radius: 6px;
+
+}
 .mobile_content .social_link {
  
     width: 27px;
