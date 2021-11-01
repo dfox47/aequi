@@ -276,7 +276,11 @@ footer .input-group input {
     .home_advantages {
         padding: 135px 0 51px;
     }
-
+    .home_info_list__item {
+       
+        padding: 18px  35px;
+       
+    }
  
 
   }
