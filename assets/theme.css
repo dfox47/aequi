@@ -96,6 +96,7 @@ footer .input-group input {
     display:none;
 }
 .article_tags{
+    color: #273734;
     width: 70%;
     margin: 0 auto;
     padding-bottom: 73px;
@@ -152,13 +153,13 @@ background-position: center;
     text-transform: uppercase;
 }
 .article__date{
-
+    color: #273734;
     font-size: 15px;
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
 }
 
 .article__title {
-  
+    color: #273734;
     padding: 57px 0 25px 0;
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
     margin-bottom: 11px;
