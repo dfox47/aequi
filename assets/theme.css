@@ -319,5 +319,11 @@ footer .input-group input {
         z-index: 1;
     }
 
+    .home_offer__title {
+      
+        padding: 100px  0 0;
+       
+    }
+
   }
 
