@@ -169,7 +169,7 @@ footer .input-group input {
 }
 
 .quote:after {
-    content: "'";
+    content: "»";
     font-size: 595px;
     font-weight: 700;
     left: 50%;
@@ -182,7 +182,7 @@ footer .input-group input {
 }
 
 .quote:before {
-    content: "'";
+    content: "«";
     font-size: 595px;
     font-weight: 700;
     left: 50%;
