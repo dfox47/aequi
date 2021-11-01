@@ -433,6 +433,36 @@
 	}
 }
 
+.home_offer_wrap {
+	.input-group {
+		margin: 0 auto 110px;
+		width: 40%;
+
+		.newsletter__submit {
+			background-color: #272C3E;
+			border-radius:6px;
+			font-family: $font_josefin;
+			font-size: 15px;
+		}
+
+		input[type=email] {
+			background-color: #f0f0f0;
+			border-radius: 6px;
+			font-family: $font_josefin;
+		}
+
+		@media #{$tablet} {
+			flex-direction: column;
+			padding: 0 15px;
+			width: 100%;
+
+			input[type=email] {
+				flex-basis: auto;
+			}
+		}
+	}
+}
+
 
 
 // home_text [START]

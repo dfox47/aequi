@@ -179,6 +179,8 @@
         ],
         "settings": {
           "main_linklist": "main-menu",
+          "footer_title": "<p>40% Off: Just For Joining<\/p>",
+          "footer_desc": "<p>Sign-up for our online publication, receive a 40% discount on any product you pre-order, and be part of the movement.<\/p>",
           "show_payment_icons": false,
           "color_footer_bg": "#272c3e",
           "color_footer_text": "#ffffff",
@@ -259,6 +261,14 @@
           "title": "Special offer for you",
           "subtitle": "As we prepare our first designs for launch, we're making a special offer.",
           "desc": "<p>Join our <strong>Early Access List<\/strong> to stay updated, receive <strong>40% Off<\/strong> on your first order and be engaged with a group of cannabis aesthetes seeking unique experiences.<\/p>"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": false,
+          "blog_show_date": true
         }
       }
     },

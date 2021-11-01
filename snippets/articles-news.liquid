@@ -1,0 +1,41 @@
+<div class="home_blog">
+	<div class="home_blog_wrap">
+		<h2>Read more</h2>
+
+		{%- assign blog = blogs.News -%}
+
+		{% unless blog.articles_count == 0 %}
+			<ul class="home_blog_list">
+				{% for article in blog.articles limit: 4 %}
+					<li class="home_blog_list__item">
+						{%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+						<a href="{{ article.url }}" class="home_blog__link">
+							{% if article.image %}<span class="home_blog_bg" style="background-image: url({{ article.image | img_url: '500x' }})"></span>{% endif %}
+
+							<span class="home_blog_content">
+							<span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
+
+							<div class="home_blog__title">{{ article.title }}</div>
+
+							<span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+
+							<span class="home_blog__desc">
+								{% if article.excerpt.size > 0 %}
+									{{ article.excerpt }}
+								{% else %}
+									{{ article.content | strip_html | truncate: 100 }}
+								{% endif %}
+							</span>
+
+							<span class="home_blog__readmore">{{ 'blogs.article.view' | t }}</span>
+						</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endunless %}
+	</div>
+</div>
+
+
