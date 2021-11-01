@@ -95,12 +95,11 @@ footer .input-group input {
 @media screen and (max-width: 1023px) {
 
     .site_nav__link {
-       
-        display: block;
+             display: block;
        
     }
 
-    .site_nav__item::after {      
+    .site_nav__item:after {      
     background-color: #fff;
     bottom: -4px;
     content: "";
