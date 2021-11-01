@@ -111,6 +111,18 @@ footer .input-group input {
             width: 70%;
             display: block;
     }
+    .site_nav__item:first-child:after {      
+    
+        margin-top: 16px;
+            background-color: #fff;
+            content: "";
+            height: 1px;
+            left: 17%;
+            position: absolute;
+            transition: all .3s ease-in-out;
+            width: 70%;
+            display: block;
+    }
 
     .mobile_content{
         display: block;
