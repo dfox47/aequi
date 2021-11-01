@@ -142,10 +142,9 @@ footer .input-group input {
     margin: 0 0 0 60px;
 }
 
-.mobile_content.social_links {
+.mobile_content .social_links {
     justify-content: center;
  }
-
 
  
 .mobile_content .social_link {
