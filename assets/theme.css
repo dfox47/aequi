@@ -99,7 +99,18 @@ footer .input-group input {
 
 .article_header{
 
-    background: #E0D8D3;
+    background: #e0d8d3;
+    text-align: center;
+}
+.article__date{
+
+    font-size: 15px;
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+}
+
+.article-grid{
+    display: grid;
+grid-template-columns: 50% 50%;
 }
 
 
