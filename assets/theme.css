@@ -138,7 +138,20 @@ footer .input-group input {
         flex-basis: auto;
        
     }
+.mobile_content .social_links__item {
+    margin: 0 0 0 60px;
+}
 
+.mobile_content.social_links {
+    justify-content: center;
+ }
+
+
+ 
+.mobile_content .social_link {
+ 
+    width: 27px;
+}
     footer .site_nav {
         flex-direction: column;
         
