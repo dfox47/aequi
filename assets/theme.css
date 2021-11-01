@@ -188,13 +188,15 @@ footer .input-group input {
 .mobile_content  .email_p {
     padding-top: 20px;
     text-align: center;
-    /* display: block; */
-    font-size: 18px;
-    display: block;
-    padding: 10px 40px;
-    background: url(i_email.svg) 88px 9px no-repeat;
+    display: inline;
+    padding: 10px 40px; 
     text-transform: initial;
     font-weight: 400;
+}
+.mobile_content .email{
+
+    display: flex;
+    justify-content: center;
 }
 .mobile_content .copiright {
     padding-top: 30px;
