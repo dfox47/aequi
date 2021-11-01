@@ -96,7 +96,9 @@ footer .input-group input {
     display:none;
 }
 
+.article_tags__item:before{
 
+    content: '#';}
 .article_header{
     padding: 270px 0 22px 0;
     background: #e0d8d3;
