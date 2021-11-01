@@ -290,14 +290,13 @@ footer .input-group input {
     }
     .home_info:before {
        
-      
-        background-color: #8a8989;
+        background-color: #ffffff;
         content: "";
         height: 1px;
-        left: 17%;
+        left: 10%;
         position: absolute;
         transition: all .3s ease-in-out;
-        width: 70%;
+        width: 80%;
         display: block;
        
     }
