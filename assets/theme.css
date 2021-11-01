@@ -178,7 +178,7 @@ footer .input-group input {
 .mobile_content form {
     padding: 0 15px;
 }
-.mobile_content button [type='submit']{
+.mobile_content button [type="submit"]{
     font-family: "Josefin Sans", sans-serif;
     
     background: #E09A8E;
