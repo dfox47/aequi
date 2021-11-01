@@ -94,6 +94,17 @@ footer .input-group input {
 
 @media screen and (max-width: 1023px) {
 
+    .site_nav__item::after {
+        content: "";
+        display: block;
+        width: calc(50% - 6px);
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 14px;
+    }
+
     .mobile_content{
         display: block;
     }
