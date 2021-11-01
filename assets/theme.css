@@ -265,5 +265,23 @@ footer .input-group input {
         width:100%;
     }
 
+    .home_info_list {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .home_advantages {
+        padding: 135px 0 51px;
+    }
+
+    .home_info_list__item {
+       
+        padding: 18px  35px;
+       
+    }
+
   }
 
