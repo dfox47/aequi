@@ -91,6 +91,8 @@ footer .input-group input {
   border-radius: 6px;   
 }
 
+
+
 .home_blog__tags{
 
     display:none;
@@ -153,6 +155,45 @@ footer .input-group input {
 .page-container .return-link-wrapper{
     display: none;
 }
+
+
+
+
+.quote {
+    color: #273734;
+    font-size: 18px;
+    padding: 200px 0 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.quote:after {
+    content: "'";
+    font-size: 595px;
+    font-weight: 700;
+    left: 50%;
+    line-height: 1;
+    opacity: .1;
+    position: absolute;
+    top: -130px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.quote:before {
+    content: "'";
+    font-size: 595px;
+    font-weight: 700;
+    left: 50%;
+    line-height: 1;
+    opacity: .1;
+    position: absolute;
+    top: -130px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
 .under_article_social{
 
     padding: 70px 0 0px 0;
