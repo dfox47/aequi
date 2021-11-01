@@ -307,16 +307,17 @@ footer .input-group input {
     }
 
     .home_offer__title::after {
-        content: "40%";
-        font-size: 268px;
-        font-weight: 700;
-        left: 53%;
-        line-height: 1;
-        opacity: .1;
-        position: absolute;
-        top: -21px;
-        transform: translateX(-50%);
-        z-index: 1;
+      
+    content: "40%";
+    font-size: 225px;
+    font-weight: 700;
+    left: 53%;
+    line-height: 1;
+    opacity: .1;
+    position: absolute;
+    top: -32px;
+    transform: translateX(-50%);
+    z-index: 1;
     }
 
     .home_offer__title {
