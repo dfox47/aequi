@@ -150,7 +150,9 @@ footer .input-group input {
     text-align: center;
     display: block;
 }
-
+.page-container .return-link-wrapper{
+    display: none;
+}
 .under_article_social{
 
     padding: 70px 0 0px 0;
