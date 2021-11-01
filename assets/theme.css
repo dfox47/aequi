@@ -104,6 +104,10 @@ footer .input-group input {
     background: #e0d8d3;
     text-align: center;
 }
+
+.article_tags__item{
+    text-transform: uppercase;
+}
 .article__date{
 
     font-size: 15px;
