@@ -98,7 +98,7 @@ footer .input-group input {
 
 
 .article_header{
-
+    padding: 270px 0 22px 0;
     background: #e0d8d3;
     text-align: center;
 }
@@ -106,6 +106,13 @@ footer .input-group input {
 
     font-size: 15px;
     font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+}
+
+.article__title {
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+    margin-bottom: 11px;
+    font-size: 33px;
+    text-transform: initial;
 }
 
 .article-grid{
