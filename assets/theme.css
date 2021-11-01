@@ -112,15 +112,15 @@ footer .input-group input {
 }
 
 .article .btn--share .icon-twitter {
-    fill: #000;
+    fill:  #273734;
 }
 
 .article .btn--share .icon-pinterest {
-    fill: #000;
+    fill: #273734;
 }
 
 .article .btn--share .icon-facebook {
-    fill: #000;
+    fill: #273734;
 }
 .article .social-sharing {
     justify-content: center;
@@ -134,7 +134,22 @@ footer .input-group input {
 .template-article .main-content {
     padding-top: 0px;
 }
+.wrap5{
 
+    
+    max-width: 846px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.article_content img{
+    
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
 
 .article_header{
     padding: 270px 15% 220px 15%;

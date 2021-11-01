@@ -34,7 +34,11 @@
 		{{ article.content }}
 	</div>
 </div>
-
+{% if section.settings.show_share_buttons %}
+			<div class="article__social">
+				{% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+			</div>
+		{% endif %}
 {% render 'articles-news' %}
 
 
