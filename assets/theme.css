@@ -181,6 +181,8 @@ footer .input-group input {
     top: -35px;
     transform: translateX(-50%);
     z-index: -1;
+    color: #8B543B;
+}
 }
 
 .quote:before {
@@ -196,17 +198,21 @@ footer .input-group input {
     top: -390px;
     transform: translateX(-50%);
     z-index: -1;
+    color: #8B543B;
+}
 }
 .author_quote{
 
     font-family: Josefin Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 100;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: center;
-color: #272C3E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #272c3e;
+    padding-top: 46px;
+    text-transform: uppercase
 
 
 }
@@ -214,12 +220,16 @@ color: #272C3E;
 .quote-text{
 
     font-family: Playfair Display;
-font-size: 33px;
-font-style: normal;
-font-weight: 400;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: center;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #8B543B;
+    width: 60%;
+    margin: 0 auto;
+    padding: 18px 0 34px 0;
 
 }
 .under_article_social{
