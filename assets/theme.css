@@ -136,9 +136,15 @@ footer .input-group input {
 
 
 .article_header{
-    padding: 270px 0 220px 0;
+    padding: 270px 15% 220px 15%;
     background: #e0d8d3;
     text-align: center;
+}
+
+.article__img{
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .article_tags__item{
