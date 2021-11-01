@@ -151,6 +151,11 @@ footer .input-group input {
     display: block;
 }
 
+.under_article_social{
+
+    padding: 70px 0 0px 0;
+}
+
 .article_header{
     padding: 270px 15% 220px 15%;
     background: #e0d8d3;
