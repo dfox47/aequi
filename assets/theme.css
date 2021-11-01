@@ -185,6 +185,28 @@ footer .input-group input {
     border-radius: 6px;
 
 }
+.mobile_content  .email_p {
+    padding-top: 20px;
+    text-align: center;
+    /* display: block; */
+    font-size: 18px;
+    display: block;
+    padding: 10px 40px;
+    background: url(i_email.svg) 88px 9px no-repeat;
+    text-transform: initial;
+    font-weight: 400;
+}
+.mobile_content .copiright {
+    padding-top: 30px;
+    margin-bottom: 90px;
+    width: 87%;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 auto 0 auto;
+    text-transform: initial;
+    text-align: center;
+    padding-bottom: 90px;
+}
 .mobile_content button [type='email']{
      
     border-radius: 6px;
