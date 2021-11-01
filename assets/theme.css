@@ -245,6 +245,14 @@ footer .input-group input {
     padding: 70px 0 0px 0;
 }
 
+.input-group-quote{
+
+    margin: 0 auto 110px auto;
+    width: 66%;
+}
+
+
+
 .article_header{
     padding: 270px 15% 220px 15%;
     background: #e0d8d3;
