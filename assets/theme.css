@@ -95,6 +95,15 @@ footer .input-group input {
 
     display:none;
 }
+
+
+.article_header{
+
+    background: #E0D8D3;
+}
+
+
+
 @media screen and (max-width: 1023px) {
 
   
@@ -174,11 +183,8 @@ footer .input-group input {
  }
 
  .mobile_content .input-group__field {
-    border-radius: 2px 0 0 2px;
-    flex-basis: auto;
-    flex-grow: 9999;
-    margin-bottom: 1rem;
-    text-align: left;
+    border-radius:6px;
+     
 }
 .mobile_content form {
     padding: 0 15px;
