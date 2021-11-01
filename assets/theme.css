@@ -169,29 +169,31 @@ footer .input-group input {
 }
 
 .quote:after {
-    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+   
+    font-family: 'Playfair Display';
     content: "“";
     font-size: 595px;
     font-weight: 700;
-    left: 50%;
+    left: 32%;
     line-height: 1;
     opacity: .1;
     position: absolute;
-    top: -130px;
+    top: -35px;
     transform: translateX(-50%);
     z-index: -1;
 }
 
 .quote:before {
-    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+   
+    font-family: 'Playfair Display';
     content: "„";
     font-size: 595px;
     font-weight: 700;
-    left: 50%;
+    left: 66%;
     line-height: 1;
     opacity: .1;
     position: absolute;
-    top: -130px;
+    top: -390px;
     transform: translateX(-50%);
     z-index: -1;
 }
