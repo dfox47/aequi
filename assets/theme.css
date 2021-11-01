@@ -111,7 +111,7 @@ footer .input-group input {
             width: 70%;
             display: block;
     }
-    .site_nav__item:first-child:after {      
+    .site_nav__item:first-child:before {      
     
         margin-top: 16px;
             background-color: #fff;
