@@ -16,14 +16,14 @@
 				{% endfor %}
 			</ul>
 		{% endif %}
-
+<div class="article">
 		{% if section.settings.show_share_buttons %}
 			<div class="article__social">
 				{% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
 			</div>
 		{% endif %}
 	   </div>
-
+</div>
 	   <div class="article__img" style="background-image: url({{ article.image.src | img_url: '500x' }})" title="{{ article.image.src }}"></div>
     </div>    
 
