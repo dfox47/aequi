@@ -254,5 +254,16 @@ footer .input-group input {
         z-index: 2;
       }
 
+      .home_advantages_img {
+        padding-right: 62px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .home_advantages_img img{
+
+        width:100%;
+    }
+
   }
 
