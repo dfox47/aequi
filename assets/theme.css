@@ -169,6 +169,7 @@ footer .input-group input {
 }
 
 .quote:after {
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
     content: "»";
     font-size: 595px;
     font-weight: 700;
@@ -182,6 +183,7 @@ footer .input-group input {
 }
 
 .quote:before {
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
     content: "«";
     font-size: 595px;
     font-weight: 700;
