@@ -277,10 +277,12 @@ footer .input-group input {
         padding: 135px 0 51px;
     }
 
-    .home_info_list__item {
-       
-        padding: 18px  35px;
-       
+    .home_info_list {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 40px;
     }
 
   }
