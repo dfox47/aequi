@@ -217,6 +217,14 @@ footer .input-group input {
 
 }
 
+.newsletter__submit-red {
+
+    font-family: "Josefin Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+    background: #8b543b;
+}
+
 .quote-text{
 
     font-family: Playfair Display;
