@@ -130,9 +130,13 @@ footer .input-group input {
     content: '#';
 }
 
+.template-article .main-content {
+    padding-top: 0px;
+}
+
 
 .article_header{
-    padding: 270px 0 22px 0;
+    padding: 270px 0 220px 0;
     background: #e0d8d3;
     text-align: center;
 }
