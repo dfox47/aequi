@@ -1,5 +1,6 @@
 <div class="article">
-	<div class="article_header">
+	<div class="article-grid">
+	   <div class="article_header">
 		{% if section.settings.blog_show_date %}
 			<span class="article__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
 		{% endif %}
@@ -21,9 +22,11 @@
 				{% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
 			</div>
 		{% endif %}
-	</div>
+	   </div>
 
-	<div class="article__img" style="background-image: url({{ article.image.src | img_url: '500x' }})" title="{{ article.image.src }}"></div>
+	   <div class="article__img" style="background-image: url({{ article.image.src | img_url: '500x' }})" title="{{ article.image.src }}"></div>
+    </div>    
+
 </div>
 
 <div class="article_content">
