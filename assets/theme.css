@@ -113,15 +113,16 @@ footer .input-group input {
     }
     .site_nav__item:first-child:before {      
     
-        margin-top: 16px;
-            background-color: #fff;
-            content: "";
-            height: 1px;
-            left: 17%;
-            position: absolute;
-            transition: all .3s ease-in-out;
-            width: 70%;
-            display: block;
+       
+    top: 36px;
+    background-color: #8a8989;
+        content: "";
+        height: 1px;
+        left: 17%;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        width: 70%;
+        display: block;
     }
 
     .mobile_content{
@@ -161,6 +162,12 @@ footer .input-group input {
 
     .site_nav__item {
         margin: 20px 48px;
+    }
+
+    .header_menu {
+       
+        top: 78%;
+        
     }
 
   }
