@@ -266,24 +266,18 @@ footer .input-group input {
     }
 
     .home_info_list {
-        padding-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-bottom: 30px;
-    }
-
-    .home_advantages {
-        padding: 135px 0 51px;
-    }
-
-    .home_info_list {
         padding-top: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 40px;
     }
+
+    .home_advantages {
+        padding: 135px 0 51px;
+    }
+
+ 
 
   }
 
