@@ -91,3 +91,15 @@
         border:none;
     }
 
+    .article__social .btn--share .icon-facebook {
+        fill: #000;
+    }
+
+    .article__social .btn--share .icon-twitter {
+        fill: #000;
+    }
+
+    .article__social .btn--share .icon-pinterest {
+        fill: #000;
+    }
+
