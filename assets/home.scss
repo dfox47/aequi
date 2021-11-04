@@ -34,6 +34,10 @@
 		letter-spacing: .02em;
 		line-height: 1.1;
 	}
+
+	@media #{$tablet} {
+		padding: 135px 0 51px;
+	}
 }
 
 .home_advantages_content {
@@ -68,6 +72,12 @@
 	@media #{$tablet} {
 		display: block;
 		margin: 0 auto;
+		padding-right: 62px;
+		width: 100%;
+
+		img {
+			width:100%;
+		}
 	}
 }
 
@@ -148,7 +158,10 @@
 		z-index: 3;
 	}
 
-	&__tags {}
+	&__tags {
+
+		display:none;
+	}
 
 	&__title {
 		margin: 0 0 1em;
@@ -342,6 +355,21 @@
 	p {
 		color: #fff;
 	}
+
+	@media #{$tablet} {
+		border-top: 0 solid #fff;
+
+		&::before {
+			background-color: #fff;
+			content: "";
+			display: block;
+			height: 1px;
+			left: 10%;
+			position: absolute;
+			transition: $transition;
+			width: 80%;
+		}
+	}
 }
 
 .home_info_list {
@@ -374,6 +402,18 @@
 			top: 50%;
 			transform: translateY(-50%);
 			width: 25px;
+		}
+	}
+
+	@media #{$tablet} {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 40px;
+		padding-top: 40px;
+
+		&__item {
+			padding: 18px  35px;
 		}
 	}
 }
@@ -431,6 +471,25 @@
 			z-index: -1;
 		}
 	}
+
+	@media #{$tablet} {
+		&__title {
+			padding: 100px  0 0;
+
+			&::after {
+				content: "40%";
+				font-size: 225px;
+				font-weight: 700;
+				left: 53%;
+				line-height: 1;
+				opacity: .1;
+				position: absolute;
+				top: -32px;
+				transform: translateX(-50%);
+				z-index: 1;
+			}
+		}
+	}
 }
 
 .home_offer_wrap {
@@ -438,11 +497,13 @@
 		margin: 0 auto 110px;
 		width: 40%;
 
-		.newsletter__submit {
-			background-color: #272C3E;
-			border-radius:6px;
-			font-family: $font_josefin;
-			font-size: 15px;
+		.newsletter {
+			&__submit {
+				background-color: #272c3e;
+				border-radius: 6px;
+				font-family: $font_josefin;
+				font-size: 15px;
+			}
 		}
 
 		input[type=email] {
@@ -452,6 +513,18 @@
 		}
 
 		@media #{$tablet} {
+			flex-direction: column;
+			padding: 0 15px;
+			width: 100%;
+
+			input[type=email] {
+				flex-basis: auto;
+			}
+		}
+	}
+
+	@media #{$tablet} {
+		.input-group {
 			flex-direction: column;
 			padding: 0 15px;
 			width: 100%;
@@ -519,5 +592,7 @@
 	}
 }
 // home_text [END]
+
+
 
 
