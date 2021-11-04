@@ -292,11 +292,22 @@ grid-template-columns: 50% 50%;
     
     font-family: 'Josefin Sans';
     display: inline;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    color: #908E8E;
 
 }
 
+.template-blog .main-content {
+    background: #E0D8D3;
+    padding-top: 55px;
+}
+.blog_tags {
+    color: #273734;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 41px;
+}
 
 @media screen and (max-width: 1023px) {
 
