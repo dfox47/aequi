@@ -4,40 +4,39 @@
   <header class="section-header text-center">
     <div class="breadcrumbs">
       <p>Home</p>/FAQ
-      <ul class="article_tags">
-				
-					<li class="article_tags__item">
-              fitness
-					</li>
-          <li class="article_tags__item">
-           lifestyle
-        </li>
-        <li class="article_tags__item">
-          health
-      </li>
-      <li class="article_tags__item">
-        travel
-    </li>
-    <li class="article_tags__item">
-      story
-  </li>
-  <li class="article_tags__item">
-    relationship
-</li>
-<li class="article_tags__item">
-  experience
-</li>
-<li class="article_tags__item">
-  howto
-</li>
-<li class="article_tags__item">
-  accessories
-</li>
-		
-			</ul>
+
     </div>
     <h1>{{ page_title }}</h1>
     {% if blog.tags.size > 0 %}
+    <ul class="article_tags">
+      <li class="article_tags__item">
+          fitness
+      </li>
+      <li class="article_tags__item">
+          lifestyle
+      </li>
+       <li class="article_tags__item">
+         health
+       </li>
+       <li class="article_tags__item">
+          travel
+       </li>
+       <li class="article_tags__item">
+           story
+       </li>
+        <li class="article_tags__item">
+            relationship
+        </li>
+        <li class="article_tags__item">
+            experience
+      </li>
+      <li class="article_tags__item">
+        howto
+      </li>
+      <li class="article_tags__item">
+        accessories
+      </li>
+  </ul>
       <div class="blog-filter">
         <label class="blog-filter__label select-label" for="BlogTagFilter">{{ 'collections.filters.title_tags' | t }}</label>
         <div class="select-group">
