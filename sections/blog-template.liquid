@@ -111,87 +111,57 @@
 {% else %}
   <ul class="blog-list-view home_blog_list">
     {% for article in blog.articles %}
-      <li class="border-top home_blog_list__item">
-        <div class="page-width">
-          <div class="grid">
-            <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-              <div class="article-listing">
-                <h2 class="article__title h3"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-                {% if section.settings.blog_show_author %}
-                  <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-                {% endif %}
+    <li class="home_blog_list__item">
+      {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-                {% if section.settings.blog_show_date %}
-                  <span class="article__date">
-                    {{ article.published_at | time_tag: format: 'date' }}
-                  </span>
-                {% endif %}
+      <a href="{{ article.url }}" class="home_blog__link">
+        {% if article.image %}<span class="home_blog_bg" style="background-image: url({{ article.image | img_url: '500x' }})"></span>{% endif %}
 
-                {% if article.image %}
-                  {% capture img_id %}ArticleImage-{{ article.image.id }}{% endcapture %}
-                  {% capture img_wrapper_id %}ArticleImageWrapper-{{ article.image.id }}{% endcapture %}
-                  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        <span class="home_blog_content">
+          {% if section.settings.blog_show_date %}
+            <span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
+          {% endif %}
 
-                  {% include 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
+          <div class="home_blog__title">{{ article.title }}</div>
 
-                  <div id="{{ img_wrapper_id }}" class="article__list-image-wrapper js">
-                    <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" class="article__list-image-container" data-image-loading-animation>
-                      <img id="{{ img_id }}"
-                           class="article__list-image lazyload"
-                           data-src="{{ img_url }}"
-                           data-widths="[180, 360, 540, 720, 905, 1090, 1296, 1512, 1728, 2048]"
-                           data-aspectratio="{{ article.image.aspect_ratio }}"
-                           data-sizes="auto"
-                           alt="">
-                    </a>
-                  </div>
+          {% if section.settings.blog_show_author %}
+            <span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+          {% endif %}
 
-                  <noscript>
-                    <p>
-                      <a href="{{ article.url }}">
-                        {{ article | img_url: '455x300', scale: 2 | img_tag: article.title }}
-                      </a>
-                    </p>
-                  </noscript>
-                {% endif %}
+          <span class="home_blog__desc">
+            {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+            {% else %}
+              {{ article.content | strip_html | truncate: 100 }}
+            {% endif %}
+          </span>
 
-                <div class="rte">
-                  {% if article.excerpt.size > 0 %}
-                    {{ article.excerpt }}
-                  {% else %}
-                    {{ article.content | strip_html | truncate: 150 }}
-                  {% endif %}
-                </div>
+          <span class="home_blog__readmore">{{ 'blogs.article.view' | t }}</span>
+        </span>
+      </a>
 
-                {% if article.tags.size > 0 %}
-                  <div class="article__tags article__tags--list rte">
-                    {{ 'blogs.article.posted_in' | t }}
-                    {% for tag in article.tags %}
-                      <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-                    {% endfor %}
-                  </div>
-                {% endif %}
-
-                <ul class="list--inline article__meta-buttons">
-                  <li>
-                    <a href="{{ article.url }}" class="btn btn--tertiary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
-                      {{ 'blogs.article.read_more' | t }}
-                    </a>
-                  </li>
-
-                  {% if blog.comments_enabled? and article.comments_count > 0 %}
-                    <li>
-                      <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
-                        {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
-                      </a>
-                    </li>
-                  {% endif %}
-                </ul>
-              </div>
-            </div>
+      <div class="home_blog__meta">
+        {% if article.tags.size > 0 %}
+          <div class="home_blog__tags">
+            <ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
+              {% for tag in article.tags %}
+                <li>
+                  <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__grid-tag">{{ tag }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
-        </div>
-      </li>
+        {% endif %}
+
+        {% if blog.comments_enabled? and article.comments_count > 0 %}
+          <div class="home_blog__comments">
+            <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
+              {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </li>
     {% endfor %}
   </ul>
 {% endif %}
