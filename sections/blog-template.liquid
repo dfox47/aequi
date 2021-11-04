@@ -10,32 +10,11 @@
     {% if blog.tags.size > 0 %}
     <ul class="article_tags">
       <li class="article_tags__item">
-          fitness
+        {% for tag in blog.all_tags %}
+        {{ tag }}
+         {% endfor %}
       </li>
-      <li class="article_tags__item">
-          lifestyle
-      </li>
-       <li class="article_tags__item">
-         health
-       </li>
-       <li class="article_tags__item">
-          travel
-       </li>
-       <li class="article_tags__item">
-           story
-       </li>
-        <li class="article_tags__item">
-            relationship
-        </li>
-        <li class="article_tags__item">
-            experience
-      </li>
-      <li class="article_tags__item">
-        howto
-      </li>
-      <li class="article_tags__item">
-        accessories
-      </li>
+     
   </ul>
   <div class="blogtags2">
     {% for tag in blog.all_tags %}
