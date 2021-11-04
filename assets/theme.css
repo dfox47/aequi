@@ -12,6 +12,18 @@
     width: auto;
 }
 
+.site_nav__item:after {
+    background-color: #8a8989;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 17%;
+    position: absolute;
+    top: 36px;
+    transition: all .3s ease-in-out;
+    width: 70%;
+}
+
 .article__img{
 
     background-size: cover;
