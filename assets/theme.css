@@ -289,7 +289,12 @@ background-position: center;
 grid-template-columns: 50% 50%;
 }
 .ira_bradcrumbs p {
-    display:inline;
+    
+    font-family: 'Josefin Sans';
+    display: inline;
+    font-size: 10px;
+    font-weight: 400;
+
 }
 
 
