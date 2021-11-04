@@ -288,7 +288,7 @@ background-position: center;
     display: grid;
 grid-template-columns: 50% 50%;
 }
-.ira_bradcrumbs p {
+.blog_bradcrumbs p {
     
     font-family: 'Josefin Sans';
     display: inline;
@@ -312,6 +312,11 @@ grid-template-columns: 50% 50%;
    
     width: 50%;
     margin: 0 auto;
+}
+
+.blog_bradcrumbs{
+
+    margin-bottom: 24px;
 }
 
 .template-blog input[type=email]{
