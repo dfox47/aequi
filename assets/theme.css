@@ -76,3 +76,9 @@
     width: 50%;
     }
 
+    .article__social{
+
+        display: flex;
+    justify-content: center;
+    }
+
