@@ -122,6 +122,22 @@
     }
 
     @media only screen and (max-width: 1023px){
+
+        .site_nav__item:after {
+            background-color: #8a8989;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: all .3s ease-in-out;
+            width: 100%;
+            margin-top: 17px;
+        }
+        
+        
+
+
         .article-grid {
        
             grid-template-columns: 1fr;
