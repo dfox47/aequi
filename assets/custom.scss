@@ -54,27 +54,12 @@ html {
 
 
 
-
-
-.author_quote {
-	color: #272c3e;
-	font-family: $font_josefin;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 100;
-	letter-spacing: 0;
-	line-height: 21px;
-	padding-top: 46px;
-	text-align: center;
-	text-transform: uppercase
-}
-
 .blog {
 	background: $c_blog_bg;
 	display: flex;
 
 	a {
-		background: $c_main;
+		background: #273734;
 		display: block;
 		font-family: $font_josefin;
 		font-weight: 100;
@@ -106,36 +91,6 @@ html {
 		font-family: $font_josefin;
 		text-transform: uppercase;
 		font-weight: 100;
-	}
-}
-
-.blog_advertising {
-	background: #273734;
-	margin: 86px 0;
-	padding: 140px 0;
-}
-
-.blog_bradcrumbs {
-	margin: 0 0 24px;
-
-	p {
-		color: #908e8e;
-		display: inline;
-		font-family: $font_josefin;
-		font-size: 12px;
-		font-weight: 400;
-	}
-}
-
-.blog_tags {
-	color: #273734;
-	margin: 0 auto;
-	padding-bottom: 41px;
-	width: 70%;
-
-	li {
-		font-weight: 400;
-		margin-right: 7px;
 	}
 }
 
@@ -227,10 +182,6 @@ html {
 	max-width: 570px;
 }
 
-.dflex {
-	display: flex;
-}
-
 .email_p {
 	background: url(i_email.svg) 9px 8px no-repeat scroll transparent;
 	display: inline;
@@ -310,25 +261,56 @@ html {
 	}
 }
 
-.first_item {
-	width: 33.3333%;
+.footer {
+	margin: 130px 0 0;
+
+	p {
+		color:#fff;
+	}
+
+	.email {
+		margin: 20px 0 40px;
+	}
+
+	.newsletter {
+		&__submit {
+			background: #E09A8E;
+			border-radius: 6px;
+			font-family: $font_josefin;
+			font-size: 15px;
+		}
+	}
+
+	.site-footer {
+		&__item {
+			margin-bottom: 10px;
+		}
+
+		&__newsletter {
+			width: 100%;
+		}
+	}
+}
+
+.footer_desc {
+	p {
+		width: 80%;
+		font-size: 18px;
+		font-weight: 100;
+		margin: 0 auto;
+	}
+}
+
+.footer_title {
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		margin-top: 50px;
+	}
 }
 
 .input-group {
 	border-radius: 6px;
-}
-
-.input-group-quote {
-	margin: 0 auto 110px auto;
-}
-
-.ira_bradcrumbs {
-	p {
-		display: inline;
-		font-family: $font_josefin;
-		font-size: 10px;
-		font-weight: 400;
-	}
 }
 
 .middle_items_wrap {
@@ -349,171 +331,10 @@ html {
 
 	@media #{$tablet} {
 		display: block;
-
-		button {
-			[type='email'] {
-				border-radius: 6px;
-			}
-		}
-
-		form {
-			padding: 0 15px;
-		}
-
-		p {
-			color: #fff;
-		}
-
-		.copiright {
-			font-size: 18px;
-			font-weight: 100;
-			margin: 0 auto;
-			padding-bottom: 57px;
-			padding-top: 14px;
-			text-align: center;
-			text-transform: initial;
-			width: 87%;
-		}
-
-		.email_p {
-			display: inline;
-			font-weight: 400;
-			padding: 10px 40px;
-			text-align: center;
-			text-transform: initial;
-		}
-
-		.email {
-
-			display: flex;
-			justify-content: center;
-		}
-
-		.footer_desc {
-			p {
-				font-size: 18px;
-				font-weight: 100;
-				margin: 5px auto 25px auto;
-				text-align: center;
-				text-transform: initial;
-				width: 100%;
-			}
-		}
-
-		.footer_title {
-			p {
-				font-size: 18px;
-				font-weight: 600;
-				margin-top: 60px;
-				text-align: center;
-				text-transform: capitalize;
-			}
-		}
-
-		.header_social {
-			display: block;
-		}
-
-		.input-group {
-			&__field {
-				border-radius: 6px;
-			}
-		}
-
-		.newsletter {
-			&__submit {
-				background: #e09a8e;
-				border-radius: 6px;
-				font-family: $font_josefin;
-			}
-		}
-
-		.social_link {
-			width: 27px;
-		}
-
-		.social_links {
-			justify-content: center;
-			margin-top: 30px;
-
-			&__item {
-				margin: 0 0 0 60px;
-
-				&:first-child {
-					margin: 0;
-				}
-			}
-		}
 	}
 }
 
-.newsletter {
-	&__submit-red {
-		background-color: #8b543b;
-		border-radius: 6px;
-		font-family: $font_josefin;
-		font-size: 15px;
-	}
-}
 
-.page-container {
-	.return-link-wrapper {
-		display: none;
-	}
-}
-
-.quote {
-	color: $c_main;
-	font-size: 18px;
-	padding: 200px 0 0;
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
-
-	&::after {
-		font-family: $font_playfair;
-		content: "“";
-		font-size: 595px;
-		font-weight: 700;
-		left: 32%;
-		line-height: 1;
-		opacity: .1;
-		position: absolute;
-		top: -35px;
-		transform: translateX(-50%);
-		z-index: -1;
-		color: #8B543B;
-	}
-
-	&::before {
-		color: #8B543B;
-		content: "„";
-		font-family: $font_playfair;
-		font-size: 595px;
-		font-weight: 700;
-		left: 66%;
-		line-height: 1;
-		opacity: .1;
-		position: absolute;
-		top: -390px;
-		transform: translateX(-50%);
-		z-index: -1;
-	}
-}
-
-.quote-text {
-	color: #8B543B;
-	font-family: $font_playfair;
-	font-size: 33px;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 45px;
-	margin: 0 auto;
-	padding: 18px 0 34px;
-	text-align: center;
-	width: 60%;
-}
 
 .site-footer {
 	input {
@@ -546,6 +367,7 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
+
 
 	&__item {
 		margin: 0 48px;
@@ -591,42 +413,6 @@ html {
 			}
 		}
 	}
-
-	@media #{$tablet} {
-		&__item {
-			margin: 20px 48px;
-
-			&:first-child {
-				&::before {
-					background-color: #8a8989;
-					content: "";
-					display: block;
-					height: 1px;
-					left: 17%;
-					position: absolute;
-					top: 36px;
-					transition: $transition;
-					width: 70%;
-				}
-			}
-		}
-
-		&__link {
-			display: block;
-
-			&::after {
-				background-color: #8a8989;
-				content: "";
-				display: block;
-				height: 1px;
-				left: 17%;
-				margin-top: 16px;
-				position: absolute;
-				transition: $transition;
-				width: 70%;
-			}
-		}
-	}
 }
 
 .social_link {
@@ -655,46 +441,11 @@ html {
 	}
 }
 
-.template-article {
-	.main-content {
-		padding-top: 0px;
-	}
-}
-
-.template-blog {
-	button[type=submit] {
-		font-family: $font_josefin;
-		background: #e09a8e;
-		border-radius: 6px;
-	}
-
-	form {
-		margin: 0 auto;
-		width: 50%;
-	}
-
-	input[type=email] {
-		border-radius: 6px;
-	}
-
-	.main-content {
-		background: #E0D8D3;
-		margin-bottom: 80px;
-		padding-top: 55px;
-	}
-}
-
-.thourth_item {
-	width: 33.3333%;
-}
-
 .text_block {
 	background: #fff;
 }
 
-.under_article_social {
-	padding: 70px 0 0;
-}
+
 
 .wrap {
 	margin: 0 auto;
@@ -731,9 +482,15 @@ html {
 	width: 100%;
 }
 
-.wrap6 {
-	margin: 0 auto;
-	width: 100%;
+
+
+// TODO move to scss
+.thourth_item {
+	width: 33.3333%;
+}
+
+.first_item {
+	width: 33.3333%;
 }
 
 

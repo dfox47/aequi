@@ -126,6 +126,8 @@
 	}
 }
 
+
+
 .hero_img {
 	align-items: center;
 	background-position: center center;
@@ -219,8 +221,7 @@
 	}
 
 	@media #{$tablet} {
-		min-height: 60vh;
-		z-index: 2;
+		min-height: calc(60vh);
 	}
 }
 
