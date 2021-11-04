@@ -314,6 +314,11 @@ grid-template-columns: 50% 50%;
     margin: 0 auto;
 }
 
+.blog_tags li{
+    font-weight: 400;
+    margin-right: 7px;
+}
+
 .blog_bradcrumbs{
 
     margin-bottom: 24px;
