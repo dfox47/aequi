@@ -49,3 +49,9 @@
         width: 100%;
     }
 
+    .template-blog .input-group__btn {
+        display: block;
+        flex-grow: 1;
+        width: 100%;
+    }
+
