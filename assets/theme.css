@@ -330,6 +330,11 @@ grid-template-columns: 50% 50%;
     width: 100%;
 }
 
+.template-blog .blog_advertising  form {
+    width: 100%;
+   
+}
+
 .blog_advertising{
     
     padding: 140px 0;
