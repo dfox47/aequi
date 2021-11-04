@@ -29,3 +29,23 @@
     align-items: flex-end;
     }
 
+    .offer_text{
+    color: #fff;
+    font-family: 'Playfair Display';
+    font-size: 33px;
+    text-align: left;
+    }
+
+    .calling_text{
+    font-family: 'Josefin Sans';
+    color: #fff;
+    padding: 25px 0;
+    font-size: 19px;
+    line-height: 20px;
+    }
+
+    .template-blog .subscribe_blog form {
+    
+        width: 100%;
+    }
+
