@@ -121,8 +121,7 @@
         fill: #000;
     }
 
-    .social_links{
-
+    .social_links {
         display:flex;
     }
     .social_links li{
