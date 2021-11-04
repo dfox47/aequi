@@ -54,66 +54,7 @@ html {
 
 
 
-.article {
-	&__date {
-		color: $c_main;
-		font-family: $font_josefin;
-		font-size: 15px;
-	}
 
-	&__img {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	&__title {
-		color: $c_main;
-		font-family: $font_josefin;
-		font-size: 33px;
-		margin-bottom: 11px;
-		padding: 57px 0 25px 0;
-		text-transform: uppercase;
-	}
-
-	.social-sharing {
-		justify-content: center;
-		display: flex;
-
-		a {
-			border: none;
-		}
-
-		.btn--share {
-			.icon-twitter {
-				fill:  $c_main;
-			}
-
-			.icon-pinterest {
-				fill: $c_main;
-			}
-
-			.icon-facebook {
-				fill: $c_main;
-			}
-		}
-
-		.share-title {
-
-			display: none;
-		}
-	}
-}
-
-.article_content {
-	img {
-
-		max-width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		display: block;
-	}
-}
 
 .author_quote {
 	color: #272c3e;
