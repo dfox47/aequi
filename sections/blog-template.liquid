@@ -37,6 +37,12 @@
         accessories
       </li>
   </ul>
+  <div class="blogtags2">
+    {% for tag in blog.all_tags %}
+ {{ tag | handleize }}
+ {{ tag }}
+  {% endfor %}
+  </div>
       <div class="blog-filter">
         <label class="blog-filter__label select-label" for="BlogTagFilter">{{ 'collections.filters.title_tags' | t }}</label>
         <div class="select-group">
