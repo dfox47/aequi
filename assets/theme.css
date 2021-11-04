@@ -315,9 +315,22 @@ grid-template-columns: 50% 50%;
     margin: 0 auto;
 }
 
+.blog_advertising{
+    
+    padding: 140px 0;
+    background: #273734;
+    margin: 86px 0;
+}
+
 .blog_tags li{
     font-weight: 400;
     margin-right: 7px;
+}
+.wrap6{
+    width: 736px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .blog_bradcrumbs{
