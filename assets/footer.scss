@@ -26,6 +26,10 @@ footer {
 		}
 	}
 
+	.site-footer__newsletter {
+		width: 100%;
+	}
+
 	@media #{$tablet} {
 			.input-group {
 				flex-direction: column;
