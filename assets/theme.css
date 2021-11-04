@@ -22,3 +22,10 @@
     margin: 0 auto;
     }
 
+    .grid_box{
+     
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    }
+
