@@ -299,6 +299,7 @@ grid-template-columns: 50% 50%;
 }
 
 .template-blog .main-content {
+    margin-bottom: 80px;
     background: #E0D8D3;
     padding-top: 55px;
 }
