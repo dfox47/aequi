@@ -314,8 +314,20 @@ grid-template-columns: 50% 50%;
     width: 50%;
     margin: 0 auto;
 }
-.dflex{
-    display: flex;
+.grid_box{
+   
+   
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(1fr 1fr));
+    display: grid;
+    align-items: end;
+}
+
+.blog_advertising .input-group__btn {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .blog_advertising{
@@ -324,13 +336,29 @@ grid-template-columns: 50% 50%;
     background: #273734;
     margin: 86px 0;
 }
+.subscribe_blog .offer_text{
+    line-height: 46px;
+    text-align: left;
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 33px;
+}
+
+.subscribe_blog .calling_text{
+
+    padding: 28px 0;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    font-size: 19px;
+}
+
 
 .blog_tags li{
     font-weight: 400;
     margin-right: 7px;
 }
 .wrap6{
-    width: 736px;
+    max-width: 736px;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
