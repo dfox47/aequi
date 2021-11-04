@@ -123,6 +123,11 @@
 
     @media only screen and (max-width: 1023px){
 
+        .mobile_content .email {
+            margin-top: 20px;
+          
+        }
+
         .site_nav__item:after {
             background-color: #8a8989;
             content: "";
