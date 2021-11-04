@@ -82,3 +82,12 @@
     justify-content: center;
     }
 
+    .article__social .share-title{
+        display: none;
+    }
+
+    .article__social .social-sharing a{
+
+        border:none;
+    }
+
