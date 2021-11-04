@@ -9,11 +9,11 @@
     <h1>{{ page_title }}</h1>
     {% if blog.tags.size > 0 %}
     <ul class="article_tags">
-      <li class="article_tags__item">
+     
         {% for tag in blog.all_tags %}
-        {{ tag }}
+        <li class="article_tags__item">{{ tag }} </li>
          {% endfor %}
-      </li>
+     
      
   </ul>
   <div class="blogtags2">
