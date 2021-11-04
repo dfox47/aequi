@@ -2,10 +2,58 @@
 
 <div class="page-width">
   <header class="section-header text-center">
+    <div class="breadcrumbs blog_bradcrumbs">
+      <p><a href="#">Home</a></p>/<p><a href="#">FAQ</a></p>
+    </div>
     <h1>{{ page_title }}</h1>
     {% if blog.tags.size > 0 %}
-    
-      <div class="blog-filter">
+    <ul class="blog_tags">
+        {% for tag in blog.all_tags %}
+        <li class="article_tags__item">{{ tag }} </li>
+        {% endfor %}
+    </ul>
+    {% form 'customer', id: formId, novalidate: 'novalidate' %}
+    {%- if form.posted_successfully? -%}
+      <p class="form-message form-message--success" tabindex="-1" data-form-status>
+        {{ 'general.newsletter_form.confirmation' | t }}
+      </p>
+    {%- endif -%}
+
+    <input type="hidden" name="contact[tags]" value="newsletter" />
+
+    <div class=" discount-offer-input input-group {% if form.errors %} input-group--error{% endif %}">
+      <input type="email"
+             name="contact[email]"
+             id="{{ formId }}-email"
+             class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+             value="{{ form.email }}"
+             placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+             aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+             aria-required="true"
+             required
+             autocapitalize="off"
+      {% if form.errors %}
+        aria-invalid="true"
+        aria-describedby="{{ formId }}-email-error"
+        data-form-status
+          {% endif %}>
+      <span class="input-group__btn">
+            <button type="submit" class="btn newsletter__submit" name="commit" >
+              <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+            </button>
+          </span>
+    </div>
+
+    {% if form.errors contains 'email' %}
+      <span id="{{ formId }}-email-error" class="input-error-message">
+            <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+            {% include 'icon-error' %}
+            <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+          </span>
+    {% endif %}
+  {% endform %}
+
+    <!-- <div class="blog-filter">
         <label class="blog-filter__label select-label" for="BlogTagFilter">{{ 'collections.filters.title_tags' | t }}</label>
         <div class="select-group">
           <select id="BlogTagFilter" aria-describedby="a11y-refresh-page-message a11y-selection-message" data-blog-tag-filter>
@@ -17,14 +65,15 @@
           {% include 'icon-chevron-down' %}
         </div>
       </div>
-    {% endif %}
+    {% endif %} -->
   </header>
 </div>
 
 
 {% if section.settings.layout == 'grid' %}
   <div class="page-width">
-    <ul class="grid grid--uniform grid--blog">
+    <ul class="home_blog_list grid grid--uniform grid--blog">
+  
       {% for article in blog.articles %}
         <li class="grid__item medium-up--one-third">
           <a href="{{ article.url }}" class="article__link">
@@ -109,100 +158,126 @@
     </ul>
   </div>
 {% else %}
-  <ul class="blog-list-view">
+  <ul class="blog-list-view home_blog_list">
     {% for article in blog.articles %}
-      <li class="border-top">
-        <div class="page-width">
-          <div class="grid">
-            <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-              <div class="article-listing">
-                <h2 class="article__title h3"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-                {% if section.settings.blog_show_author %}
-                  <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-                {% endif %}
+    <li class="home_blog_list__item">
+      {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-                {% if section.settings.blog_show_date %}
-                  <span class="article__date">
-                    {{ article.published_at | time_tag: format: 'date' }}
-                  </span>
-                {% endif %}
+      <a href="{{ article.url }}" class="home_blog__link">
+        {% if article.image %}<span class="home_blog_bg" style="background-image: url({{ article.image | img_url: '500x' }})"></span>{% endif %}
 
-                {% if article.image %}
-                  {% capture img_id %}ArticleImage-{{ article.image.id }}{% endcapture %}
-                  {% capture img_wrapper_id %}ArticleImageWrapper-{{ article.image.id }}{% endcapture %}
-                  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        <span class="home_blog_content">
+          {% if section.settings.blog_show_date %}
+            <span class="home_blog__date">{{ article.published_at | date: '%Y.%m.%d' }}</span>
+          {% endif %}
 
-                  {% include 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
+          <div class="home_blog__title">{{ article.title }}</div>
 
-                  <div id="{{ img_wrapper_id }}" class="article__list-image-wrapper js">
-                    <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" class="article__list-image-container" data-image-loading-animation>
-                      <img id="{{ img_id }}"
-                           class="article__list-image lazyload"
-                           data-src="{{ img_url }}"
-                           data-widths="[180, 360, 540, 720, 905, 1090, 1296, 1512, 1728, 2048]"
-                           data-aspectratio="{{ article.image.aspect_ratio }}"
-                           data-sizes="auto"
-                           alt="">
-                    </a>
-                  </div>
+          {% if section.settings.blog_show_author %}
+            <span class="home_blog__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+          {% endif %}
 
-                  <noscript>
-                    <p>
-                      <a href="{{ article.url }}">
-                        {{ article | img_url: '455x300', scale: 2 | img_tag: article.title }}
-                      </a>
-                    </p>
-                  </noscript>
-                {% endif %}
+          <span class="home_blog__desc">
+            {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+            {% else %}
+              {{ article.content | strip_html | truncate: 100 }}
+            {% endif %}
+          </span>
 
-                <div class="rte">
-                  {% if article.excerpt.size > 0 %}
-                    {{ article.excerpt }}
-                  {% else %}
-                    {{ article.content | strip_html | truncate: 150 }}
-                  {% endif %}
-                </div>
+          <span class="home_blog__readmore">{{ 'blogs.article.view' | t }}</span>
+        </span>
+      </a>
 
-                {% if article.tags.size > 0 %}
-                  <div class="article__tags article__tags--list rte">
-                    {{ 'blogs.article.posted_in' | t }}
-                    {% for tag in article.tags %}
-                      <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-                    {% endfor %}
-                  </div>
-                {% endif %}
-
-                <ul class="list--inline article__meta-buttons">
-                  <li>
-                    <a href="{{ article.url }}" class="btn btn--tertiary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
-                      {{ 'blogs.article.read_more' | t }}
-                    </a>
-                  </li>
-
-                  {% if blog.comments_enabled? and article.comments_count > 0 %}
-                    <li>
-                      <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
-                        {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
-                      </a>
-                    </li>
-                  {% endif %}
-                </ul>
-              </div>
-            </div>
+      <div class="home_blog__meta">
+        {% if article.tags.size > 0 %}
+          <div class="home_blog__tags">
+            <ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
+              {% for tag in article.tags %}
+                <li>
+                  <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__grid-tag">{{ tag }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
-        </div>
-      </li>
+        {% endif %}
+
+        {% if blog.comments_enabled? and article.comments_count > 0 %}
+          <div class="home_blog__comments">
+            <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
+              {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </li>
     {% endfor %}
   </ul>
 {% endif %}
+<div class="blog_advertising">
+  <div class="wrap6 grid_box">
+    <div class="img_box">
+      <img src="https://cdn.shopify.com/s/files/1/0550/6531/3538/files/Mask_Group_9.png?v=1636019082" alt="advert">
+    </div>
+    <div class="subscribe_blog">
+        <div class="offer_text">
+          As we prepare our first designs for launch, we're making a special offer. 
+        </div>
+        <div class="calling_text">
+          Join our Early Access List to stay updated, receive 40% Off on your first order 
+        </div>
+        <div class="form">
+          {% form 'customer', id: formId, novalidate: 'novalidate' %}
+          {%- if form.posted_successfully? -%}
+            <p class="form-message form-message--success" tabindex="-1" data-form-status>
+              {{ 'general.newsletter_form.confirmation' | t }}
+            </p>
+          {%- endif -%}
 
+          <input type="hidden" name="contact[tags]" value="newsletter" />
+
+          <div class=" discount-offer-input input-group {% if form.errors %} input-group--error{% endif %}">
+            <input type="email"
+                  name="contact[email]"
+                  id="{{ formId }}-email"
+                  class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+                  value="{{ form.email }}"
+                  placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                  aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                  aria-required="true"
+                  required
+                  autocapitalize="off"
+            {% if form.errors %}
+              aria-invalid="true"
+              aria-describedby="{{ formId }}-email-error"
+              data-form-status
+                {% endif %}>
+            <span class="input-group__btn">
+                  <button type="submit" class="btn newsletter__submit" name="commit" >
+                    <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                  </button>
+                </span>
+          </div>
+
+          {% if form.errors contains 'email' %}
+            <span id="{{ formId }}-email-error" class="input-error-message">
+                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                  {% include 'icon-error' %}
+                  <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                </span>
+          {% endif %}
+        {% endform %}
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
 {%- if paginate.pages > 1 -%}
   {% include 'pagination', paginate: paginate %}
 {%- endif -%}
 
 {% endpaginate %}
-
-
 
 {% schema %}
 {
