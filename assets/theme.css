@@ -70,3 +70,9 @@
         margin:0 auto;
     }
 
+    .home_offer_wrap .site-footer__newsletter form{
+
+        margin: 80px auto 100px auto;
+    width: 50%;
+    }
+
