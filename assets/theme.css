@@ -319,7 +319,7 @@ grid-template-columns: 50% 50%;
     border-radius: 6px;
 }
 
-.template-blog input[type=submit]{
+.template-blog input[type=submit] {
     font-family: 'Josefin Sans';
     background: #E09A8E;
     border-radius: 6px;
