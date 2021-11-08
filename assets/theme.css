@@ -11010,4 +11010,8 @@ footer .site-footer__newsletter {
 .input-group-quote {
   margin: 0 auto 50px;
 }
+
+.home_offer_wrap .input-group {
+  margin: 0 auto 50px auto;
+}
 /*# sourceMappingURL=theme.css.map */
