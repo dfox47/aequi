@@ -10948,4 +10948,24 @@ footer .site-footer__newsletter {
   max-width: 736px;
   width: 100%;
 }
+
+.article__social .btn--share {
+  border: none;
+}
+
+.article__social .share-title {
+  display: none;
+}
+
+.article__social .btn--share .icon-facebook {
+  fill: #273734;
+}
+
+.article__social .btn--share .icon-facebook {
+  fill: #273734;
+}
+
+.article__social .btn--share .icon-pinterest {
+  fill: #273734;
+}
 /*# sourceMappingURL=theme.css.map */
