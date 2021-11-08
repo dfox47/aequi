@@ -9221,7 +9221,13 @@ footer .site-footer__newsletter {
 
  .article__social {
 
+    .social-sharing {
+        justify-content: center;
+       
+    }
+
     .share-title {
+        padding: 30px 0 90px  0;
         display: none;
       
 }
