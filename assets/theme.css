@@ -76,6 +76,10 @@
   opacity: 0.7;
 }
 
+.home_info {
+  background-color: #273734;
+}
+
 .header {
   background-color: #273734;
   color: #fff;
