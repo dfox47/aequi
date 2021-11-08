@@ -10975,4 +10975,12 @@ footer .site-footer__newsletter {
 .article__social .btn--share .icon-pinterest {
   fill: #273734;
 }
+
+.header_menu_active .header_menu {
+  z-index: 1;
+}
+
+.site_nav__item:first-child::before {
+  z-index: -1;
+}
 /*# sourceMappingURL=theme.css.map */

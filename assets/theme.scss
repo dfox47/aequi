@@ -9247,4 +9247,13 @@ footer .site-footer__newsletter {
 }
  }
 
+ .header_menu_active .header_menu {
+     z-index: 1;
+}
+
+.site_nav__item:first-child::before {
+    z-index: -1;
+   
+}
+
 
