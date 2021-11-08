@@ -9255,7 +9255,7 @@ footer .site-footer__newsletter {
     z-index: -1;
    
 }
-
+@media screen and (max-width: 1023px) {
 .article-grid {
     grid-auto-flow: column;
     grid-template-columns: 100% 100%;
@@ -9290,4 +9290,5 @@ footer .site-footer__newsletter {
 }
 .article_content{
     padding: 0 30px;
+}
 }

@@ -10984,38 +10984,35 @@ footer .site-footer__newsletter {
   z-index: -1;
 }
 
-.article-grid {
-  grid-auto-flow: column;
-  -ms-grid-columns: 100% 100%;
-      grid-template-columns: 100% 100%;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-.quote::after {
-  font-size: 395px;
-  left: 25%;
-  top: 0%;
-  z-index: 0;
-}
-
-.quote::before {
-  top: auto;
-  bottom: 31%;
-  font-size: 395px;
-  left: 77%;
-  z-index: 0;
-}
-
-.input-group-quote {
-  margin: 0 auto 50px;
-}
-
-.home_offer_wrap .input-group {
-  margin: 0 auto 50px auto;
-}
-
-.article_content {
-  padding: 0 30px;
+@media screen and (max-width: 1023px) {
+  .article-grid {
+    grid-auto-flow: column;
+    -ms-grid-columns: 100% 100%;
+        grid-template-columns: 100% 100%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .quote::after {
+    font-size: 395px;
+    left: 25%;
+    top: 0%;
+    z-index: 0;
+  }
+  .quote::before {
+    top: auto;
+    bottom: 31%;
+    font-size: 395px;
+    left: 77%;
+    z-index: 0;
+  }
+  .input-group-quote {
+    margin: 0 auto 50px;
+  }
+  .home_offer_wrap .input-group {
+    margin: 0 auto 50px auto;
+  }
+  .article_content {
+    padding: 0 30px;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
