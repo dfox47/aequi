@@ -48,6 +48,7 @@
 .home_info {
 
     background-color: #273734;
+    border-top: 1px solid #fff;
 }
 
 .header {
@@ -9294,5 +9295,10 @@ footer .site-footer__newsletter {
 }
 .article_content{
     padding: 0 30px;
+}
+
+.home_info {
+ 
+    border-top: none;
 }
 }
