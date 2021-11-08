@@ -9261,3 +9261,21 @@ footer .site-footer__newsletter {
     grid-template-columns: 100% 100%;
     grid-template-rows: 1fr 1fr;
 }
+.quote::after {
+   
+    font-size: 395px;
+ 
+    left: 25%;
+  
+    top: 0%;
+
+    z-index: 0;
+}
+
+
+.quote::before {
+    bottom: 31%;
+      font-size: 395px;
+     left: 77%;
+     z-index: 0;
+}
