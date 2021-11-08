@@ -11000,6 +11000,7 @@ footer .site-footer__newsletter {
 }
 
 .quote::before {
+  top: auto;
   bottom: 31%;
   font-size: 395px;
   left: 77%;
