@@ -10983,4 +10983,12 @@ footer .site-footer__newsletter {
 .site_nav__item:first-child::before {
   z-index: -1;
 }
+
+.article-grid {
+  grid-auto-flow: column;
+  -ms-grid-columns: 100% 100%;
+      grid-template-columns: 100% 100%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
 /*# sourceMappingURL=theme.css.map */
