@@ -18,8 +18,12 @@
 		<div class="hero_img__desc">{{ section.settings.desc }}</div>
 	{%- endif -%}
 
-	{%- if section.settings.link_src != blank -%}
+	<!-- {%- if section.settings.link_src != blank -%}
 		<a id="btn-open" class="hero_img__btn" href="{{ section.settings.link_src }}" target="_blank">{{ section.settings.link_text }}</a>
+	{%- endif -%} -->
+	
+	{%- if section.settings.link_src != blank -%}
+		<button id="btn-open" class="hero_img__btn">{{ section.settings.link_text }}</button>
 	{%- endif -%}
 </div>
 
