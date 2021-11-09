@@ -99,13 +99,13 @@
   padding: 30px   30px;
 }
 
-.home_offer_wrap .home_offer__subtitle {
+#modal-window .home_offer_wrap .home_offer__subtitle {
 
   text-align: left;
   padding: 30px 0 30px 0;
   font-size: 23px; 
 }
-.home_offer_wrap .home_offer__desc {
+#modal-window .home_offer_wrap .home_offer__desc {
 
   text-align: left;
   font-size: 19px;
