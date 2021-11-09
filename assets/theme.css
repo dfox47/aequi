@@ -71,15 +71,17 @@
 
 }
 .modal-home_offer__title::after {
+
+  font-family: 'Playfair Display';
   color: #fff;
   content: "40%";
-  font-size: 215px;
+  font-size: 242px;
   font-weight: 700;
-  left: 50%;
+  left: 25%;
   line-height: 1;
   opacity: 1;
   position: absolute;
-  top: 50%;
+  top: 7%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
