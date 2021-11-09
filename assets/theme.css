@@ -11216,6 +11216,10 @@ footer .site-footer__newsletter {
 .discount-part {
   background: #ffffff;
 }
+#modal-window {
+  width: 100%;
+  top: 5%;
+}
 
 
 }
