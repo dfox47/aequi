@@ -45,12 +45,15 @@
 
 .grid-box-modal{
 
-	display: grid;
-    grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-rows: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 
 }
 .discount-part {
   background: #273734;
+  max-height: 430px;
 
 }
 .modal-home_offer__title::after {
@@ -67,6 +70,12 @@
   transform: translateX(-50%);
   z-index: 2;
 }
+
+#modal-window .close-btn {
+  position: absolute;
+  right: 0;
+}
+
 .home_offer_wrap .home_offer__subtitle {
   font-size: 23px;  
 }
@@ -121,6 +130,7 @@
           transform: translate(-50%, -50%);
   max-width: 890px;
   z-index: 4;
+  max-height: 430px;
   border: 1px solid black;
   background-color: #ffffff;
 }
