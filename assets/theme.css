@@ -81,6 +81,8 @@
 }
 .home_offer_wrap .home_offer__desc {
   font-size: 19px;
+  max-width: none;
+    padding: 0 0 35px;
  }
 
 /*modal styles*/
@@ -128,7 +130,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 890px;
+ width: 890px;
   z-index: 4;
   max-height: 430px;
   border: 1px solid black;
