@@ -9755,6 +9755,6 @@ function closeModal() {
 	modal3.classList.remove('active');
 }
 
-overlay2.addEventListener('click', closeModal);
+overlay3.addEventListener('click', closeModal);
 btnClose4.addEventListener('click', closeModal);
 
