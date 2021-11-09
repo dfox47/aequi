@@ -9726,12 +9726,12 @@ btnOpen2.addEventListener('click', function () {
 	modal2.classList.add('active');
 });
 
-function closeModal() {
+function closeModal2() {
 	modal2.classList.remove('active');
 }
 
-overlay2.addEventListener('click', closeModal);
-btnClose2.addEventListener('click', closeModal);
-btnClose3.addEventListener('click', closeModal);
+overlay2.addEventListener('click', closeModal2);
+btnClose2.addEventListener('click', closeModal2);
+btnClose3.addEventListener('click', closeModal2);
 
 
