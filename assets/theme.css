@@ -51,7 +51,17 @@
   font-size: 23px;
   padding: 0px 0 26px;
 }
-
+#wrapper-modal-2 p{
+  
+  font-family: Josefin Sans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
 #modal-window .home_offer_wrap .input-group {
   display: block;
   margin: 0 auto 0 auto;
