@@ -9719,7 +9719,7 @@ btnOpen2 = document.getElementById('btn-open-2');
 var modal2 = document.getElementById('wrapper-modal-2');
 
 var overlay2 = document.getElementById('overlay-2');
-var btnClose2 = document.querySelector('.btn-close-2');
+var btnClose2 = document.querySelector('.btn-close-2 .btn-close-3');
 
 btnOpen2.addEventListener('click', function () {
 	modal2.classList.add('active');
