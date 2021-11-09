@@ -9740,11 +9740,11 @@ btnClose3.addEventListener('click', closeModal);
  */
 
 
-btnOpen3 = document.getElementById('btn-open-3');
-var modal3 = document.getElementById('wrapper-modal-3');
+btnOpen3 = document.getElementById('btn-open-sighn-up');
+var modal3 = document.getElementById('wrapper-modal-sighn-up');
 
-var overlay3 = document.getElementById('overlay-3');
-var btnClose4 = document.querySelector('.btn-close-4');
+var overlay3 = document.getElementById('overlay--sighn-up');
+var btnClose4 = document.querySelector('.btn-close-sighn-up');
 
 
 btnOpen3.addEventListener('click', function () {
