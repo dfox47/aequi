@@ -62,6 +62,22 @@
   text-align: center;
   
 }
+
+.btn-close-3{
+  
+  background: #E09A8E;
+  padding: 16px 45px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border: navajowhite;
+  border-radius: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+}
+
+
 #modal-window .home_offer_wrap .input-group {
   display: block;
   margin: 0 auto 0 auto;
