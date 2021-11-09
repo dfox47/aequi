@@ -9733,3 +9733,28 @@ function closeModal() {
 overlay2.addEventListener('click', closeModal);
 btnClose2.addEventListener('click', closeModal);
 btnClose3.addEventListener('click', closeModal);
+
+/**
+ * modal-3
+ * 
+ */
+
+
+ btnOpen3 = document.getElementById('btn-open-3');
+ var modal3 = document.getElementById('wrapper-modal-3');
+ 
+ var overlay3 = document.getElementById('overlay-3');
+ var btnClose4 = document.querySelector('.btn-close-4');
+ 
+ 
+ btnOpen3.addEventListener('click', function () {
+	 modal2.classList.add('active');
+ });
+ 
+ function closeModal() {
+	 modal3.classList.remove('active');
+ }
+ 
+ overlay2.addEventListener('click', closeModal);
+ btnClose4.addEventListener('click', closeModal);
+
