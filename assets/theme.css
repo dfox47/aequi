@@ -43,7 +43,12 @@
   text-align: center;
 }
 
+.grid-box-modal{
 
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 /*modal styles*/
 .flex-wrapper {
