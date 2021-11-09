@@ -53,7 +53,7 @@
   background: #273734;
 
 }
-.home_offer_wrap .home_offer__title::after {
+.modal-home_offer__title::after {
   color: #fff;
   content: "40%";
   font-size: 215px;
