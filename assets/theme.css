@@ -168,9 +168,21 @@
   opacity: 0.5;
 }
 
-#modal-window, .modal-window {
+#modal-window {
   position: absolute;
   top: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 4;
+
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+#modal-window-2 {
+  position: absolute;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
