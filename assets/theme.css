@@ -43,6 +43,8 @@
   text-align: center;
 }
 
+
+
 /*modal styles*/
 .flex-wrapper {
   display: -webkit-box;
@@ -88,8 +90,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
+  max-width: 890px;
   z-index: 4;
   border: 1px solid black;
   background-color: #ffffff;
