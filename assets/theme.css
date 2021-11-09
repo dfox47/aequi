@@ -91,6 +91,17 @@
   z-index: 2;
 }
 
+#modal-window #btn-close{
+  
+  display: flex;
+  background: #273734;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+
+}
+
 #modal-window .close-btn {
   position: absolute;
   right: 0;
