@@ -11205,5 +11205,18 @@ footer .site-footer__newsletter {
 }
 
 
+.modal-home_offer__title::after {
+  color: #cdcdcd;
+  font-size: 171px;
+  left: 50%;
+  top: 0%;
+  z-index: 2;
+}
+
+.discount-part {
+  background: #ffffff;
+}
+
+
 }
 /*# sourceMappingURL=theme.css.map */
