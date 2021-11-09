@@ -49,6 +49,14 @@
     grid-template-columns: 1fr 1fr;
 
 }
+.discount-part{
+  background: #273734;
+
+}
+
+.home_offer_wrap .home_offer__subtitle {
+  font-size: 23px;  
+}
 
 /*modal styles*/
 .flex-wrapper {
