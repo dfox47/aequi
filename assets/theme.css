@@ -93,7 +93,7 @@
 
 }
 
-#modal-window #btn-close{
+#modal-window #btn-close, #btn-close-2{
   
   display: flex;
   background: #273734;
@@ -104,7 +104,7 @@
 
 }
 
-#modal-window .close-btn {
+#modal-window .close-btn,#modal-window-2 .close-btn {
   position: absolute;
   right: 0;
 }
