@@ -70,6 +70,9 @@
 .home_offer_wrap .home_offer__subtitle {
   font-size: 23px;  
 }
+.home_offer_wrap .home_offer__desc {
+  font-size: 19px;
+ }
 
 /*modal styles*/
 .flex-wrapper {
