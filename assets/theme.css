@@ -11194,4 +11194,16 @@ footer .site-footer__newsletter {
     border-top: none;
   }
 }
+
+@media only screen and (max-width: 730px) {
+
+  .grid-box-modal {
+    grid-auto-flow: row;
+    grid-template-rows: 200px 381px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+}
 /*# sourceMappingURL=theme.css.map */
