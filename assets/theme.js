@@ -9734,27 +9734,4 @@ overlay2.addEventListener('click', closeModal);
 btnClose2.addEventListener('click', closeModal);
 btnClose3.addEventListener('click', closeModal);
 
-/**
- * modal-3
- * 
- */
-
-
-btnOpen3 = document.getElementById('btn-open-sighn-up');
-var modal3 = document.getElementById('wrapper-modal-sighn-up');
-
-var overlay3 = document.getElementById('overlay--sighn-up');
-var btnClose4 = document.querySelector('.btn-close-sighn-up');
-
-
-btnOpen3.addEventListener('click', function () {
-	modal3.classList.add('active');
-});
-
-function closeModal() {
-	modal3.classList.remove('active');
-}
-
-overlay3.addEventListener('click', closeModal);
-btnClose4.addEventListener('click', closeModal);
 
