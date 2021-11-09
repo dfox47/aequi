@@ -42,6 +42,15 @@
   padding: 50px 0;
   text-align: center;
 }
+#wrapper-modal-2.content-2 {
+  padding: 80px   100px;
+
+}
+#wrapper-modal-2 .home_offer__subtitle {
+  font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+  font-size: 23px;
+  padding: 0px 0 26px;
+}
 
 #modal-window .home_offer_wrap .input-group {
   display: block;
