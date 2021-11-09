@@ -53,7 +53,20 @@
   background: #273734;
 
 }
-
+.home_offer_wrap .home_offer__title::after {
+  color: #fff;
+  content: "40%";
+  font-size: 215px;
+  font-weight: 700;
+  left: 50%;
+  line-height: 1;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
+}
 .home_offer_wrap .home_offer__subtitle {
   font-size: 23px;  
 }
