@@ -76,19 +76,21 @@
 }
 .modal-home_offer__title::after {
 
+
   font-family: 'Playfair Display';
   color: #fff;
   content: "40%";
-  font-size: 242px;
+  font-size: 205px;
   font-weight: 700;
-  left: 25%;
+  left: 27%;
   line-height: 1;
   opacity: 1;
   position: absolute;
-  top: 7%;
+  top: 15%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
+
 }
 
 #modal-window #btn-close{
@@ -107,14 +109,14 @@
   right: 0;
 }
 #modal-window .form-part{
-  padding: 30px   30px;
+  padding: 30px   38px;
 }
 
 #modal-window .home_offer_wrap .home_offer__subtitle {
 
   text-align: left;
   padding: 30px 0 30px 0;
-  font-size: 23px; 
+  font-size: 21px; 
 }
 #modal-window .home_offer_wrap .home_offer__desc {
 
