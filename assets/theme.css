@@ -43,6 +43,11 @@
   text-align: center;
 }
 
+#modal-window .home_offer_wrap .input-group {
+  margin: 0 auto 0 auto;
+  width: 100%;
+}
+
 .grid-box-modal{
 
   grid-auto-flow: row;
