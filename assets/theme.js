@@ -9687,7 +9687,7 @@ function removeImageLoadingAnimation(image) {
 }
 
 /**
- * modal
+ * modal-1
  * 
  */
 
@@ -9708,3 +9708,26 @@ function closeModal() {
 
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
+
+/**
+ * modal-2
+ * 
+ */
+
+
+btnOpen2 = document.getElementById('btn-open-2');
+var modal2 = document.getElementById('wrapper-modal-2');
+
+var overlay2 = document.getElementById('overlay-2');
+var btnClose2 = document.getElementById('btn-close-2');
+
+btnOpen2.addEventListener('click', function () {
+	modal2.classList.add('active');
+});
+
+function closeModal() {
+	modal2.classList.remove('active');
+}
+
+overlay2.addEventListener('click', closeModal);
+btnClose2.addEventListener('click', closeModal);
