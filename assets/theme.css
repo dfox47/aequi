@@ -11416,12 +11416,7 @@ footer .site-footer__newsletter {
 @media only screen and (max-width: 730px) {
 
 
-  #modal-window-sighn-up {
-    height: 100%;
-    top: 50%;
-    width: 100%;
-    border: none;
-}
+
 
 
 .wrapper-modal.active {
@@ -11474,7 +11469,7 @@ footer .site-footer__newsletter {
 
 #modal-window-sighn-up {
   height: 100%;
-  top: 61%;
+  top: 50%;
   width: 100%;
   border: none;
 }
