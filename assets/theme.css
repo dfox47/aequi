@@ -11508,11 +11508,14 @@ footer .site-footer__newsletter {
   padding: 0;
  }
 
-#modal-window {
+ #modal-window {
+  height: 100%;
+  top: 50%;
   width: 100%;
-  top: 5%;
-}
+  border: none;
+  width: 100%;
 
+}
 
 }
 /*# sourceMappingURL=theme.css.map */
