@@ -1653,6 +1653,11 @@ summary {
 .home_offer_wrap_mg input[type=email]{
   border-radius: 6px;
 }
+.home_offer_wrap_mg button[type=submit]{
+  border-radius: 6px;
+  background: #E09A8E;
+
+}
 
  .home_offer__desc_mg {
   
