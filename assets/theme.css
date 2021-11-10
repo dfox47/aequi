@@ -11413,7 +11413,12 @@ footer .site-footer__newsletter {
 
 .flex-wrap-over21 .over21 {
   width: 100%;
- }
+}
+ 
+
+.buttons{
+  padding: 0 20px;
+}
 
   .grid-box-modal_mg {
 
