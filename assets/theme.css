@@ -190,11 +190,19 @@
 }
 
 .h100 {
-
+   justify-content: center;
   display: flex;
-  background: #2A3734;
+  background: #2a3734;
   flex-grow: 1;
   align-items: center;
+}
+
+.flex-wrap-over21{
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer {
