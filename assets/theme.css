@@ -202,6 +202,13 @@
   background-color: gray;
   opacity: 0.5;
 } 
+.picture-part{
+  background-image: url(https://cdn.shopify.com/s/files/1/0550/6531/3538/files/Mask_Group_10.png?v=1636504301);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
 
 .btn-close-sighn-up{
   position: absolute;
