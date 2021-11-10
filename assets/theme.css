@@ -11321,6 +11321,21 @@ footer .site-footer__newsletter {
 
 @media only screen and (max-width: 730px) {
 
+  .home_offer_wrap_mg .home_offer__subtitle {
+    color: #273734;
+    text-align: left;
+    font-size: 31px;
+    padding: 20px 0 40px 0;
+}
+
+.home_offer_wrap_mg input[type=email] {
+ width:100%;
+}
+
+.home_offer_wrap_mg .input-group__btn {
+  width:100%;
+}
+
   #modal-window-sighn-up {
     height: auto;
     top: 56%;
