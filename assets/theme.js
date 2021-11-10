@@ -9779,7 +9779,7 @@ btnClose3.addEventListener('click', closeModal3);
 * 
 */
 btnOpen4 = document.getElementById('over_21');
-var modal4 = document.getElementById('flex-modal');
+var modal4 = document.querySelector('.flex-modal');
 var btnClose4 = document.getElementById('close-btn');
 
 btnOpen4.addEventListener('click', function () {
