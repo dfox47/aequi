@@ -11248,7 +11248,7 @@ footer .site-footer__newsletter {
 }
 
 @media screen and (max-width: 1023px) {
-  .modal-window-sighn-up{
+  #modal-window-sighn-up{
     width: 80%;
   }
   .article-grid {
