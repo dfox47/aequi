@@ -9787,7 +9787,7 @@ btnOpen4.addEventListener('click', function () {
 });
 
 function closeModal4() {
-	modal4.classList.remove('active');
+	modal4.classList.remove('active-flex');
 }
 
 btnClose4.addEventListener('click', closeModal4);
