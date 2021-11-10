@@ -277,11 +277,13 @@
   display: none;
 }
 
+
+
 #wrapper-modal.active {
   display: block;
 }
 .wrapper-modal.active {
-  display: block;
+  display: flex;
 }
 
 #overlay, .overlay, .overlay3 {
@@ -11412,6 +11414,24 @@ footer .site-footer__newsletter {
 }
 
 @media only screen and (max-width: 730px) {
+
+
+  #modal-window-sighn-up {
+    height: 100%;
+    top: 50%;
+    width: 100%;
+    border: none;
+}
+
+
+.wrapper-modal.active {
+    top: 0;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    z-index: 12;
+    background: #000;
+}
 
   .flex-wrap-over21 .no {
     width: 100%;
