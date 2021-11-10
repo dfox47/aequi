@@ -190,8 +190,11 @@
 }
 
 .h100 {
-  background: yellow;
-  flex-grow: 3
+
+  display: flex;
+  background: #2A3734;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .footer {
