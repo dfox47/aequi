@@ -171,6 +171,30 @@
  }
 
 /*modal styles*/
+
+.flex-modal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+.header {
+  background: green
+}
+
+.h100 {
+  background: yellow;
+  flex-grow: 3
+}
+
+.footer {
+  background: red
+}
+
+
+
 .flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
