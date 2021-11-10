@@ -1650,7 +1650,7 @@ summary {
 
 }
 
-.home_offer_wrap_mg .input[type=email]{
+.home_offer_wrap_mg input[type=email]{
   border-radius: 6px;
 }
 
