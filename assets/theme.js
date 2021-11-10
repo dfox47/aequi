@@ -9753,3 +9753,42 @@ function closeModal3() {
 
 overlay3.addEventListener('click', closeModal3);
 btnClose3.addEventListener('click', closeModal3);
+
+/**
+ * modal-3
+ * 
+ */
+btnOpen3 = document.getElementById('btn-open-sighn-up');
+var modal3 = document.getElementById('wrapper-modal-sighn-up');
+var overlay3 = document.getElementById('overlay-sighn-up');
+var btnClose3 = document.querySelector('.btn-close-sighn-up');
+
+btnOpen3.addEventListener('click', function () {
+	modal3.classList.add('active');
+});
+
+function closeModal3() {
+	modal3.classList.remove('active');
+}
+
+overlay3.addEventListener('click', closeModal3);
+btnClose3.addEventListener('click', closeModal3);
+
+/**
+* modal-4
+* 
+*/
+btnOpen4 = document.getElementById('over_21');
+var modal4 = document.getElementById('flex-modal');
+var btnClose4 = document.getElementById('close-btn');
+
+btnOpen4.addEventListener('click', function () {
+	modal4.classList.add('active-flex');
+});
+
+function closeModal3() {
+	modal4.classList.remove('active');
+}
+
+overlay3.addEventListener('click', closeModal3);
+btnClose3.addEventListener('click', closeModal3);

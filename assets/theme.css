@@ -76,7 +76,9 @@
   text-transform: uppercase;
   font-family: 'Josefin Sans';
 }
-
+.flex-modal {
+  display: none;
+}
 
 #modal-window .home_offer_wrap .input-group {
   display: block;
@@ -171,6 +173,11 @@
  }
 
 /*modal styles*/
+
+.active-flex{
+
+  display: flex;
+}
 
 .flex-modal {
   display: flex;
