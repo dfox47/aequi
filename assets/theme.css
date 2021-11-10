@@ -183,7 +183,18 @@
   top: 0;
 }
 
-
+.flex-wrap-over21 p{
+  
+      padding: 50px   0;
+      color: #fff;
+      font-family: Josefin Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+}
 
 .header {
   background-color: #9c27b0;
