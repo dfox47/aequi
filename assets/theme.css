@@ -184,7 +184,7 @@
 }
 
 .flex-wrap-over21 p{
-  
+      width: 60%;
       padding: 50px   0;
       color: #fff;
       font-family: Josefin Sans;
@@ -11405,6 +11405,15 @@ footer .site-footer__newsletter {
 }
 
 @media only screen and (max-width: 730px) {
+
+  .flex-wrap-over21 .no {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.flex-wrap-over21 .over21 {
+  width: 100%;
+ }
 
   .grid-box-modal_mg {
 
