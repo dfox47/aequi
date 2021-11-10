@@ -9786,9 +9786,9 @@ btnOpen4.addEventListener('click', function () {
 	modal4.classList.add('active-flex');
 });
 
-function closeModal3() {
+function closeModal4() {
 	modal4.classList.remove('active');
 }
 
-overlay3.addEventListener('click', closeModal3);
-btnClose3.addEventListener('click', closeModal3);
+overlay3.addEventListener('click', closeModal4);
+btnClose3.addEventListener('click', closeModal4);
