@@ -206,6 +206,17 @@
       border: none;
 }
 
+.flex-wrap-over21 .over21{
+  
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 41px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #E09A8E;
+  border: none;
+}
+
 .header {
   background-color: #9c27b0;
 }
