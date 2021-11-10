@@ -104,6 +104,15 @@
   grid-template-columns: 50% 50%;
 
 }
+
+.grid-box-modal_mg {
+
+  grid-auto-flow: row;
+  grid-template-rows: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
 .discount-part {
   background: #273734;
 
@@ -11321,6 +11330,16 @@ footer .site-footer__newsletter {
 
 @media only screen and (max-width: 730px) {
 
+  .grid-box-modal_mg {
+
+   
+    grid-auto-flow: row;
+    grid-template-rows: 382px 382px;
+    display: grid;
+    grid-template-columns: 100%;
+  
+  }
+
   .home_offer_wrap_mg .home_offer__subtitle {
     color: #273734;
     text-align: left;
@@ -11336,12 +11355,12 @@ footer .site-footer__newsletter {
   width:100%;
 }
 
-  #modal-window-sighn-up {
-    height: auto;
-    top: 56%;
-    width: 100%;
-    border: none;
- }
+#modal-window-sighn-up {
+  height: 100%;
+  top: 61%;
+  width: 100%;
+  border: none;
+}
 
   .grid-box-modal {
     grid-auto-flow: row;
