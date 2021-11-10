@@ -11322,10 +11322,11 @@ footer .site-footer__newsletter {
 @media only screen and (max-width: 730px) {
 
   #modal-window-sighn-up {
+    height: auto;
+    top: 56%;
     width: 100%;
     border: none;
-    height: auto;
-}
+ }
 
   .grid-box-modal {
     grid-auto-flow: row;
