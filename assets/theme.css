@@ -1664,7 +1664,7 @@ summary {
   font-size: 22px;
   font-weight: 200;
   max-width: 575px;
-  padding: 0 0 64px;
+  padding: 0 0 40px;
 }
 
 
@@ -11320,6 +11320,12 @@ footer .site-footer__newsletter {
 }
 
 @media only screen and (max-width: 730px) {
+
+  #modal-window-sighn-up {
+    width: 100%;
+    border: none;
+    height: auto;
+}
 
   .grid-box-modal {
     grid-auto-flow: row;
