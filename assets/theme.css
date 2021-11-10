@@ -180,7 +180,7 @@
 }
 
 .flex-modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100vh;
   
