@@ -1638,6 +1638,8 @@ summary {
 }
 
 .home_offer_wrap_mg{
+
+  background: #E0D8D3;
   padding: 50px 30px;
 }
 .home_offer_wrap_mg .home_offer__subtitle{
@@ -1646,6 +1648,10 @@ summary {
   text-align: left;
   font-size: 23px;
 
+}
+
+.home_offer_wrap_mg .input[type=email]{
+  border-radius: 6px;
 }
 
  .home_offer__desc_mg {
