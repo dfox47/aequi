@@ -1637,6 +1637,10 @@ summary {
   border-radius: 6px;
 }
 
+.home_offer_wrap_mg{
+  padding: 50px 30px;
+}
+
 .home-offer-wrap .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
