@@ -11530,12 +11530,14 @@ footer .site_nav__link {
 
   .copiright {
     width: 95%;
+    font-size: 16px;
 
   }
 
   .footer_desc p {
     width: 100%;
     padding-bottom: 20px;
+    font-size: 16px;
 }
   .grid_box {
     grid-template-columns: 100%;
