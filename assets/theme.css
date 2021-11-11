@@ -420,7 +420,7 @@
 #modal-window-sighn-up {
  
   top: 50%;
-  position: absolute;
+  position: fixed;
   /* bottom: -29%; */
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
