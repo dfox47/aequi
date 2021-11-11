@@ -56,11 +56,12 @@ letter-spacing: 0em;
 text-align: left;
 }
 
-.privacy_breadcrumbs{
+.privacy_breadcrumbs {
   margin: 47px 0 24px   0;
   display: flex;
   justify-content: center;
   }
+  
 .privacy_policy_title h2{
   font-family: Playfair Display;
 font-size: 30px;
