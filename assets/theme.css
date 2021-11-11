@@ -78,7 +78,9 @@
 }
 
 .input-group--underline{
+  width: 60%;
   display: flex;
+  margin: 0 auto;
 }
 #input-group__field{
     border-radius: 6px;
@@ -11363,7 +11365,7 @@ footer .site-footer__newsletter {
 }
 
 .template-blog form {
-  width: 50%;
+ 
   margin: 0 auto;
 }
 
