@@ -11510,6 +11510,12 @@ footer .site-footer__newsletter {
  
 }
 
+footer .site_nav__item::after {
+ 
+  display: none;
+ 
+}
+
 
 }
 
