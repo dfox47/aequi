@@ -11516,6 +11516,11 @@ footer .site_nav__item::after {
  
 }
 
+footer .site_nav__link {
+  font-size: 19px;
+  display: block;
+  text-transform: uppercase;
+}
 
 }
 
