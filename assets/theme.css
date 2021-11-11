@@ -417,7 +417,7 @@
 
 #modal-window-sighn-up {
  
-  top: 0%;
+  top: 50%;
   position: absolute;
   /* bottom: -29%; */
   left: 50%;
@@ -10924,7 +10924,7 @@ footer .site-footer__newsletter {
 .blog_advertising {
   padding: 140px 0;
   background: #273734;
-  margin: 86px 0;
+  margin: 86px 0 0 0;
 }
 
 .blog_advertising .input-group__btn {
@@ -11383,7 +11383,7 @@ footer .site-footer__newsletter {
 
 .template-blog .main-content {
   background: #e0d8d3;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   padding-top: 55px;
 }
 
