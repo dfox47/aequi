@@ -71,6 +71,7 @@
 
 .flex-wrap-over21 a{
   color:#fff;
+  text-decoration: underline;
 }
 .privacy_content li{
   list-style-type: unset;
