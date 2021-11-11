@@ -81,8 +81,11 @@
   display: flex;
 }
 #input-group__field{
-  flex-grow: 4;
+    border-radius: 6px;
+      flex-grow: 4;
+      margin-right: 9px;
 }
+
 #btn--square{
   width:100%;
 }
