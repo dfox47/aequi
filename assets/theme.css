@@ -42,6 +42,13 @@
   padding: 50px 0;
   text-align: center;
 }
+.privacy_policy_breadcrumbs {
+  margin: 47px 0px 24px  0px;
+  display: flex;
+  justify-content: center;
+  }
+
+  
 .content2 {
   padding: 80px   100px;
 
@@ -71,11 +78,7 @@ margin-bottom: 15px;
 
 
 
-.privacy_breadcrumbs {
-  margin: 47px 0 24px  0;
-  display: flex;
-  justify-content: center;
-  }
+
 
 #wrapper-modal-2 .home_offer__subtitle {
   font-family: "Playfair Display",Helvetica,Arial,sans-serif;
