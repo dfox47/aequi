@@ -10736,7 +10736,8 @@ footer .email {
 }
 
 footer .input-group {
-   margin: 0 auto 0 auto;
+  width: 64%;
+  margin: 0 auto 0 auto;
 }
 
 footer .input-group input {
