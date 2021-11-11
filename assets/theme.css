@@ -64,7 +64,13 @@
  
     
 }
-
+.privacy_content li{
+  list-style-type: unset;
+  font-size: 19px;
+}
+.privacy_content ul{
+  padding-left: 20px;
+}
 
 .privacy_policy_title h2{
   font-family: Playfair Display;
