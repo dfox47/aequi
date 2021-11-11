@@ -10924,13 +10924,11 @@ footer .site-footer__newsletter {
 }
 
 .blog_advertising {
-
-  background-position: left;
-  background-image: url();
+ 
   padding: 140px 0;
-  background: #273734;
+  background: #273734 url(i_star.svg) no-repeat left bottom;
   margin: 86px 0 0 0;
-  background-image: url(i_star.svg);
+ 
 }
 
 .blog_advertising .input-group__btn {
