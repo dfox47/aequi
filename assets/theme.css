@@ -11512,7 +11512,9 @@ footer .site-footer__newsletter {
 @media only screen and (max-width: 730px) {
 
 
-
+  .grid_box {
+    grid-template-columns: 100%;
+  }
 
 
 .wrapper-modal.active {
