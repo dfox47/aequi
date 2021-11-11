@@ -87,6 +87,7 @@
 }
 
 #btn--square{
+  min-height: 45px;
   width:100%;
 }
 
