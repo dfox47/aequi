@@ -42,11 +42,7 @@
   padding: 50px 0;
   text-align: center;
 }
-.privacy_policy_breadcrumbs {
-  margin: 47px 0px 24px  0px;
-  display: flex;
-  justify-content: center;
-  }
+
 #privacy_breadcrumbs{
   margin: 47px 0px 24px  0px;
   display: flex;
@@ -58,13 +54,15 @@
 
 }
 .privacy_content p{
-font-family: Josefin Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+ 
+    
 }
 
 
