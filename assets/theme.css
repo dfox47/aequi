@@ -1876,6 +1876,8 @@ summary {
 
 .site_nav__item {
   margin: 0 48px;
+  text-transform: uppercase;
+    font-size: 18px;
 }
 
 .site_nav__item.active .header_menu_list__link::after,
