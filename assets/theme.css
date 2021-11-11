@@ -11514,6 +11514,11 @@ footer .site-footer__newsletter {
 
   .grid_box {
     grid-template-columns: 100%;
+    padding: 0 20px;
+  }
+
+  .blog_advertising {
+    padding: 60px 0;
   }
 
 
