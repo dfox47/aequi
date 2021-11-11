@@ -406,7 +406,7 @@
 }
 
 #modal-window-2 {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
