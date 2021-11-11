@@ -47,8 +47,12 @@
   display: flex;
   justify-content: center;
   }
+#privacy_breadcrumbs{
+  margin: 47px 0px 24px  0px;
+  display: flex;
+  justify-content: center; 
+}
 
-  
 .content2 {
   padding: 80px   100px;
 
