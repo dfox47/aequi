@@ -11513,11 +11513,24 @@ footer .site-footer__newsletter {
 
 @media only screen and (max-width: 730px) {
 
+  .copiright {
+    width: 95%;
 
+  }
+
+  .footer_desc p {
+    width: 100%;
+    padding-bottom: 20px;
+}
   .grid_box {
     grid-template-columns: 100%;
     padding: 0 20px;
   }
+  .footer_social .icon {
+       width: 35px;
+    height: 35px;
+   
+}
 
   .blog_advertising {
     padding: 60px 0 350px 0;
