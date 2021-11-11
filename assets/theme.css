@@ -11489,6 +11489,24 @@ footer .site-footer__newsletter {
   .home_info {
     border-top: none;
   }
+
+
+  #input-group__field {
+    width: 100%;
+    flex-grow: 1;
+ }
+
+ .input-group__button {
+  width: 100%;
+  flex-grow: 1;
+}
+.input-group--underline {
+  flex-wrap: wrap;
+  width: 100%;
+ 
+}
+
+
 }
 
 @media only screen and (max-width: 730px) {
