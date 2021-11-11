@@ -80,7 +80,7 @@
 .input-group--underline{
   display: flex;
 }
-.input-group__field{
+#input-group__field{
   flex-grow: 4;
 }
 
