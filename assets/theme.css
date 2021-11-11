@@ -83,6 +83,9 @@
 #input-group__field{
   flex-grow: 4;
 }
+.btn--square{
+  width:100%;
+}
 
 .input-group__button{
       flex-grow: 2;
