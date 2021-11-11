@@ -11521,7 +11521,9 @@ footer .site_nav__link {
   display: block;
   text-transform: uppercase;
 }
-
+ footer .footer_menu{
+   margin-bottom: 30px;
+ 
 }
 
 @media only screen and (max-width: 730px) {
