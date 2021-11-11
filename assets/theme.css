@@ -77,6 +77,17 @@
   margin-bottom: 65px;
 }
 
+.input-group--underline{
+  display: flex;
+}
+.input-group__field{
+  flex-grow: 4;
+}
+
+.input-group__button{
+      flex-grow: 2;
+}
+
 .privacy_policy_title h2{
 
   font-family: Playfair Display;
