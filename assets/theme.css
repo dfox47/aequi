@@ -11520,8 +11520,9 @@ footer .site-footer__newsletter {
   }
 
   .blog_advertising {
-    padding: 60px 0;
-  }
+    padding: 60px 0 350px 0;
+    background: #273734 url(i_star.svg) no-repeat 209% bottom;
+     }
 
 
 .wrapper-modal.active {
