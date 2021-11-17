@@ -136,14 +136,6 @@
 	text-transform: uppercase;
 }
 
-.flex-modal {
-	display: none;
-}
-
-.flex-modal.active {
-	display: block;
-}
-
 #modal-window .home_offer_wrap .input-group {
 	display: block;
 	margin: 0 auto 0 auto;
@@ -246,16 +238,21 @@
 	display: none;
 	flex-direction: column;
 	height: 100vh;
-
-	z-index: 10;
+	left: 0;
 	position: fixed;
-	width: 100%;
 	top: 0;
+	width: 100%;
+	z-index: 10;
 }
-.active-flex {
 
+.flex-modal.active {
 	display: flex;
 }
+
+.active-flex {
+	display: flex;
+}
+
 .flex-wrap-over21 p {
 	width: 60%;
 	padding: 50px   0;
@@ -268,6 +265,7 @@
 	letter-spacing: 0em;
 	text-align: center;
 }
+
 .flex-wrap-over21 .no {
 
 	margin-right: 17px;
