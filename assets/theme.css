@@ -4245,13 +4245,6 @@ body.prevent-scrolling {
 	overflow: hidden;
 }
 
-@media only screen and (min-width: 750px) {
-	.page-container {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-}
-
 hr {
 	margin: 55px 0;
 	border: 0;

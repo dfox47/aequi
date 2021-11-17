@@ -9686,12 +9686,12 @@ function removeImageLoadingAnimation(image) {
 	}
 }
 
+
+
 /**
  * modal-1
  * 
  */
-
-
 btnOpen = document.getElementById('btn-open');
 var modal = document.getElementById('wrapper-modal');
 
@@ -9709,12 +9709,12 @@ function closeModal() {
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
 
+
+
 /**
  * modal-2
  * 
  */
-
-
 btnOpen2 = document.getElementById('btn-open-2');
 var modal2 = document.getElementById('wrapper-modal-2');
 
@@ -9734,25 +9734,7 @@ overlay2.addEventListener('click', closeModal2);
 btnClose2.addEventListener('click', closeModal2);
 btnClose2_1.addEventListener('click', closeModal2);
 
-/**
- * modal-3
- * 
- */
-btnOpen3 = document.getElementById('btn-open-sighn-up');
-var modal3 = document.getElementById('wrapper-modal-sighn-up');
-var overlay3 = document.getElementById('overlay-sighn-up');
-var btnClose3 = document.querySelector('.btn-close-sighn-up');
 
-btnOpen3.addEventListener('click', function () {
-	modal3.classList.add('active');
-});
-
-function closeModal3() {
-	modal3.classList.remove('active');
-}
-
-overlay3.addEventListener('click', closeModal3);
-btnClose3.addEventListener('click', closeModal3);
 
 /**
  * modal-3
@@ -9773,6 +9755,8 @@ function closeModal3() {
 
 overlay3.addEventListener('click', closeModal3);
 btnClose3.addEventListener('click', closeModal3);
+
+
 
 /**
 * modal-4
