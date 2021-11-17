@@ -349,7 +349,6 @@
 
 		<button id="btn-open-2" class="modal2">modal2</button>
 		<button id="btn-open-sighn-up" class="modal2">modal-sighn-up</button>
-		<button id="over_21" class="modal2">over_21</button>
 	</div>
 
 	<!-- modal1 -->
@@ -482,17 +481,15 @@
 
 
 <!-- modal4 -->
-<div class="flex-modal active js-popup" data-popup="4">
-	<div class="h100">
-		<div class="flex-wrap-over21">
-			<a class="header_logo" href="/"><img src="{{ 'i_logo.svg' | asset_url }}" alt="" /></a>
+<div class="flex-modal active js-popup js-popup-over-21" data-popup="4">
+	<div class="flex-wrap-over21">
+		<a class="header_logo" href="/"><img src="{{ 'i_logo.svg' | asset_url }}" alt="" /></a>
 
-			<p>By entering this website, you are agreeing to our terms and services and <a href="#">privacy police.</a></p>
+		<p>By entering this website, you are agreeing to our terms and services and <a href="#">privacy police.</a></p>
 
-			<div class="buttons">
-				<button class="no">no</button>
-				<button id="close-btn" class="over21 js-popup-close">Yes, I am over 21</button>
-			</div>
+		<div class="buttons">
+			<button class="no">no</button>
+			<button class="over21 js-popup-close js-popup-over-21-agree">Yes, I am over 21</button>
 		</div>
 	</div>
 </div>

@@ -9757,21 +9757,3 @@ overlay3.addEventListener('click', closeModal3);
 btnClose3.addEventListener('click', closeModal3);
 
 
-
-/**
-* modal-4
-* 
-*/
-btnOpen4 = document.getElementById('over_21');
-var modal4 = document.querySelector('.flex-modal');
-var btnClose4 = document.getElementById('close-btn');
-
-btnOpen4.addEventListener('click', function () {
-	modal4.classList.add('active-flex');
-});
-
-function closeModal4() {
-	modal4.classList.remove('active-flex');
-}
-
-btnClose4.addEventListener('click', closeModal4);

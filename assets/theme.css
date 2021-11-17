@@ -235,9 +235,12 @@
 
 
 .flex-modal {
+	align-items: center;
+	background-color: #2a3734;
 	display: none;
 	flex-direction: column;
 	height: 100vh;
+	justify-content: center;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -294,14 +297,6 @@
 
 .header {
 	background-color: #9c27b0;
-}
-
-.h100 {
-	justify-content: center;
-	display: flex;
-	background: #2a3734;
-	flex-grow: 1;
-	align-items: center;
 }
 
 .flex-wrap-over21 {
@@ -4236,7 +4231,6 @@ body.prevent-scrolling {
 
 .drawer-page-content::after,
 .page-container {
-	-webkit-transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
 	transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
 }
 

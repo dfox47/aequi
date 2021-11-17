@@ -34,7 +34,9 @@ $(window).bind('load', function() {
 
 
 
+	// popups [START]
 	$('.js-popup-close').click(function () {
+		// close all popups
 		$('.js-popup').removeClass('active');
 	});
 
@@ -45,6 +47,21 @@ $(window).bind('load', function() {
 		$('.js-popup').removeClass('active');
 		$('.js-popup[data-popup="' + popupId + '"]').addClass('active');
 	});
+	// popups [END]
+
+
+
+	// over 21 [START]
+	var isOver21 = localStorage.getItem('over21');
+
+	if ( isOver21 === '1' ) {
+		$('.js-popup-over-21').removeClass('active');
+	}
+
+	$('.js-popup-over-21-agree').click(function () {
+		localStorage.setItem('over21', '1');
+	});
+	// over 21 [END]
 });
 
 
