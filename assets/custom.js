@@ -31,6 +31,20 @@ $(window).bind('load', function() {
 		$('.js-block-show[data-block="' + blockId + '"]').toggleClass('active');
 		$('.js-block[data-block="' + blockId + '"]').toggleClass('active');
 	});
+
+
+
+	$('.js-popup-close').click(function () {
+		$('.js-popup').removeClass('active');
+	});
+
+	$('.js-popup-show').click(function () {
+		var popupId = $(this).attr('data-popup');
+
+		// hide all opened popups
+		$('.js-popup').removeClass('active');
+		$('.js-popup[data-popup="' + popupId + '"]').addClass('active');
+	});
 });
 
 
