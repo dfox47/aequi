@@ -54,8 +54,8 @@ $(window).bind('load', function() {
 	// over 21 [START]
 	var isOver21 = localStorage.getItem('over21');
 
-	if ( isOver21 === '1' ) {
-		$('.js-popup-over-21').removeClass('active');
+	if ( isOver21 !== '1' ) {
+		$('.js-popup-over-21').addClass('active');
 	}
 
 	$('.js-popup-over-21-agree').click(function () {
