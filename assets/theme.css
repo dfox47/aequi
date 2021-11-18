@@ -3094,9 +3094,6 @@ symbol.icon:not(.icon--full-color) .icon-error__symbol {
 }
 
 .payment-icons {
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
 	user-select: none;
 	cursor: default;
 }
@@ -3139,7 +3136,6 @@ symbol.icon:not(.icon--full-color) .icon-error__symbol {
 	width: calc(calc(var(--font-size-base) * 1px) - 2px);
 	height: calc(calc(var(--font-size-base) * 1px) - 2px);
 	margin-top: 0.1em;
-	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 
@@ -3222,12 +3218,7 @@ a[href^="tel"] {
 
 .btn,
 .shopify-payment-button .shopify-payment-button__button--unbranded {
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
 	user-select: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	appearance: none;
 	text-decoration: none;
 	text-align: center;
