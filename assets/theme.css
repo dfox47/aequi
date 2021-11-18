@@ -10605,11 +10605,11 @@ footer .site-footer__newsletter {
 	font-family: "Josefin Sans", sans-serif;
 }
 
-.copiright {
-	width: 45%;
+.copyright {
 	font-size: 18px;
 	font-weight: 100;
 	margin: 0 auto;
+	width: 45%;
 }
 
 .email_p {
@@ -10840,7 +10840,7 @@ footer .site-footer__newsletter {
 		display: flex;
 		justify-content: center;
 	}
-	.mobile_content .copiright {
+	.mobile_content .copyright {
 		font-size: 18px;
 		font-weight: 100;
 		margin: 0 auto;
@@ -11131,7 +11131,7 @@ footer .site-footer__newsletter {
 }
 
 @media only screen and (max-width: 730px) {
-	.copiright {
+	.copyright {
 		font-size: 16px;
 		width: 95%;
 	}
