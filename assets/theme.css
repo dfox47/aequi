@@ -10612,8 +10612,9 @@ footer .site-footer__newsletter {
 	width: 45%;
 }
 
-.email_p {
-	background: url(i_email.svg) 9px 8px no-repeat;
+.email a {
+	background: url(i_email.svg) 9px 8px no-repeat scroll transparent;
+	color: #fff;
 	font-size: 18px;
 	padding: 10px 40px;
 }
@@ -10830,16 +10831,19 @@ footer .site-footer__newsletter {
 		background: #e09a8e;
 		border-radius: 6px;
 	}
-	.mobile_content .email_p {
+
+	.mobile_content .email a {
 		font-weight: 400;
 		padding: 10px 40px;
 		text-align: center;
 		text-transform: initial;
 	}
+
 	.mobile_content .email {
 		display: flex;
 		justify-content: center;
 	}
+
 	.mobile_content .copyright {
 		font-size: 18px;
 		font-weight: 100;
