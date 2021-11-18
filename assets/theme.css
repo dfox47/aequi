@@ -10615,8 +10615,14 @@ footer .site-footer__newsletter {
 .email a {
 	background: url(i_email.svg) 9px 8px no-repeat scroll transparent;
 	color: #fff;
+	display: inline-block;
 	font-size: 18px;
 	padding: 10px 40px;
+	transition: all .3s ease-in-out;
+}
+
+.email a:hover {
+	text-decoration: underline;
 }
 
 .first_item {
