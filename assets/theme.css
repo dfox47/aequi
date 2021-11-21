@@ -161,24 +161,39 @@
 	grid-template-rows: 100%;
 }
 
+
+
 .discount-part {
-	background: #273734;
+	background-color: #273734;
+	overflow: hidden;
+	position: relative;
 }
 
-.modal-home_offer__title::after {
+.discount-part::after,
+.discount-part::before {
 	color: #fff;
-	content: "40%";
 	font-family: "Playfair Display", Helvetica, Arial, sans-serif;
 	font-size: 205px;
 	font-weight: 700;
-	left: 27%;
 	line-height: 1;
-	opacity: 1;
 	position: absolute;
-	top: 15%;
 	transform: translateX(-50%);
 	z-index: 2;
 }
+
+.discount-part::after {
+	content: "40";
+	left: 27%;
+	top: 15%;
+}
+
+.discount-part::before {
+	content: "%";
+	left: 10px;
+	top: 10%;
+}
+
+
 
 #modal-window #btn-close, #btn-close-2 {
 	align-items: center;
