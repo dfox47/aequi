@@ -196,13 +196,17 @@
 
 
 .popup {
-	display: flex;
+	display: none;
 	height: 100%;
 	left: 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9;
+}
+
+.popup.active {
+	display: flex;
 }
 
 .popup__bg {
