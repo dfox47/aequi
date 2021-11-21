@@ -235,6 +235,13 @@
 	display: flex;
 }
 
+.flex-wrap-over21 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .flex-wrap-over21 p {
 	color: #fff;
 	font-family: 'Josefin Sans', Helventica, Arial, sans-serif;
@@ -276,11 +283,8 @@
 	background-color: #9c27b0;
 }
 
-.flex-wrap-over21 {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+.hidden {
+	display: none;
 }
 
 .footer {
@@ -3833,7 +3837,8 @@ textarea {
 }
 
 .form-message--error .form-message__link:focus,
-.form-message--error .form-message__link:hover,
+.form-message--error .form-message__link:hover,		<button id="btn-open-2" class="modal2">modal2</button>
+		<button id="btn-open-sighn-up" class="modal2">modal-sighn-up</button>
 .form-message--error a:focus,
 .form-message--error a:hover {
 	text-decoration: none;
