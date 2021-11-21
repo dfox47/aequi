@@ -356,72 +356,6 @@
 		</div>
 	</div>
 
-	<!-- modal1 -->
-	<div id="wrapper-modal">
-		<div id="overlay"></div>
-
-		<div id="modal-window">
-			<div class="close-btn">
-				<button id="btn-close">
-					<svg width="17" height="18" viewBox="0 0 17 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.69948 9.00177L0.710529 2.00967C0.46475 1.76389 0.46475 1.36371 0.710529 1.11793C0.956308 0.872149 1.35649 0.872149 1.60227 1.11793L8.59122 8.11003L15.5833 1.12108C15.8291 0.872149 16.2261 0.872149 16.4719 1.12108C16.7177 1.37001 16.7177 1.76704 16.4719 2.01282L9.48296 9.00177L16.4719 15.9939C16.7177 16.2397 16.7177 16.6398 16.4719 16.8856C16.349 17.0085 16.1883 17.0715 16.0276 17.0715C15.8669 17.0715 15.7062 17.0085 15.5833 16.8856L8.59122 9.89351L1.59912 16.8856C1.47623 17.0085 1.31553 17.0715 1.15482 17.0715C0.994122 17.0715 0.833419 17.0085 0.710529 16.8856C0.46475 16.6398 0.46475 16.2397 0.710529 15.9939L7.69948 9.00177Z" fill="#fff"/>
-					</svg>
-				</button>
-			</div>
-
-			<div class="content">
-				<div class="wrapper-modal-content grid-box-modal">
-					<div class="discount-part"></div>
-
-					<div class="form-part">
-						<div class="home_offer_wrap">
-							<div class="home_offer__subtitle">
-								As we prepare our first designs for launch, we're making a special offer.
-							</div>
-
-							<div class="home_offer__desc">
-								<p>Join our <strong>Early Access List</strong> to stay updated, receive <strong>40% Off</strong> on your first order</p>
-							</div>
-
-							<div class="site-footer__newsletter">
-								<form accept-charset="UTF-8"
-								      method="post"
-								      action="/contact#home_offer_form"
-								      class="contact-form"
-								      id="home_offer_form"
-								      novalidate="novalidate"
-								>
-									<input type="hidden" name="form_type" value="customer" />
-									<input type="hidden" name="utf8" value="✓" />
-									<input type="hidden" name="contact[tags]" value="newsletter" />
-
-									<div class="input-group">
-										<input type="email"
-										       name="contact[email]"
-										       id="home_offer_form-email"
-										       class="input-group__field newsletter__input"
-										       value=""
-										       placeholder="Email address"
-										       aria-label="Email address"
-										       aria-required="true"
-										       required
-										       autocapitalize="off"
-										>
-										<span class="input-group__btn">
-											<button type="submit" class="btn newsletter__submit" name="commit">
-												<span class="newsletter__submit-text--large">Subscribe</span>
-											</button>
-										</span>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<!-- modal3 -->
 	<div class="wrapper-modal" id="wrapper-modal-sighn-up">
 		<div class="overlay3" id="overlay-sighn-up"></div>
@@ -483,6 +417,72 @@
 </footer>
 
 
+
+<!-- modal1 -->
+<div id="wrapper-modal" class="popup js-popup">
+	<div id="overlay" class="popup__bg"></div>
+
+	<div id="modal-window" class="popup__content">
+		<div class="btn_close close-btn js-popup-close">
+			<button id="btn-close">
+				<svg width="17" height="18" viewBox="0 0 17 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.69948 9.00177L0.710529 2.00967C0.46475 1.76389 0.46475 1.36371 0.710529 1.11793C0.956308 0.872149 1.35649 0.872149 1.60227 1.11793L8.59122 8.11003L15.5833 1.12108C15.8291 0.872149 16.2261 0.872149 16.4719 1.12108C16.7177 1.37001 16.7177 1.76704 16.4719 2.01282L9.48296 9.00177L16.4719 15.9939C16.7177 16.2397 16.7177 16.6398 16.4719 16.8856C16.349 17.0085 16.1883 17.0715 16.0276 17.0715C15.8669 17.0715 15.7062 17.0085 15.5833 16.8856L8.59122 9.89351L1.59912 16.8856C1.47623 17.0085 1.31553 17.0715 1.15482 17.0715C0.994122 17.0715 0.833419 17.0085 0.710529 16.8856C0.46475 16.6398 0.46475 16.2397 0.710529 15.9939L7.69948 9.00177Z" fill="#fff"/>
+				</svg>
+			</button>
+		</div>
+
+		<div class="content">
+			<div class="wrapper-modal-content grid-box-modal">
+				<div class="discount-part"></div>
+
+				<div class="form-part">
+					<div class="home_offer_wrap">
+						<div class="home_offer__subtitle">
+							As we prepare our first designs for launch, we're making a special offer.
+						</div>
+
+						<div class="home_offer__desc">
+							<p>Join our <strong>Early Access List</strong> to stay updated, receive <strong>40% Off</strong> on your first order</p>
+						</div>
+
+						<div class="site-footer__newsletter">
+							<form accept-charset="UTF-8"
+							      method="post"
+							      action="/contact#home_offer_form"
+							      class="contact-form"
+							      id="home_offer_form"
+							      novalidate="novalidate"
+							>
+								<input type="hidden" name="form_type" value="customer" />
+								<input type="hidden" name="utf8" value="✓" />
+								<input type="hidden" name="contact[tags]" value="newsletter" />
+
+								<div class="input-group">
+									<input type="email"
+									       name="contact[email]"
+									       id="home_offer_form-email"
+									       class="input-group__field newsletter__input"
+									       value=""
+									       placeholder="Email address"
+									       aria-label="Email address"
+									       aria-required="true"
+									       required
+									       autocapitalize="off"
+									>
+									<span class="input-group__btn">
+											<button type="submit" class="btn newsletter__submit" name="commit">
+												<span class="newsletter__submit-text--large">Subscribe</span>
+											</button>
+										</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- modal4 -->
 <div class="flex-modal js-popup js-popup-over-21">

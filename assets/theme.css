@@ -195,6 +195,33 @@
 
 
 
+.popup {
+	display: flex;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+.popup__bg {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.popup__content {
+	background-color: #fff;
+	position: relative;
+	z-index: 3;
+}
+
+
+
 #modal-window #btn-close, #btn-close-2 {
 	align-items: center;
 	background-color: #273734;
@@ -6810,9 +6837,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 	background-color: var(--color-body);
 	z-index: 9999;
 	border: 1px solid var(--color-border);
-	-webkit-transform: translateY(0);
 	transform: translateY(0);
-	-webkit-transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
 	transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
 }
 
