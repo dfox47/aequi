@@ -173,8 +173,8 @@
 .discount-part::before {
 	color: #fff;
 	font-family: "Playfair Display", Helvetica, Arial, sans-serif;
-	font-size: 205px;
 	font-weight: 700;
+	left: 50%;
 	line-height: 1;
 	position: absolute;
 	transform: translateX(-50%);
@@ -182,15 +182,16 @@
 }
 
 .discount-part::after {
+	bottom: 20px;
+	font-size: 390px;
 	content: "40";
-	left: 27%;
 	top: 15%;
 }
 
 .discount-part::before {
+	font-size: 206px;
 	content: "%";
-	left: 10px;
-	top: 10%;
+	top: -4%;
 }
 
 
