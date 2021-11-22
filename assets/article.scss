@@ -1,0 +1,33 @@
+
+
+
+.article {
+	&__social {
+		.btn--share {
+			border: none;
+
+			.icon-twitter {
+				fill: $c_main;
+			}
+
+			.icon-facebook {
+				fill: $c_main;
+			}
+
+			.icon-pinterest {
+				fill: $c_main;
+			}
+		}
+
+		.social-sharing {
+			justify-content: center;
+			padding: 30px 0 90px  0;
+		}
+
+		.share-title {
+			display: none;
+		}
+	}
+}
+
+
