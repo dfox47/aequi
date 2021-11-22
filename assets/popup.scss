@@ -33,26 +33,48 @@
 		z-index: 3;
 	}
 
+	.form-part {
+		padding: 30px 38px;
+	}
+
 	.home_offer_wrap {
+		.home_offer {
+			&__desc {
+				font-size: 19px;
+				max-width: none;
+				padding: 0 0 35px;
+				text-align: left;
+			}
+
+			&__subtitle {
+				text-align: left;
+				padding: 30px 0;
+				font-size: 21px;
+			}
+		}
+
 		.input-group {
 			display: block;
 			margin: 0 auto 0 auto;
 			width: 100%;
-		}
 
-		.input-group .newsletter__submit {
-			background: $c_link;
-		}
+			.newsletter {
+				&__submit {
+					background: $c_link;
+				}
+			}
 
-		.input-group input[type=email] {
-			background-color: #f0f0f0;
-			border-radius: 6px;
-			display: block;
-			font-family: $font_josefin;
-			width: 100%;
+			input {
+				&[type=email] {
+					background-color: #f0f0f0;
+					border-radius: 6px;
+					display: block;
+					font-family: $font_josefin;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
-
 
 
