@@ -201,7 +201,6 @@
 	height: 100%;
 	justify-content: center;
 	left: 0;
-	padding: 85px 0 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -216,6 +215,7 @@
 	background: linear-gradient(to bottom, #273734, #000);
 	height: 100%;
 	left: 0;
+	opacity: .5;
 	position: absolute;
 	top: 0;
 	width: 100%;
