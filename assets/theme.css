@@ -196,9 +196,12 @@
 
 
 .popup {
+	align-items: center;
 	display: none;
 	height: 100%;
+	justify-content: center;
 	left: 0;
+	padding: 85px 0 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -210,6 +213,7 @@
 }
 
 .popup__bg {
+	background: linear-gradient(to bottom, #273734, #000);
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -1576,27 +1580,19 @@ h2 {
 
 .btn_close,
 .btn_close:visited {
+	background-color: #273734;
 	color: #000;
 	font-size: 19px;
 	font-weight: 100;
-	line-height: 1.1;
+	height: 52px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 52px;
 }
 
-.btn_close span,
-.btn_close:visited span {
-	background-color: #273734;
-	display: inline-block;
-	height: 37px;
-	margin: 0 8px 0 0;
-	position: relative;
-	vertical-align: middle;
-	width: 37px;
-}
-
-.btn_close span::after,
-.btn_close span::before,
-.btn_close:visited span::after,
-.btn_close:visited span::before {
+.btn_close::after,
+.btn_close::before {
 	background-color: #fff;
 	content: "";
 	height: 1px;
@@ -1606,13 +1602,11 @@ h2 {
 	width: 15px;
 }
 
-.btn_close span::after,
-.btn_close:visited span::after {
+.btn_close::after {
 	transform: rotate(45deg);
 }
 
-.btn_close span::before,
-.btn_close:visited span::before {
+.btn_close::before {
 	transform: rotate(-45deg);
 }
 
