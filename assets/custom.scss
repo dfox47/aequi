@@ -128,20 +128,22 @@
 
 
 
-#wrapper-modal-2 .home_offer__subtitle {
-	font-family: $font_playfair;
-	font-size: 23px;
-	padding: 0 0 26px;
-}
+#wrapper-modal-2 {
+	p {
+		font-family: $font_josefin;
+		font-size: 19px;
+		font-style: normal;
+		font-weight: 200;
+		letter-spacing: 0;
+		line-height: 20px;
+		text-align: center;
+	}
 
-#wrapper-modal-2 p {
-	font-family: $font_josefin;
-	font-size: 19px;
-	font-style: normal;
-	font-weight: 200;
-	letter-spacing: 0;
-	line-height: 20px;
-	text-align: center;
+	.home_offer__subtitle {
+		font-family: $font_playfair;
+		font-size: 23px;
+		padding: 0 0 26px;
+	}
 }
 
 .btn-close-3 {
@@ -157,27 +159,7 @@
 	text-transform: uppercase;
 }
 
-.popup {
-	.home_offer_wrap {
-		.input-group {
-			display: block;
-			margin: 0 auto 0 auto;
-			width: 100%;
-		}
 
-		.input-group .newsletter__submit {
-			background: $c_link;
-		}
-
-		.input-group input[type=email] {
-			background-color: #f0f0f0;
-			border-radius: 6px;
-			display: block;
-			font-family: $font_josefin;
-			width: 100%;
-		}
-	}
-}
 
 
 
@@ -197,39 +179,36 @@
 
 
 
-.discount-part {
+.discount_percent {
 	background-color: $c_main;
 	overflow: hidden;
 	position: relative;
+
+	&::after,
+	&::before {
+		color: #fff;
+		font-family: $font_playfair;
+		font-weight: 700;
+		left: 50%;
+		line-height: 1;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+
+	&::after {
+		bottom: 20px;
+		font-size: 390px;
+		content: "40";
+	}
+
+	&::before {
+		font-size: 206px;
+		content: "%";
+		top: -4%;
+	}
 }
 
-.discount-part::after,
-.discount-part::before {
-	color: #fff;
-	font-family: $font_playfair;
-	font-weight: 700;
-	left: 50%;
-	line-height: 1;
-	position: absolute;
-	transform: translateX(-50%);
-	z-index: 2;
-}
-
-.discount-part::after {
-	bottom: 20px;
-	font-size: 390px;
-	content: "40";
-}
-
-.discount-part::before {
-	font-size: 206px;
-	content: "%";
-	top: -4%;
-}
-
-
-
-#modal-window #btn-close,
 #btn-close-2 {
 	align-items: center;
 	background-color: $c_main;
@@ -239,28 +218,31 @@
 	padding: 10px;
 }
 
-#modal-window .close-btn,
 #modal-window-2 .close-btn {
 	position: absolute;
 	right: 0;
 }
 
-#modal-window .form-part {
-	padding: 30px 38px;
+.popup {
+	.form-part {
+		padding: 30px 38px;
+	}
+
+	.home_offer_wrap .home_offer__subtitle {
+		text-align: left;
+		padding: 30px 0;
+		font-size: 21px;
+	}
+
+	.home_offer_wrap .home_offer__desc {
+		font-size: 19px;
+		max-width: none;
+		padding: 0 0 35px;
+		text-align: left;
+	}
 }
 
-.popup .home_offer_wrap .home_offer__subtitle {
-	text-align: left;
-	padding: 30px 0;
-	font-size: 21px;
-}
 
-.popup .home_offer_wrap .home_offer__desc {
-	font-size: 19px;
-	max-width: none;
-	padding: 0 0 35px;
-	text-align: left;
-}
 /*modal styles*/
 
 
