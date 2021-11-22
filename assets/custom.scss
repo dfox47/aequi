@@ -877,20 +877,23 @@ h2 {
 	display: none;
 }
 
-.btn {
+.btn,
+.btn:visited {
+	cursor: pointer;
+	display: inline-block;
 	transition: $transition;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
-.btn:visited,
 .btn_close,
 .btn_close:visited {
 	cursor: pointer;
 	display: inline-block;
 	transition: $transition;
-}
-
-.btn_close,
-.btn_close:visited {
 	background-color: $c_main;
 	color: #000;
 	font-size: 19px;
@@ -900,46 +903,52 @@ h2 {
 	right: 0;
 	top: 0;
 	width: 52px;
+
+	&::after,
+	&::before {
+		background-color: #fff;
+		content: "";
+		height: 1px;
+		left: 10px;
+		position: absolute;
+		top: 25px;
+		width: 35px;
+	}
+
+	&::after {
+		transform: rotate(45deg);
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+	}
 }
 
-.btn_close::after,
-.btn_close::before {
-	background-color: #fff;
-	content: "";
-	height: 1px;
-	left: 10px;
-	position: absolute;
-	top: 25px;
-	width: 35px;
-}
+.btn_close_text {}
 
-.btn_close::after {
-	transform: rotate(45deg);
-}
 
-.btn_close::before {
-	transform: rotate(-45deg);
-}
-
-.faq,
-.faq h3 {
-	font-family: $font_josefin;
-}
 
 .faq {
+	font-family: $font_josefin;
 	padding: 0 0 116px;
+
+	h3 {
+		font-family: $font_josefin;
+		margin: 2em 0 0;
+	}
+
+	&__desc {
+		display: none;
+		padding: 0 0 0 100px;
+
+		&.active {
+			display: block;
+		}
+	}
 }
 
-.faq h3 {
-	margin: 2em 0 0;
-}
 
-.faq__desc {
-	display: none;
-	padding: 0 0 0 100px;
-}
 
-.faq__desc.active,
 article,
 aside,
 details,
@@ -978,36 +987,38 @@ summary {
 	padding: 27px 0 0 100px;
 	position: relative;
 	text-transform: uppercase;
+
+	&::before {
+		align-items: center;
+		background-color: rgba(39, 55, 52, 0.5);
+		color: #000;
+		content: "+";
+		display: flex;
+		font-size: 60px;
+		font-weight: 100;
+		height: 70px;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 70px;
+	}
+
+	&.active {
+		font-weight: 700;
+
+		&::before {
+			background-color: $c_main;
+			color: #fff;
+			content: "-";
+		}
+	}
 }
 
-.faq__title::before {
-	align-items: center;
-	background-color: rgba(39, 55, 52, 0.5);
-	color: #000;
-	content: "+";
-	display: flex;
-	font-size: 60px;
-	font-weight: 100;
-	height: 70px;
-	justify-content: center;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 70px;
-}
 
-.faq__title.active {
-	font-weight: 700;
-}
 
-.faq__title.active::before {
-	background-color: $c_main;
-	color: #fff;
-	content: "-";
-}
-
-.faq .btn_close,
-.faq .btn_close:visited {
+.faq .btn_close_text,
+.faq .btn_close_text:visited {
 	margin: 30px 0 45px;
 }
 
