@@ -294,23 +294,10 @@
 	display: none;
 	height: 100%;
 	width: 100%;
-}
 
-#wrapper-modal {
-	display: none;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 12;
-}
-
-
-#wrapper-modal.active {
-	display: block;
-}
-.wrapper-modal.active {
-	display: flex;
+	&.active {
+		display: flex;
+	}
 }
 
 #overlay,

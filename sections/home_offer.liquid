@@ -21,9 +21,9 @@
 			{%- if form.posted_successfully? -%}
 				<!-- modal2 -->
 				<div class="wrapper-modal popup js-popup active" id="wrapper-modal-2" data-popup="subscribe_success">
-					<div class="overlay js-popup-close" id="overlay-2"></div>
+					<div class="popup__bg js-popup-close"></div>
 
-					<div id="modal-window-2">
+					<div id="modal-window-2" class="popup__content">
 						<div class="btn_close js-popup-close"></div>
 
 						<div class="content2">
@@ -34,7 +34,7 @@
 
 										<p>Thank you for subscribing!</p>
 
-										<button class="btn-close-3">ok</button>
+										<button class="btn-close-3 js-popup-close">ok</button>
 									</div>
 								</div>
 							</div>
