@@ -933,6 +933,8 @@ h2 {
 		background-color: $c_main;
 		display: inline-block;
 		height: 37px;
+		margin: 0 8px 0 0;
+		position: relative;
 		width: 37px;
 
 		&::after,
@@ -942,8 +944,8 @@ h2 {
 			height: 1px;
 			left: 10px;
 			position: absolute;
-			top: 25px;
-			width: 35px;
+			top: 17px;
+			width: 20px;
 		}
 
 		&::after {
