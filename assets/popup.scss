@@ -28,9 +28,12 @@
 	}
 
 	&__content {
-		background-color: #fff;
 		position: relative;
 		z-index: 3;
+
+		&__with_bg {
+			background-color: #fff;
+		}
 	}
 
 	.form-part {
