@@ -27,11 +27,27 @@
 	}
 }
 
+#btn-close-2 {
+	align-items: center;
+	background-color: $c_main;
+	border: none;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
 #input-group {
 	&__field {
 		border-radius: 6px;
 		flex-grow: 4;
 		margin-right: 9px;
+	}
+}
+
+#modal-window-2 {
+	.close-btn {
+		position: absolute;
+		right: 0;
 	}
 }
 
@@ -67,6 +83,10 @@
 
 
 // Help classes [START]
+.active-flex {
+	display: flex;
+}
+
 .btn-close-3 {
 	background-color: $c_link;
 	border-radius: 6px;
@@ -115,129 +135,16 @@
 }
 
 .flex-wrap-over21 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
 	a,
 	a:visited {
 		color: #fff;
 		text-decoration: underline;
 	}
-}
-
-.grid-box-modal {
-	display: grid;
-	grid-auto-flow: row;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 100%;
-}
-
-.grid-box-modal_mg {
-	display: grid;
-	grid-auto-flow: row;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 100%;
-}
-
-.icon-rss {
-	display: none;
-}
-
-.input-group {
-	&__button {
-		flex-grow: 2;
-	}
-
-	&--underline {
-		width: 60%;
-		display: flex;
-		margin: 0 auto;
-	}
-}
-
-.privacy_content {
-	li {
-		list-style-type: unset;
-		font-size: 19px;
-	}
-
-	p {
-		font-family: $font_josefin;
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 19px;
-		letter-spacing: 0;
-		text-align: left;
-	}
-
-	ul {
-		padding-left: 20px;
-	}
-}
-
-.privacy_policy_title {
-	h2 {
-		font-family: $font_playfair;
-		font-size: 30px;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: 0;
-		line-height: 32px;
-		margin-bottom: 39px;
-		text-align: center;
-	}
-}
-// Help classes [END]
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-#btn-close-2 {
-	align-items: center;
-	background-color: $c_main;
-	border: none;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-
-#modal-window-2 .close-btn {
-	position: absolute;
-	right: 0;
-}
-
-
-.flex-modal {
-	align-items: center;
-	background-color: #2a3734;
-	display: none;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: center;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10;
-
-	&.active {
-		display: flex;
-	}
-}
-
-.active-flex {
-	display: flex;
-}
-
-.flex-wrap-over21 {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
 
 	p {
 		color: #fff;
@@ -277,10 +184,6 @@
 	}
 }
 
-.hidden {
-	display: none;
-}
-
 .flex-wrapper {
 	align-items: center;
 	display: flex;
@@ -288,6 +191,74 @@
 	justify-content: center;
 	position: relative;
 	width: 100%;
+}
+
+.grid-box-modal {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+}
+
+.grid-box-modal_mg {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+}
+
+.icon-rss {
+	display: none;
+}
+
+.input-group {
+	&__button {
+		flex-grow: 2;
+	}
+
+	&--underline {
+		width: 60%;
+		display: flex;
+		margin: 0 auto;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.privacy_content {
+	li {
+		list-style-type: unset;
+		font-size: 19px;
+	}
+
+	p {
+		font-family: $font_josefin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 19px;
+		letter-spacing: 0;
+		text-align: left;
+	}
+
+	ul {
+		padding-left: 20px;
+	}
+}
+
+.privacy_policy_title {
+	h2 {
+		font-family: $font_playfair;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: 0;
+		line-height: 32px;
+		margin-bottom: 39px;
+		text-align: center;
+	}
 }
 
 .wrapper-modal {
@@ -299,6 +270,16 @@
 		display: flex;
 	}
 }
+// Help classes [END]
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 #overlay,
 .overlay,

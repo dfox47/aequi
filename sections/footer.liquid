@@ -357,17 +357,11 @@
 	</div>
 
 	<!-- modal3 -->
-	<div class="wrapper-modal" id="wrapper-modal-sighn-up">
-		<div class="overlay3" id="overlay-sighn-up"></div>
+	<div class="wrapper-modal popup js-popup" id="wrapper-modal-sighn-up">
+		<div class="popup__bg js-popup-close"></div>
 
 		<div id="modal-window-sighn-up">
-			<div>
-				<button class="btn-close-sighn-up" id="btn-close-sighn-up">
-					<svg width="17" height="18" viewBox="0 0 17 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.69948 9.00177L0.710529 2.00967C0.46475 1.76389 0.46475 1.36371 0.710529 1.11793C0.956308 0.872149 1.35649 0.872149 1.60227 1.11793L8.59122 8.11003L15.5833 1.12108C15.8291 0.872149 16.2261 0.872149 16.4719 1.12108C16.7177 1.37001 16.7177 1.76704 16.4719 2.01282L9.48296 9.00177L16.4719 15.9939C16.7177 16.2397 16.7177 16.6398 16.4719 16.8856C16.349 17.0085 16.1883 17.0715 16.0276 17.0715C15.8669 17.0715 15.7062 17.0085 15.5833 16.8856L8.59122 9.89351L1.59912 16.8856C1.47623 17.0085 1.31553 17.0715 1.15482 17.0715C0.994122 17.0715 0.833419 17.0085 0.710529 16.8856C0.46475 16.6398 0.46475 16.2397 0.710529 15.9939L7.69948 9.00177Z" fill="#fff"/>
-					</svg>
-				</button>
-			</div>
+			<div class="btn_close"></div>
 
 			<div class="content">
 				<div class="wrapper-modal-content grid-box-modal_mg">
@@ -388,16 +382,16 @@
 									<input type="hidden" name="contact[tags]" value="newsletter" />
 
 									<div class="input-group">
-										<input type="email"
-										       name="contact[email]"
-										       id="home_offer_form-email"
-										       class="input-group__field newsletter__input"
-										       value=""
-										       placeholder="Email address"
-										       aria-label="Email address"
+										<input aria-label="Email address"
 										       aria-required="true"
-										       required
 										       autocapitalize="off"
+										       class="input-group__field newsletter__input"
+										       id="home_offer_form-email"
+										       name="contact[email]"
+										       placeholder="Email address"
+										       required
+										       type="email"
+										       value=""
 										>
 
 										<span class="input-group__btn">
@@ -451,22 +445,23 @@
 							<input type="hidden" name="contact[tags]" value="newsletter" />
 
 							<div class="input-group">
-								<input type="email"
-								       name="contact[email]"
-								       id="home_offer_form-email"
-								       class="input-group__field newsletter__input"
-								       value=""
-								       placeholder="Email address"
-								       aria-label="Email address"
+								<input aria-label="Email address"
 								       aria-required="true"
-								       required
 								       autocapitalize="off"
+								       class="input-group__field newsletter__input"
+								       id="home_offer_form-email"
+								       name="contact[email]"
+								       placeholder="Email address"
+								       required
+								       type="email"
+								       value=""
 								>
+
 								<span class="input-group__btn">
-										<button type="submit" class="btn newsletter__submit" name="commit">
-											<span class="newsletter__submit-text--large">Subscribe</span>
-										</button>
-									</span>
+									<button type="submit" class="btn newsletter__submit" name="commit">
+										<span class="newsletter__submit-text--large">Subscribe</span>
+									</button>
+								</span>
 							</div>
 						</form>
 					</div>
@@ -477,17 +472,21 @@
 </div>
 
 <!-- modal4 -->
-<div class="flex-modal popup js-popup js-popup-over-21">
-	<div class="popup__bg js-popup-close"></div>
+<div class="popup js-popup js-popup-over-21">
+	<div class="popup__bg popup__bg__over_21 js-popup-close"></div>
 
 	<div class="popup__content flex-wrap-over21">
-		<a class="header_logo" href="/"><img src="{{ 'i_logo.svg' | asset_url }}" alt="" /></a>
+		<div class="textg-center">
+			<a class="header_logo" href="/"><img src="{{ 'i_logo.svg' | asset_url }}" alt="" /></a>
 
-		<p>By entering this website, you are agreeing to our terms and services and <a href="#">privacy police.</a></p>
+			<p>
+				By entering this website, you are agreeing to our terms and services and <a href="javascript:void(0);">privacy police.</a>
+			</p>
 
-		<div class="buttons">
-			<button class="no">no</button>
-			<button class="over21 js-popup-close js-popup-over-21-agree">Yes, I am over 21</button>
+			<div class="buttons">
+				<button class="no">no</button>
+				<button class="over21 js-popup-close js-popup-over-21-agree">Yes, I am over 21</button>
+			</div>
 		</div>
 	</div>
 </div>
