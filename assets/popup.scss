@@ -39,6 +39,14 @@
 		&__with_bg {
 			background-color: #fff;
 		}
+
+		&__over_21 {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
 	}
 
 	.form-part {
