@@ -179,8 +179,8 @@
         ],
         "settings": {
           "main_linklist": "main-menu",
-          "footer_title": "<p>40% Off: Just For Joining<\/p>",
-          "footer_desc": "<p>Sign-up for our online publication, receive a 40% discount on any product you pre-order, and be part of the movement.<\/p>",
+          "footer_title": "<p>20% Off: Just For Joining<\/p>",
+          "footer_desc": "<p>Sign-up for our online publication, receive a 20% discount on any product you pre-order, and be part of the movement.<\/p>",
           "show_payment_icons": false,
           "color_footer_bg": "#272c3e",
           "color_footer_text": "#ffffff",
