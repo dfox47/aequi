@@ -1,11 +1,7 @@
 
 
 
-.home_info {
-	background-color: $c_main;
-	border-top: 1px solid #fff;
-}
-
+// home_advantages [START]
 .home_advantages {
 	background-color: $c_main;
 	color: #fff;
@@ -361,7 +357,19 @@
 }
 // home_blog [END]
 
+	@media #{$tablet} {
+		border-top: 0 solid #fff;
 
+		&::before {
+			background-color: #fff;
+			content: "";
+			height: 1px;
+			left: 10%;
+			position: absolute;
+			transition: $transition;
+			width: 80%;
+			display: block;
+		}
 
 .home_info {
 	background-color: $c_main;
@@ -446,6 +454,28 @@
 	}
 }
 
+		&:last-child {
+			padding-right: 0;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	@media #{$tablet} {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 40px;
+		padding-top: 40px;
+
+		&__item {
+			padding: 18px 35px;
+		}
+	}
+}
+
 .home_offer {
 	overflow: hidden;
 	position: relative;
@@ -502,6 +532,92 @@
 			transform: translateX(-50%);
 			z-index: -1;
 		}
+
+		@media #{$tablet} {
+			padding: 100px 0 0;
+
+			&::after {
+				content: "40%";
+				font-size: 225px;
+				font-weight: 700;
+				left: 53%;
+				line-height: 1;
+				opacity: 0.1;
+				position: absolute;
+				top: -32px;
+				transform: translateX(-50%);
+				z-index: 1;
+			}
+		}
+	}
+}
+
+.home-offer-wrap {
+	.input-group {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto 110px;
+		width: 40%;
+	}
+}
+
+.home_offer_wrap {
+	.input-group {
+		margin: 0 auto 110px;
+		width: 40%;
+
+		input[type="email"] {
+			background-color: #f0f0f0;
+			border-radius: 6px;
+			font-family: $font_josefin;
+		}
+
+		.newsletter__submit {
+			font-family: $font_josefin;
+			font-size: 15px;
+			border-radius: 6px;
+			background: #272c3e;
+		}
+
+		@media #{$tablet} {
+			flex-direction: column;
+			width: 100%;
+			padding: 0 15px;
+			margin: 0 auto 50px auto;
+
+			input[type="email"] {
+				flex-basis: auto;
+			}
+		}
+	}
+}
+
+.home_offer_wrap_mg {
+	background-color: #e0d8d3;
+	padding: 50px 30px;
+
+	button[type=submit] {
+		background-color: $c_link;
+		border-radius: 6px;
+	}
+
+	input[type=email] {
+		border-radius: 6px;
+	}
+
+	.home_offer {
+		&__subtitle {
+			color: $c_main;
+			text-align: left;
+			font-size: 23px;
+		}
+	}
+}
+
+	+ .home_text {
+		padding: 54px 0 0;
+
 
 		@media #{$tablet} {
 			padding: 100px 0 0;
