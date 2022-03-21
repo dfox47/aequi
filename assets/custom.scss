@@ -1,6 +1,4 @@
 
-
-
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
@@ -17,6 +15,7 @@
 		background-color: var(--global-color-image-loader-primary);
 	}
 }
+
 
 
 // ID's [START]
@@ -320,6 +319,10 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 4;
+
+	@media #{$tablet} {
+		width: 90%;
+	}
 }
 
 #modal-window-2 {
@@ -342,19 +345,7 @@
 	width: 830px;
 	z-index: 4;
 }
-
-
-
 /*end modal styles*/
-
-
-
-
-@media #{$tablet} {
-	#modal-window {
-		width: 90%;
-	}
-}
 
 
 
