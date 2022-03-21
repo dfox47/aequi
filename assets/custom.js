@@ -66,6 +66,7 @@ $(window).bind('load', function() {
 
 
 	$('.js-home-slider').owlCarousel({
+		dtos:   true,
 		items:  1,
 		loop:   true
 	});
