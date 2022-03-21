@@ -30,6 +30,68 @@
 {% schema %}
 	{
 		"name": "Hero image bg",
+		"blocks": [
+			{
+				"type": "image",
+				"name": {
+					"en": "Image",
+				},
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": {
+							"en": "Image",
+						}
+					},
+					{
+						"type": "select",
+						"id": "alignment",
+						"label": {
+							"en": "Image alignment",
+						},
+						"default": "center",
+						"options": [
+							{
+								"value": "top",
+								"label": {
+									"en": "Top",
+								}
+							},
+							{
+								"value": "center",
+								"label": {
+									"en": "Middle",
+								}
+							},
+							{
+								"value": "bottom",
+								"label": {
+									"en": "Bottom",
+								}
+							}
+						]
+					},
+					{
+						"type": "url",
+						"id": "link",
+						"label": {
+							"en": "Link",
+						},
+						"info": {
+							"en": "Optional",
+						}
+					},
+					{
+						"type": "text",
+						"id": "cta_label",
+						"label": {
+							"en": "Caption",
+						}
+					}
+				]
+			}
+		]
 		"settings": [
 			{
 				"type": "image_picker",
@@ -69,7 +131,7 @@
 		],
 		"presets": [
 			{
-				"name": "Hero image",
+				"name": "Hero image bg",
 				"category": "image"
 				"blocks": [
 					{
