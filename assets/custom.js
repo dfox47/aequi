@@ -66,9 +66,14 @@ $(window).bind('load', function() {
 
 
 	$('.js-home-slider').owlCarousel({
-		dtos:   true,
 		items:  1,
 		loop:   true
+	});
+
+	$('.js-home-slider-goto').click(function () {
+		let slideId = $(this).attr('data-id');
+
+		$('.js-home-slider').trigger('to.owl.carousel', slideId);
 	});
 });
 
