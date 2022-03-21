@@ -1,25 +1,18 @@
 @charset "UTF-8";
 // powered by FOXARTBOX | www.foxartbox.com
 
-
-
 // should be 1st
 @import "vars";
 @import "default";
-
-
 
 @import "article";
 @import "footer";
 @import "header";
 @import "hero";
 @import "home";
+@import "owl.carousel";
 @import "popup";
 @import "slick";
 
-
-
 // should be last
 @import "custom";
-
-
