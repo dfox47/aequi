@@ -120,9 +120,17 @@ function closeModal2() {
 	modal2.classList.remove('active');
 }
 
-overlay2.addEventListener('click', closeModal2);
-btnClose2.addEventListener('click', closeModal2);
-btnClose2_1.addEventListener('click', closeModal2);
+if (overlay2 != null) {
+	overlay2.addEventListener('click', closeModal2);
+}
+
+if (btnClose2 != null) {
+	btnClose2.addEventListener('click', closeModal2);
+}
+
+if (btnClose2_1 != null) {
+	btnClose2_1.addEventListener('click', closeModal2);
+}
 
 
 
