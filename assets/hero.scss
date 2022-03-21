@@ -11,6 +11,25 @@
 		height: 100%;
 	}
 
+	.owl-dot {
+		border-radius: 50%;
+		border: 2px solid #fff;
+		height: 12px;
+		width: 12px;
+
+		&.active {
+			background-color: #fff;
+		}
+	}
+
+	.owl-dots {
+		bottom: 10px;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 3;
+	}
+
 	.owl-item {
 		height: 100%;
 	}
@@ -27,6 +46,8 @@
 		background-position: center;
 		background-size: cover;
 		height: 100%;
+		position: relative;
 		width: 100%;
+		z-index: 1;
 	}
 }
