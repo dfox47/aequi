@@ -62,6 +62,13 @@ $(window).bind('load', function() {
 		localStorage.setItem('over21', '1');
 	});
 	// over 21 [END]
+
+
+
+	$('.js-home-slider').owlCarousel({
+		items:      1,
+		loop:       true
+	});
 });
 
 
