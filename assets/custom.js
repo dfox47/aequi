@@ -95,7 +95,9 @@ if (overlay != null) {
 	overlay.addEventListener('click', closeModal);
 }
 
-btnClose.addEventListener('click', closeModal);
+if (btnClose != null) {
+	btnClose.addEventListener('click', closeModal);
+}
 
 
 
