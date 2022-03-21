@@ -22,10 +22,12 @@
 
 
 
-	<div class="hero_slider owl-carousel js-home-slider">
-		{% for block in section.blocks %}
-			<div class="hero_slider__item" style="background-image: url({{ block.settings.image | img_url: '2048x' }})"></div>
-		{% endfor %}
+	<div class="hero_slider">
+		<div class="owl-carousel js-home-slider">
+			{% for block in section.blocks %}
+				<div class="hero_slider__item" style="background-image: url({{ block.settings.image | img_url: '2048x' }})"></div>
+			{% endfor %}
+		</div>
 	</div>
 </div>
 
