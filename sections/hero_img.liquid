@@ -1,5 +1,5 @@
 
-<div class="hero_img" style="background-image: url({{ section.settings.hero_img | img_url: '2048x' }})">
+<div class="hero_img">
 	<div class="hero_img__logo">
 		<img src="{{ 'i_logo.svg' | asset_url }}" alt="" />
 	</div>
@@ -41,21 +41,11 @@
 						"type": "image_picker",
 						"id": "image",
 						"label": "Image"
-					},
-					{
-						"type": "text",
-						"id": "cta_label",
-						"label": "Caption"
 					}
 				]
 			}
 		],
 		"settings": [
-			{
-				"type": "image_picker",
-				"id": "hero_img",
-				"label": "Hero image bg"
-			},
 			{
 				"type": "text",
 				"id": "title_1",
