@@ -66,8 +66,7 @@ $(window).bind('load', function() {
 
 
 	$('.js-home-slider').owlCarousel({
-		items:      1,
-		loop:       false
+		// items:      1
 	});
 });
 

@@ -7,6 +7,10 @@
 	width: 100%;
 	z-index: 1;
 
+	.owl-carousel {
+		height: 100%;
+	}
+
 	&__item {
 		background-position: center;
 		background-size: cover;
