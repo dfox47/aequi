@@ -2894,7 +2894,7 @@ theme.Header = (function () {
 		cache = {
 			nav: navigation,
 			topLevel: document.querySelectorAll(selectors.siteNavLinkMain),
-			// parents: navigation.querySelectorAll(selectors.siteNavHasDropdown),
+			parents: navigation.querySelectorAll(selectors.siteNavHasDropdown),
 			subMenuLinks: document.querySelectorAll(selectors.siteNavChildLinks),
 			activeDropdown: document.querySelector(selectors.siteNavActiveDropdown),
 			siteHeader: document.querySelector(selectors.siteHeader),
