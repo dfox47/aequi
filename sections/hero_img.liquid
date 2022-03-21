@@ -68,55 +68,51 @@
 			}
 		],
 		"blocks": [
-		{
-			"type": "image",
-			"name": "Image",
-			"settings": [
-				{
-					"type": "image_picker",
-					"id": "image",
-					"label":  "Image",
-				},
-				{
-					"type": "select",
-					"id": "alignment",
-					"label":  "Image alignment",
-					"default": "center",
-					"options": [
-						{
-							"value": "top",
-							"label": "Top",
-						},
-						{
-							"value": "center",
-							"label": "Middle",
-						},
-						{
-							"value": "bottom",
-							"label": "Bottom",
-						}
-					]
-				},
-				{
-					"type": "url",
-					"id": "link",
-					"label": {
-						"en": "Link",
+			{
+				"type": "image",
+				"name": "Image",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label":  "Image",
 					},
-					"info": {
-						"en": "Optional",
+					{
+						"type": "select",
+						"id": "alignment",
+						"label":  "Image alignment",
+						"default": "center",
+						"options": [
+							{
+								"value": "top",
+								"label": "Top",
+							},
+							{
+								"value": "center",
+								"label": "Middle",
+							},
+							{
+								"value": "bottom",
+								"label": "Bottom",
+							}
+						]
+					},
+					{
+						"type": "url",
+						"id": "link",
+						"label": "Link",
+						"info": {
+							"en": "Optional",
+						}
+					},
+					{
+						"type": "text",
+						"id": "cta_label",
+						"label": "Caption",
 					}
-				},
-				{
-					"type": "text",
-					"id": "cta_label",
-					"label": {
-						"en": "Caption",
-					}
-				}
-			]
-		}
-	],
+				]
+			}
+		],
 		"presets": [
 			{
 				"name": "Hero image bg",
