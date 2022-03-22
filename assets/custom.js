@@ -66,8 +66,8 @@ $(window).bind('load', function() {
 
 
 	// home slider [START]
-	let $homeSlider = $('.js-home-slider');
-	let sliderAutoplay = $homeSlider.attr('data-autoplay');
+	let $homeSlider     = $('.js-home-slider');
+	let sliderAutoplay  = $homeSlider.attr('data-autoplay');
 
 	$homeSlider.owlCarousel({
 		autoplay:           sliderAutoplay,
@@ -76,14 +76,19 @@ $(window).bind('load', function() {
 		loop:               true
 	});
 
+	$homeSlider.on('changed.owl.carousel', function(e) {
+		let currentID = e.item.index;
+
+		$('.js-home-slider-goto').removeClass('active');
+		$('.js-home-slider-goto[data-id="' + currentID + '"]').addClass('active');
+	});
+
 	$('.js-home-slider-goto').click(function () {
 		let $this   = $(this);
 		let slideId = parseInt($this.attr('data-id'));
 
 		$('.js-home-slider-goto').removeClass('active');
-
 		$this.addClass('active');
-
 		$('.js-home-slider').trigger('to.owl.carousel', slideId - 1);
 	});
 	// home slider [END]
