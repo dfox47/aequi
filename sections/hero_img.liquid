@@ -23,7 +23,7 @@
 
 
 	<div class="hero_slider">
-		<div class="owl-carousel js-home-slider" data-autoplay="{{ settings.slider_autoplay }}">
+		<div class="owl-carousel js-home-slider" data-autoplay="{{ section.settings.slider_autoplay }}">
 			{% for block in section.blocks %}
 				<div class="hero_slider__item" style="background-image: url({{ block.settings.image | img_url: '2048x' }})"></div>
 			{% endfor %}
