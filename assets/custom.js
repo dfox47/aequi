@@ -66,9 +66,14 @@ $(window).bind('load', function() {
 
 
 	// home slider [START]
-	$('.js-home-slider').owlCarousel({
-		items:  1,
-		loop:   true
+	let $homeSlider = $('.js-home-slider');
+	let sliderAutoplay = $homeSlider.attr('data-autoplay');
+
+	$homeSlider.owlCarousel({
+		autoplay:           sliderAutoplay,
+		autoplayTimeout:    3000,
+		items:              1,
+		loop:               true
 	});
 
 	$('.js-home-slider-goto').click(function () {
