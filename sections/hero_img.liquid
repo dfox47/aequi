@@ -32,7 +32,7 @@
 
 	<div class="hero_slider_dots">
 		{% for block in section.blocks %}
-			<div class="hero_slider_dots__item js-home-slider-goto {{ forloop.index == '1' }}" data-id="{{ forloop.index }}"></div>
+			<div class="hero_slider_dots__item js-home-slider-goto {% if forloop.index == '1' %}active{%- endif -%}" data-id="{{ forloop.index }}"></div>
 		{% endfor %}
 	</div>
 </div>

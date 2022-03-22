@@ -54,6 +54,7 @@
 
 .hero_slider_dots {
 	bottom: 80px;
+	cursor: pointer;
 	display: flex;
 	left: 50%;
 	position: absolute;
@@ -61,15 +62,27 @@
 	z-index: 5;
 
 	&__item {
-		border-radius: 50%;
-		border: 1px solid #fff;
 		display: block;
-		height: 10px;
-		margin: 0 8px;
-		width: 10px;
+		height: 30px;
+		position: relative;
+		width: 30px;
+
+		&::after {
+			border-radius: 50%;
+			border: 1px solid #fff;
+			content: "";
+			height: 10px;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			width: 10px;
+		}
 
 		&.active {
-			background-color: #fff;
+			&::after {
+				background-color: #fff;
+			}
 		}
 	}
 }
