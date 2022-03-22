@@ -146,6 +146,14 @@
 	.owl-stage-outer {
 		height: 100%;
 	}
+
+	@media #{$tablet} {
+		height: 100vw;
+		left: auto;
+		position: relative;
+		top: auto;
+		width: 100%;
+	}
 }
 // home_advantages [END]
 
