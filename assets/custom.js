@@ -77,7 +77,7 @@ $(window).bind('load', function() {
 	});
 
 	$homeSlider.on('changed.owl.carousel', function(e) {
-		let currentID = e.item.index;
+		let currentID = e.item.index - 1;
 
 		$('.js-home-slider-goto').removeClass('active');
 		$('.js-home-slider-goto[data-id="' + currentID + '"]').addClass('active');
