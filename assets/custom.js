@@ -92,6 +92,20 @@ $(window).bind('load', function() {
 		$('.js-home-slider').trigger('to.owl.carousel', slideId - 1);
 	});
 	// home slider [END]
+
+
+
+	// advantages slider [START]
+	let $advantagesSlider           =  $('.js-advantages-slider');
+	let advantagesSliderAutoplay    = $advantagesSlider.attr('data-autoplay');
+
+	$advantagesSlider.owlCarousel({
+		autoplay:           advantagesSliderAutoplay,
+		autoplayTimeout:    3000,
+		items:              1,
+		loop:               true
+	});
+	// advantages slider [END]
 });
 
 
