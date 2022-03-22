@@ -1,23 +1,13 @@
+
 <div class="wrap3">
-	{% capture image_layout %}
-		<div class="home_advantages_img">
-			{% if section.settings.image != blank %}
-				{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-
-				<img alt="{{ section.settings.image.alt | escape }}"
-				     class="lazyload"
-				     data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-				     data-sizes="auto"
-				     data-src="{{ img_url }}"
-				     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-				     src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-				/>
-			{% endif %}
-		</div>
-	{% endcapture %}
-
 	<div class="home_advantages_list">
-		{{ image_layout }}
+		<div class="home_advantages_slider">
+			<div class="owl-carousel js-advantages-slider" data-autoplay="{% if section.settings.slider_autoplay %}true{%- endif -%}">
+				{% for block in section.blocks %}
+					<div class="home_advantages_slider__item" style="background-image: url({{ block.settings.image | img_url: '2048x' }})"></div>
+				{% endfor %}
+			</div>
+		</div>
 
 		<div class="home_advantages_content">
 			{% if section.settings.title_1 != blank %}
@@ -70,21 +60,25 @@
 	"name": {
 		"en": "Image & text home"
 	},
+	"blocks": [
+		{
+			"type": "image",
+			"name": "Image",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				}
+			]
+		}
+	],
 	"class": "home_advantages",
 	"settings": [
 		{
-			"type": "image_picker",
-			"id": "image",
-			"label": {
-				"en": "Image"
-			}
-		},
-		{
 			"type": "text",
 			"id": "title_1",
-			"label": {
-				"en": "Title 1"
-			},
+			"label": "Title 1",
 			"default": {
 				"en": "Image & text home 1"
 			}
@@ -92,9 +86,7 @@
 		{
 			"type": "text",
 			"id": "title_2",
-			"label": {
-				"en": "Title 2"
-			},
+			"label": "Title 2",
 			"default": {
 				"en": "Image & text home 2"
 			}
@@ -102,9 +94,7 @@
 		{
 			"type": "text",
 			"id": "title_3",
-			"label": {
-				"en": "Title 3"
-			},
+			"label": "Title 3",
 			"default": {
 				"en": "Image & text home 3"
 			}
@@ -112,19 +102,13 @@
 		{
 			"type": "text",
 			"id": "subtitle_1",
-			"label": {
-				"en": "Subtitle 1"
-			},
-			"default": {
-				"en": "Image & text home 1"
-			}
+			"label": "Subtitle 1",
+			"default": "Image & text home 1"
 		},
 		{
 			"type": "text",
 			"id": "subtitle_2",
-			"label": {
-				"en": "Subtitle 2"
-			},
+			"label": "Subtitle 2",
 			"default": {
 				"en": "Image & text home 2"
 			}
@@ -132,9 +116,7 @@
 		{
 			"type": "text",
 			"id": "subtitle_3",
-			"label": {
-				"en": "Subtitle 3"
-			},
+			"label":  "Subtitle 3",
 			"default": {
 				"en": "Image & text home 3"
 			}
@@ -142,9 +124,7 @@
 		{
 			"type": "richtext",
 			"id": "text_1",
-			"label": {
-				"en": "Text 1"
-			},
+			"label":  "Text 1",
 			"default": {
 				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
 			}
@@ -152,9 +132,7 @@
 		{
 			"type": "richtext",
 			"id": "text_2",
-			"label": {
-				"en": "Text 2"
-			},
+			"label": "Text 2",
 			"default": {
 				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
 			}
@@ -162,12 +140,16 @@
 		{
 			"type": "richtext",
 			"id": "text_3",
-			"label": {
-				"en": "Text 3"
-			},
+			"label": "Text 3",
 			"default": {
 				"en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
 			}
+		},
+		{
+			"type": "checkbox",
+			"id": "slider_autoplay",
+			"label": "Slider autoplay",
+			"default": true
 		}
 	],
 	"presets": [
@@ -175,6 +157,17 @@
 			"name": {
 				"en": "Image & text home"
 			},
+			"blocks": [
+				{
+					"type": "image"
+				},
+				{
+					"type": "image"
+				},
+				{
+					"type": "image"
+				}
+			],
 			"category": {
 				"en": "Image"
 			}
