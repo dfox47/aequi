@@ -102,6 +102,7 @@ $(window).bind('load', function() {
 	$advantagesSlider.owlCarousel({
 		autoplay:           advantagesSliderAutoplay,
 		autoplayTimeout:    3000,
+		dots:               true,
 		items:              1,
 		loop:               true
 	});
