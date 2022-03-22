@@ -72,9 +72,14 @@ $(window).bind('load', function() {
 	});
 
 	$('.js-home-slider-goto').click(function () {
-		let slideId = $(this).attr('data-id');
+		let $this   = $(this);
+		let slideId = parseInt($this.attr('data-id'));
 
-		$('.js-home-slider').trigger('to.owl.carousel', slideId);
+		$('.js-home-slider-goto').removeClass('active');
+
+		$this.addClass('active');
+
+		$('.js-home-slider').trigger('to.owl.carousel', slideId - 1);
 	});
 	// home slider [END]
 });
