@@ -194,22 +194,19 @@
           "398f3c2c-fdc7-4139-8159-e342a0aea5ab": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/AdobeStock_459263281_Preview_1.png",
-              "cta_label": ""
+              "image": "shopify:\/\/shop_images\/AdobeStock_459263281_Preview_1.png"
             }
           },
           "b2a42153-f6ef-4a81-980c-16251d5e0967": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3273_2.png",
-              "cta_label": ""
+              "image": "shopify:\/\/shop_images\/IMG_3273_2.png"
             }
           },
           "70ece5c4-3517-4be9-90e1-aa4496ae99b8": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3269-Edit_1.png",
-              "cta_label": ""
+              "image": "shopify:\/\/shop_images\/IMG_3269-Edit_1.png"
             }
           }
         },
@@ -219,12 +216,12 @@
           "70ece5c4-3517-4be9-90e1-aa4496ae99b8"
         ],
         "settings": {
-          "hero_img": "shopify:\/\/shop_images\/adobestock_standard_459263281_copy.jpg",
           "title_1": "Your style.",
           "title_2": "Your scene.",
           "desc": "We design aesthetic cannabis experiences.",
           "link_src": "\/",
-          "link_text": "40% OFF"
+          "link_text": "40% OFF",
+          "slider_autoplay": true
         }
       },
       "163352137347303009": {
