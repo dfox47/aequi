@@ -247,8 +247,29 @@
       },
       "1634400532ed0f0043": {
         "type": "image_text_home",
+        "blocks": {
+          "ce8d19a2-79fa-4b4a-a3ee-1c34d26e3c2f": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "4aad9aa9-c9d3-4e3c-8893-0f8f79d35f88": {
+            "type": "image",
+            "settings": {
+            }
+          },
+          "617bc590-6645-4d9a-a1e4-e6ef0a980ef4": {
+            "type": "image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "ce8d19a2-79fa-4b4a-a3ee-1c34d26e3c2f",
+          "4aad9aa9-c9d3-4e3c-8893-0f8f79d35f88",
+          "617bc590-6645-4d9a-a1e4-e6ef0a980ef4"
+        ],
         "settings": {
-          "image": "shopify:\/\/shop_images\/Group_1181-2_984e8d6f-6b33-4e32-95e0-42d79c4ef133.png",
           "title_1": "Quality",
           "title_2": "Mission",
           "title_3": "Balance",
@@ -257,7 +278,8 @@
           "subtitle_3": "Live with balance",
           "text_1": "<p>Our products are designed to be lifetime companions.<\/p>",
           "text_2": "<p>Cannabis is entering a new era. It deserves a new look and feel to match.<\/p>",
-          "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>"
+          "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>",
+          "slider_autoplay": true
         }
       },
       "1634454978ed949a88": {
