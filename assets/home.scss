@@ -109,14 +109,18 @@
 	}
 
 	.owl-dot {
-		border-radius: 50%;
-		border: 1px solid $c_main;
-		height: 10px;
-		margin: 0 8px;
-		width: 10px;
+		span {
+			border-radius: 50%;
+			border: 1px solid $c_main;
+			height: 10px;
+			margin: 0 8px;
+			width: 10px;
+		}
 
 		&.active {
-			background-color: $c_main;
+			span {
+				background-color: $c_main;
+			}
 		}
 	}
 
