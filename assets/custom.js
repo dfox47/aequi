@@ -68,10 +68,11 @@ $(window).bind('load', function() {
 	// home slider [START]
 	let $homeSlider     = $('.js-home-slider');
 	let sliderAutoplay  = $homeSlider.attr('data-autoplay');
+	let sliderTimeout   = $homeSlider.attr('data-timeout');
 
 	$homeSlider.owlCarousel({
 		autoplay:           sliderAutoplay,
-		autoplayTimeout:    3000,
+		autoplayTimeout:    sliderTimeout ? sliderTimeout : 5000,
 		items:              1,
 		loop:               true
 	});
