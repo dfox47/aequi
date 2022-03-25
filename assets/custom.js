@@ -99,10 +99,11 @@ $(window).bind('load', function() {
 	// advantages slider [START]
 	let $advantagesSlider           =  $('.js-advantages-slider');
 	let advantagesSliderAutoplay    = $advantagesSlider.attr('data-autoplay');
+	let advantagesSliderTimeout     = $advantagesSlider.attr('data-timeout');
 
 	$advantagesSlider.owlCarousel({
 		autoplay:           advantagesSliderAutoplay,
-		autoplayTimeout:    3000,
+		autoplayTimeout:    advantagesSliderTimeout ? advantagesSliderTimeout : 3000,
 		dots:               true,
 		items:              1,
 		loop:               true

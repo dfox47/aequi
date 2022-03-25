@@ -21,7 +21,7 @@
 	{%- endif -%}
 
 	<div class="hero_slider">
-		<div class="owl-carousel js-home-slider" data-autoplay="{% if section.settings.slider_autoplay %}true{%- endif -%}">
+		<div class="owl-carousel js-home-slider" data-autoplay="{% if section.settings.slider_autoplay %}true{%- endif -%}" data-timeout="{{ section.settings.slider_timeout }}">
 			{% for block in section.blocks %}
 				<div class="hero_slider__item" style="background-image: url({{ block.settings.image | img_url: '2048x' }})"></div>
 			{% endfor %}
@@ -89,6 +89,12 @@
 				"id": "slider_autoplay",
 				"label": "Slider autoplay",
 				"default": true
+			},
+			{
+				"type": "text",
+				"id": "slider_timeout",
+				"label": "Slider timeout",
+				"default": "5000"
 			}
 		],
 		"presets": [
