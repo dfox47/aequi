@@ -283,7 +283,7 @@
           "text_2": "<p>Cannabis is entering a new era. It deserves a new look and feel to match.<\/p>",
           "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>",
           "slider_autoplay": true,
-          "slider_timeout": "1000"
+          "slider_timeout": "10000"
         }
       },
       "1634454978ed949a88": {
