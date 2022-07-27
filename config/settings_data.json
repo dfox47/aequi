@@ -218,9 +218,9 @@
         "settings": {
           "title_1": "Your style.",
           "title_2": "Your scene.",
-          "desc": "We design aesthetic cannabis experiences.",
+          "desc": "We design aesthetic Hemp experiences.",
           "link_src": "\/",
-          "link_text": "40% OFF",
+          "link_text": "20% OFF",
           "slider_autoplay": true,
           "slider_timeout": "5000"
         }
@@ -281,7 +281,7 @@
           "subtitle_2": "Enhanced cannabis experiences",
           "subtitle_3": "Live with balance",
           "text_1": "<p>Our products are designed to be lifetime companions.<\/p>",
-          "text_2": "<p>Cannabis is entering a new era. It deserves a new look and feel to match.<\/p>",
+          "text_2": "<p>Hemp is entering a new era. It deserves a new look and feel to match.<\/p>",
           "text_3": "<p>AEQUI is dedicated to helping our customers live creative, fulfilled and balanced lives.<\/p>",
           "slider_autoplay": true,
           "slider_timeout": "5000"
@@ -321,6 +321,14 @@
           "layout": "list",
           "blog_show_author": false,
           "blog_show_date": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
         }
       }
     },
